@@ -48,7 +48,7 @@ export class SurveyService {
   }
 
   public getSurvey(survey: Survey): Observable<any> {
-    this.loadToken();
+  //  this.loadToken();
     return this.http.get<any>(
       this.endpoint + "" + survey._id,
       this.httpOptions
@@ -64,7 +64,7 @@ export class SurveyService {
   }
 
   public getMySurvey(username: string): Observable<any> {
-    this.loadToken();
+    //this.loadToken();
     return this.http.get<any>(
       this.endpoint + "list/" + username,
       this.httpOptions
@@ -72,7 +72,7 @@ export class SurveyService {
   }
 
   public addSurvey(survey: Survey): Observable<any> {
-    this.loadToken();
+    //this.loadToken();
     return this.http.post<any>(this.endpoint + "add", survey, this.httpOptions);
   }
 

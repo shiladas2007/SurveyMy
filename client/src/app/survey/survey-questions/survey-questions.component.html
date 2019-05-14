@@ -1,0 +1,117 @@
+<!-- Developers:
+       Shila Das (ID# 300969886)
+       Michael Adaikalaraj (ID# 300958145)
+       Nikesh Patel (ID# 300970071)
+       Khushboo Sakervala (ID# 300984318)
+       Gurpreet Kaur (ID# 300989390)
+
+ WebApp Name: Poll+
+
+Brief Description: Content of Questions for Survey Page-->
+
+<br />
+<div class="container questions">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>{{ survey.surveyTitle }}  </h1>
+      <h4>   <div class="counter-wrapper">
+          <app-time-q #counter></app-time-q>
+        </div><br>
+         </h4>
+
+      <br />
+
+      <form class="form" (submit)="onSurveySubmit()">
+
+        <div *ngFor="let question of questions; let i = index" class="card border-primary lg-3">
+          <div class="card-header">{{ i + 1 }}) {{ question.question }}</div>
+          <div class="card-text">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item" *ngIf="question.questionType === 3">
+                      <app-key-count (messageEvent)="receiveMessage($event)"></app-key-count>
+                      <input
+                        name="mike{{ i }}"
+                        type="text" readonly="readonly"
+                        style="width: 50%; margin-left: 30px;"
+                        id="{{ answers[i] }}"
+
+                        value="{{count}}"
+                        [(ngModel)]="answers[i].answer"
+                      />
+
+                     <br />
+
+                    </li>
+                  <li class="list-group-item" *ngIf="question.option1">
+              <input
+                name="mike{{ i }}"
+                type="radio"
+                id="{{ answers[i] }}"
+                [(ngModel)]="answers[i].answer"
+                value="1"
+              />
+              {{ question.option1 }}<br />
+                  </li>
+                  <li class="list-group-item" *ngIf="question.option2">
+              <input
+                name="mike{{ i }}"
+                type="radio"
+                id="{{ answers[i] }}"
+                [(ngModel)]="answers[i].answer"
+                value="2"
+              />
+              {{ question.option2 }}<br />
+                  </li>
+                  <li class="list-group-item" *ngIf="question.option3">
+
+              <input
+                name="mike{{ i }}"
+                type="radio"
+                id="{{ answers[i] }}"
+                [(ngModel)]="answers[i].answer"
+                value="3"
+              />
+              {{ question.option3 }}<br />
+
+            </li>
+            <li class="list-group-item" *ngIf="question.option4">
+
+              <input
+                name="mike{{ i }}"
+                type="radio"
+                id="{{ answers[i] }}"
+                [(ngModel)]="answers[i].answer"
+                value="4"
+              />
+              {{ question.option4 }}<br />
+
+            </li>
+            <li class="list-group-item" *ngIf="question.questionType === 2">
+                <input
+                  name="mike{{ i }}"
+                  type="text"
+                  style="width: 50%; margin-left: 30px;"
+                  id="{{ answers[i] }}"
+                  [(ngModel)]="answers[i].answer"
+                />
+               <br />
+
+              </li>
+          </ul>
+          </div>
+
+        </div>
+
+        <div class="container row">
+          <button type="submit" class="btn btn-primary">
+            Submit Survey
+          </button>
+
+          <a routerLink="/survey/list" class="btn btn-warning margin-left">
+            Cancel</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

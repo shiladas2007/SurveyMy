@@ -34,6 +34,8 @@ let answerSchema = mongoose.Schema(
       keySp: String,
       redDot: String,
       nums: String,
+      num1Shown: String,
+      num1Typed: String,
       desc: String
   },
   {

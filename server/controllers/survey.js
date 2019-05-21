@@ -238,6 +238,9 @@ module.exports.processAnsAddPage = (req, res, next) => {
   keySp: req.body.keySp,
   redDot: req.body.redDot,
   nums: req.body.nums,
+  nums: req.body.nu,
+  num1Shown: req.body.num1Shown,
+  num1Typed: req.body.num1Typed,
   desc: req.body.desc
   });
   

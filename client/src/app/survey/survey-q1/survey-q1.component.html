@@ -4,11 +4,15 @@
     <app-time-q #counter></app-time-q>
     <app-time-q #counter1 style="display: none"></app-time-q>
     <app-time-q #counter2 style="display: none"></app-time-q>
+    <app-time-q #counter3 style="display: none"></app-time-q>
   </div><br>
    </h4>
 <br>
-<form>
-    <mat-card class="example-card" [hidden]="startExam" >
+<form [formGroup]="formGroup">
+    <mat-horizontal-stepper formArrayName="formArray" [linear]="true" #stepper>
+        <mat-step [editable]="false" formGroupName="0" [stepControl]="formArray?.get([0])">
+            <ng-template matStepLabel></ng-template>
+    <mat-card class="example-card"  >
         <mat-card-header class="cardHeader">
             General Info
         </mat-card-header>
@@ -16,23 +20,26 @@
 <hr>
 
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Name" name="Name" [(ngModel)]="ans1.Name" required >
+        <input matInput placeholder="Name" name="Name" formControlName="NameCtrl" [(ngModel)]="ans1.Name" required >
+        <mat-error>This field is required</mat-error>
       </mat-form-field><br>
       <mat-form-field class="example-full-width">
-          <input matInput placeholder="Email" name="Email" type="email" required  [(ngModel)]="ans1.Email">
+          <input matInput placeholder="Email" name="Email"formControlName="EmailCtrl"  type="email" required  [(ngModel)]="ans1.Email">
+          <mat-error>This field is required</mat-error>
         </mat-form-field><br>
       <mat-form-field>
-        <input matInput placeholder="Age" name="Age"   [(ngModel)]="ans1.Age">
+        <input matInput placeholder="Age" name="Age" formControlName="AgeCtrl"   [(ngModel)]="ans1.Age">
       </mat-form-field>
+
+
       <div>
-        <button mat-button  (click)="start()">Start Exam</button>
+        <button mat-button type="button" autofocus matStepperNext (click)="start()">Start Exam</button>
       </div>
     </mat-card-content>
   </mat-card>
+</mat-step>
 
-<mat-horizontal-stepper [linear]="true" [hidden]="!startExam" #stepper>
-
-  <mat-step editable="false">
+  <mat-step editable="false" formGroupName="1" [stepControl]="formArray?.get([1])">
 
       <ng-template matStepLabel></ng-template>
       <mat-card class="example-card">
@@ -43,19 +50,20 @@
               <hr>
       <label id="example-radio-group-label">1. Are you a visible minority or a new immigrant woman?</label>
       <mat-radio-group
-        aria-labelledby="example-radio-group-label" name="isImi"
-        class="example-radio-group"  [(ngModel)]="ans1.isImi"
+        aria-labelledby="example-radio-group-label" name="isImi" #isImi required
+        class="example-radio-group"  [(ngModel)]="ans1.isImi" formControlName="isImiCtrl"
         >
         <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
           {{item}}
         </mat-radio-button>
+        <mat-error *ngIf="isImi.invalid">required</mat-error>
       </mat-radio-group>
       <div>
 
         <label id="example-radio-group-label">2. When did you arrived in Canada?</label>
-        <mat-radio-group
+        <mat-radio-group required
         aria-labelledby="example-radio-group-label" name="isImiYr"
-        class="example-radio-group"  [(ngModel)]="ans1.isImiYr"
+        class="example-radio-group"  [(ngModel)]="ans1.isImiYr" formControlName="isImiYrCtrl"
         >
         <mat-radio-button class="example-radio-button" *ngFor="let item of Yrs" [value]="item">
           {{item}}
@@ -64,8 +72,8 @@
 
 
       <label id="example-radio-group-label">3. Are you able to legally work in Canada?</label>
-      <mat-radio-group
-      aria-labelledby="example-radio-group-label" name="isWork"
+      <mat-radio-group required
+      aria-labelledby="example-radio-group-label" name="isWork"  formControlName="isWorkCtrl"
       class="example-radio-group"  [(ngModel)]="ans1.isWork"
       >
       <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
@@ -74,8 +82,8 @@
     </mat-radio-group>
 
     <label id="example-radio-group-label">4. What is your resident status?</label>
-    <mat-radio-group name="Res"
-    aria-labelledby="example-radio-group-label"
+    <mat-radio-group name="Res" required
+    aria-labelledby="example-radio-group-label" formControlName="ResCtrl"
     class="example-radio-group"  [(ngModel)]="ans1.Res"
     >
     <mat-radio-button class="example-radio-button" *ngFor="let item of Res" [value]="item">
@@ -89,7 +97,7 @@
   </mat-card>
 
   </mat-step>
-  <mat-step editable="false">
+  <mat-step editable="false" formGroupName="2" [stepControl]="formArray?.get([2])">
 
       <ng-template matStepLabel></ng-template>
       <mat-card class="example-card">
@@ -99,9 +107,9 @@
           <mat-card-content>
               <hr>
       <label id="example-radio-group-label">1. Have you ever worked in Canada?</label>
-      <mat-radio-group
+      <mat-radio-group required
         aria-labelledby="example-radio-group-label" name="isWorked"
-        class="example-radio-group"  [(ngModel)]="ans1.isWorked"
+        class="example-radio-group"  [(ngModel)]="ans1.isWorked" formControlName="isWorkedCtrl"
         >
         <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
           {{item}}
@@ -111,19 +119,19 @@
 
 
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="2. How many jobs have you worked on?" name="NoJobs"  [(ngModel)]="ans1.NoJobs">
+          <input matInput required formControlName="NoJobsCtrl" placeholder="2. How many jobs have you worked on?" name="NoJobs"  [(ngModel)]="ans1.NoJobs">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <input matInput  [(ngModel)]="ans1.WorkPer" name="WorkPer" placeholder="3. What is the maximum work period you have worked in a job (months/years)?" >
+          <input matInput required [(ngModel)]="ans1.WorkPer"  formControlName="WorkPerCtrl" name="WorkPer" placeholder="3. What is the maximum work period you have worked in a job (months/years)?" >
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <input matInput  [(ngModel)]="ans1.jobL" name="jobL" placeholder="4. Why did you leave your previous job?" >
+          <input matInput  [(ngModel)]="ans1.jobL" formControlName="jobLCtrl" name="jobL" placeholder="4. Why did you leave your previous job?" >
         </mat-form-field><br>
       <label id="example-radio-group-label">5. Have you done any volunteering jobs in Canada?</label>
-      <mat-radio-group
-      aria-labelledby="example-radio-group-label" name="isVol"
+      <mat-radio-group required
+      aria-labelledby="example-radio-group-label" name="isVol" formControlName="isVolCtrl"
       class="example-radio-group"  [(ngModel)]="ans1.isVol"
       >
       <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
@@ -132,7 +140,7 @@
     </mat-radio-group>
 
     <mat-form-field class="example-full-width">
-      <input matInput  [(ngModel)]="ans1.Vol" name="Vol" placeholder="6. For how long have you done the volunteering Work?" >
+      <input matInput required formControlName="VolCtrl" [(ngModel)]="ans1.Vol" name="Vol" placeholder="6. For how long have you done the volunteering Work?" >
     </mat-form-field>
 <br>
 
@@ -143,7 +151,7 @@
 
 
   </mat-step>
-  <mat-step editable="false" >
+  <mat-step editable="false" formGroupName="3" [stepControl]="formArray?.get([3])">
 
       <ng-template matStepLabel></ng-template>
       <mat-card class="example-card">
@@ -154,7 +162,7 @@
               <hr>
             <label id="example-radio-group-label">Choose one option for each row</label>
 
-      <mat-radio-group
+      <mat-radio-group formControlName="Work1Ctrl" required
         aria-labelledby="example-radio-group-label" name="Work1"
         class="example-radio-group"  [(ngModel)]="ans1.Work1"
         >
@@ -162,35 +170,35 @@
         <mat-radio-button class="example-radio-button" value="Working with people">Working with people</mat-radio-button>
       </mat-radio-group>
       <hr>
-      <mat-radio-group
+      <mat-radio-group formControlName="Work2Ctrl" required
       aria-labelledby="example-radio-group-label" name="Work2"
       class="example-radio-group" [(ngModel)]="ans1.Work2"
       >
       <mat-radio-button class="example-radio-button" value="Working outdoors" >Working outdoors</mat-radio-button>
       <mat-radio-button class="example-radio-button" value="Working indoors" >Working indoors</mat-radio-button>
     </mat-radio-group><hr>
-    <mat-radio-group
+    <mat-radio-group formControlName="Work3Ctrl" required
     aria-labelledby="example-radio-group-label"
     class="example-radio-group" [(ngModel)]="ans1.Work3" name="Work3"
     >
     <mat-radio-button class="example-radio-button" value="Working with numbers">Working with numbers</mat-radio-button>
     <mat-radio-button class="example-radio-button" value="Working with ideas">Working with ideas</mat-radio-button>
   </mat-radio-group><hr>
-  <mat-radio-group
-  aria-labelledby="example-radio-group-label"
+  <mat-radio-group formControlName="Work4Ctrl"
+  aria-labelledby="example-radio-group-label" required
   class="example-radio-group" [(ngModel)]="ans1.Work4" name="Work4"
   >
   <mat-radio-button class="example-radio-button" value="Cleaning and organizing">Cleaning and organizing </mat-radio-button>
   <mat-radio-button class="example-radio-button" value="Creating new objects" >Creating new objects</mat-radio-button>
 </mat-radio-group><hr>
-<mat-radio-group
-aria-labelledby="example-radio-group-label"
+<mat-radio-group formControlName="Work5Ctrl"
+aria-labelledby="example-radio-group-label" required
 class="example-radio-group" [(ngModel)]="ans1.Work5" name="Work5"
 >
 <mat-radio-button class="example-radio-button" value="Operating machines">Operating machines </mat-radio-button>
 <mat-radio-button class="example-radio-button" value="Office work">Office work</mat-radio-button>
 </mat-radio-group><hr>
-<mat-radio-group
+<mat-radio-group formControlName="Work6Ctrl" required
 aria-labelledby="example-radio-group-label"
 class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
 >
@@ -198,7 +206,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
 <mat-radio-button class="example-radio-button" value="Woking in a company">Woking in a company</mat-radio-button>
 </mat-radio-group><br>
 <mat-form-field class="example-full-width">
-  <input matInput [(ngModel)]="ans1.Interest" name="Interest" placeholder="Mention your career interest" >
+  <input matInput [(ngModel)]="ans1.Interest" formControlName="IntCtrl" name="Interest" placeholder="Mention your career interest" >
 </mat-form-field>
 <br>
       <div>
@@ -209,7 +217,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
 
 
   </mat-step>
-  <mat-step editable="false">
+  <mat-step editable="false" formGroupName="4" [stepControl]="formArray?.get([4])">
 
       <ng-template matStepLabel></ng-template>
       <mat-card class="example-card">
@@ -220,8 +228,8 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             <hr>
 
           <label id="example-radio-group-label">1. I  have explored job possibilities for me</label>
-          <mat-radio-group
-          aria-labelledby="example-radio-group-label" name="isExpJob"
+          <mat-radio-group required
+          aria-labelledby="example-radio-group-label" name="isExpJob" formControlName="isExpJob"
           class="example-radio-group" [(ngModel)]="ans1.isExpJob"
           >
           <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
@@ -229,7 +237,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
           </mat-radio-button>
         </mat-radio-group>
         <label id="example-radio-group-label">2. I have explored possible organizations for me to work</label>
-          <mat-radio-group
+          <mat-radio-group formControlName="isExpOrg" required
           aria-labelledby="example-radio-group-label" name="isExpOrg"
           class="example-radio-group"  [(ngModel)]="ans1.isExpOrg"
           >
@@ -238,8 +246,8 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
           </mat-radio-button>
         </mat-radio-group>
         <label id="example-radio-group-label">3. I have explored interview sessions</label>
-          <mat-radio-group  [(ngModel)]="ans1.isExpInt"
-          aria-labelledby="example-radio-group-label"
+          <mat-radio-group  [(ngModel)]="ans1.isExpInt" required
+          aria-labelledby="example-radio-group-label" formControlName="isExpInt"
           class="example-radio-group" name="isExpInt"
           >
           <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
@@ -247,8 +255,8 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
           </mat-radio-button>
         </mat-radio-group>
         <label id="example-radio-group-label">4. I have explored circulating my resume to as many contacts as possible</label>
-          <mat-radio-group  [(ngModel)]="ans1.isExpRes" name="isExpRes"
-          aria-labelledby="example-radio-group-label"
+          <mat-radio-group  [(ngModel)]="ans1.isExpRes" name="isExpRes" formControlName="isExpRes"
+          aria-labelledby="example-radio-group-label" required
           class="example-radio-group"
           >
           <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
@@ -256,8 +264,8 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
           </mat-radio-button>
         </mat-radio-group>
         <label id="example-radio-group-label">5. I have prepared for possible interview sessions</label>
-          <mat-radio-group  [(ngModel)]="ans1.isExpPre" name="isExpPre"
-          aria-labelledby="example-radio-group-label"
+          <mat-radio-group  [(ngModel)]="ans1.isExpPre" name="isExpPre" formControlName="isExpPre"
+          aria-labelledby="example-radio-group-label" required
           class="example-radio-group"
           >
           <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
@@ -265,7 +273,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
           </mat-radio-button>
         </mat-radio-group>
         <label id="example-radio-group-label">6. I have identified five target companies that I have to send my resume to them</label>
-          <mat-radio-group name="isExpTar"
+          <mat-radio-group name="isExpTar" formControlName="isExpTar" required
           aria-labelledby="example-radio-group-label"  [(ngModel)]="ans1.isExpTar"
           class="example-radio-group"
           >
@@ -281,7 +289,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
   </mat-card>
 
   </mat-step>
-  <mat-step editable="false">
+  <mat-step editable="false" formGroupName="5" [stepControl]="formArray?.get([5])">
 
       <ng-template matStepLabel></ng-template>
       <mat-card class="example-card">
@@ -291,8 +299,8 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
         <mat-card-content>
             <hr>
           <label id="example-radio-group-label">You are given 15 seconds; how many times can you tab on the right arrow key?</label>
-          <mat-radio-group  (change)="selKey=true;" [disabled]="selKey"
-          aria-labelledby="example-radio-group-label" name="ExpCount"
+          <mat-radio-group  (change)="selKey=true;" [disabled]="selKey" required
+          aria-labelledby="example-radio-group-label" name="ExpCount" formControlName="ExpCount"
           class="example-radio-group"  [(ngModel)]="ans1.ExpCount"
           >
           <mat-radio-button class="example-radio-button" *ngFor="let item of Kc" [value]="item">
@@ -309,6 +317,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
                         id="keySp"
                         value="{{count}}"
                         [(ngModel)]="ans1.keySp"
+                        formControlName="keySp"
                       />
       <div>
         <button mat-button type="button" matStepperNext>Next</button>
@@ -317,7 +326,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
   </mat-card>
 
   </mat-step>
-  <mat-step editable="false">
+  <mat-step editable="false" formGroupName="6" [stepControl]="formArray?.get([6])">
 
         <ng-template matStepLabel></ng-template>
         <mat-card class="example-card">
@@ -326,7 +335,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             </mat-card-header>
           <mat-card-content>
               <hr>
-            <label id="example-radio-group-label">Click on button see the image!</label><br>
+            <label id="example-radio-group-label">Click on button see the image of dots. please count the dots by color.!</label><br>
             <button type="button" class="btn" [hidden]="clicked1"
             (click)="clicked1=!clicked1; img1=false; counter1.start();">Show</button>
             <span [hidden]="!span1">How many red dot is there?<br> </span>
@@ -337,10 +346,11 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             style="width: 50%; margin-left: 30px;"
             id="redDot"
             [(ngModel)]="ans1.redDot"
+            formControlName="redDot"
           />
 
             <br>
-            <label id="example-radio-group-label">Click on button see the image!</label><br>
+            <label id="example-radio-group-label">Click on button see the image! Please read all the numbers from image.</label><br>
             <button type="button" class="btn" [hidden]="clicked2"
             (click)="clicked2=!clicked2; img2=false; counter2.start();">Show</button>
             <span [hidden]="!span2">Can you write down the numbers from the image?<br> </span>
@@ -351,7 +361,22 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             style="width: 50%; margin-left: 30px;"
             id="nums"
             [(ngModel)]="ans1.nums"
+            formControlName="nums"
           />
+          <br>
+          <label id="example-radio-group-label">Click on button see the questions!</label><br>
+          <button type="button" class="btn" [hidden]="clicked3"
+          (click)="clicked3=!clicked3; img3=false; counter3.start(); genN();">Show</button>
+          <label [hidden]="img3">{{random1}} {{random2}} {{random3}} {{random4}}</label>
+          <span [hidden]="!span3">Can you write down the numbers which has shown?<br> </span>
+          <input [hidden]="!span3"
+          name="num1Typed"
+          type="text"
+          style="width: 50%; margin-left: 30px;"
+          id="num1Typed"
+          [(ngModel)]="ans1.num1Typed"
+          formControlName="num1Typed"
+        />
 
         <div>
           <button mat-button type="button" matStepperNext>Next</button>
@@ -360,7 +385,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
     </mat-card>
 
     </mat-step>
-    <mat-step>
+    <mat-step formGroupName="7" [stepControl]="formArray?.get([7])">
 
           <ng-template matStepLabel></ng-template>
           <mat-card class="example-card">
@@ -371,14 +396,14 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
                 <hr>
                 <mat-form-field>
                     <mat-label>What describe you best?</mat-label>
-                    <mat-select  [(ngModel)]="ans1.desc" name="desc">
+                    <mat-select  [(ngModel)]="ans1.desc" name="desc" required formControlName="desc" >
                       <mat-option *ngFor="let item of lst" [value]="item">
                         {{item}}
                       </mat-option>
                     </mat-select>
                   </mat-form-field>
           <div>
-              <button mat-button type="submit" (click)="submit()">Submit</button>
+              <button mat-button type="button"  (click)="submit()">Submit</button>
           </div>
         </mat-card-content>
       </mat-card>

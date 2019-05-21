@@ -50,9 +50,11 @@ module.exports.processAddPage = (req, res, next) => {
         keySp: req.body.keySp,
         redDot: req.body.redDot,
         nums: req.body.nums,
+        num1Shown: req.body.num1Shown,
+        num1Typed: req.body.num1Typed,
         desc: req.body.desc
     });
-
+    console.log(newContact);
     contactModel.create(newContact, (err, contactModel) => {
         if(err) {
             console.log(err);

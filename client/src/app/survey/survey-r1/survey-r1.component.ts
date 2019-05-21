@@ -14,6 +14,7 @@ import { User } from "src/app/models/user";
 })
 export class SurveyR1Component implements OnInit {
   ans1s: Ans1[];
+  output: string;
   constructor(
     private activatedRoute: ActivatedRoute,
     private flashMessage: FlashMessagesService,
@@ -24,14 +25,44 @@ export class SurveyR1Component implements OnInit {
 
   ngOnInit() {
     this.ans1s = new Array<Ans1>();
+    this.output = 'Results:\r\n';
     this.surveyService.getAnsList().subscribe( data => {
         if (data.success) {
             this.ans1s = data.contactList;
+//prepare result
+let i=1;
+            this.ans1s.forEach(item => {
+
+  if (item.isWork === 'Yes') {
+
+    const sp: number = +item.keySp;
+    if (
+      (item.Work4.startsWith('Cleaning')) &&
+      (item.Work2.endsWith('indoors')) &&
+      (item.Work6.endsWith('company')) &&
+      (item.Work3.endsWith('numbers')) &&
+      (item.Work5.startsWith('Office')) &&
+      sp > 21)  {
+        this.output += i +'. Name:' + item.Name + ',' + item.Email + ', Administrative jobs;\r\n';
+    console.log(item.isWork + i++);
+  } else if (
+    (item.Work4.startsWith('Cleaning')) &&
+    (item.Work6.endsWith('company')) &&
+    (item.Work3.endsWith('ideas')) &&
+    (item.Work1.endsWith('people')) &&
+    sp > 51) { this.output += i + '. Name:' + item.Name + ',' + item.Email + ', Digital Marketing;\r\n';
+  console.log(item.isWork + i++);
+}
+  }
+});
+
+
         } else {
           this.flashMessage.show('some error', {cssClass: 'alert-danger', timeOut: 3000});
         }
 
       });
+      console.log(this.output);
   }
   download() {
     this.downloadFile(this.ans1s);

@@ -29,5 +29,8 @@ export class Ans1 {
       keySp: string;
       redDot: string;
       nums: string;
+      num1Shown: string;
+      num1Typed: string;
       desc: string;
+
 }

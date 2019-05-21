@@ -6,7 +6,7 @@
        Gurpreet Kaur (ID# 300989390)
 
  WebApp Name: Poll+
-
+<
 Brief Description: Content of Questions for Survey Page-->
 
 <br />
@@ -16,6 +16,8 @@ Brief Description: Content of Questions for Survey Page-->
       <h1>{{ survey.surveyTitle }}  </h1>
       <h4>   <div class="counter-wrapper">
           <app-time-q #counter></app-time-q>
+          <app-time-q #counter1 style="display: none"></app-time-q>
+          <app-time-q #counter2 style="display: none"></app-time-q>
         </div><br>
          </h4>
 
@@ -23,6 +25,9 @@ Brief Description: Content of Questions for Survey Page-->
 
       <form class="form" (submit)="onSurveySubmit()">
 
+          <!-- <ul class="nav nav-tabs" *ngFor="let section of sections; let j = index">
+              <li ><a href="tab{{section.sectionN}}" data-toggle="tab">{{section.sectionHeader}}</a></li>
+          </ul> -->
         <div *ngFor="let question of questions; let i = index" class="card border-primary lg-3">
           <div class="card-header">{{ i + 1 }}) {{ question.question }}</div>
           <div class="card-text">
@@ -42,6 +47,27 @@ Brief Description: Content of Questions for Survey Page-->
                      <br />
 
                     </li>
+                    <li class="list-group-item" *ngIf="question.questionType === 6">
+                        <button type="button" class="btn" [hidden]="clicked1"
+                        (click)="clicked1=!clicked1; img1=false; counter1.start();">Show</button>
+                        <span [hidden]="!span1">{{question.dynamicQ}}<br> </span>
+                        <img  src="{{question.image}}" [hidden]="img1" width="50%" height="15%"/>
+
+
+
+                        <br />
+
+                       </li>
+                       <li class="list-group-item" *ngIf="question.questionType === 7">
+                          <button type="button" class="btn" [hidden]="clicked2"
+                          (click)="clicked2=!clicked2; img2=false; counter2.start();">Show</button>
+                          <span [hidden]="!span2">{{question.dynamicQ}}</span><br>
+                          <img id="img2" src="{{question.image}}" [hidden]="img2" width="50%" height="30%"/>
+
+
+                          <br />
+
+                         </li>
                   <li class="list-group-item" *ngIf="question.option1">
               <input
                 name="mike{{ i }}"
@@ -86,7 +112,7 @@ Brief Description: Content of Questions for Survey Page-->
               {{ question.option4 }}<br />
 
             </li>
-            <li class="list-group-item" *ngIf="question.questionType === 2">
+            <li class="list-group-item" *ngIf="question.questionType === 2 || question.questionType === 7">
                 <input
                   name="mike{{ i }}"
                   type="text"
@@ -97,6 +123,18 @@ Brief Description: Content of Questions for Survey Page-->
                <br />
 
               </li>
+              <li class="list-group-item" *ngIf="question.questionType === 5">
+                <select  id="{{ answers[i] }}"  name="mike{{ i }}"
+                style="width: 50%; margin-left: 30px;"
+                [(ngModel)]="answers[i].answer"
+                >
+                <option *ngFor="let item of question.list" [value]="item">{{ item }}</option>
+              </select>
+
+                 <br />
+
+                </li>
+
           </ul>
           </div>
 

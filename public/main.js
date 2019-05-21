@@ -35,24 +35,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _survey_survey_questions_survey_questions_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./survey/survey-questions/survey-questions.component */ "./src/app/survey/survey-questions/survey-questions.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
-/* harmony import */ var _pages_about_about_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/about/about.component */ "./src/app/pages/about/about.component.ts");
-/* harmony import */ var _pages_products_products_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/products/products.component */ "./src/app/pages/products/products.component.ts");
-/* harmony import */ var _pages_services_services_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/services/services.component */ "./src/app/pages/services/services.component.ts");
-/* harmony import */ var _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/contact/contact.component */ "./src/app/pages/contact/contact.component.ts");
-/* harmony import */ var _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/page-not-found/page-not-found.component */ "./src/app/pages/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contacts/contact-list/contact-list.component */ "./src/app/contacts/contact-list/contact-list.component.ts");
-/* harmony import */ var _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./contacts/contact-details/contact-details.component */ "./src/app/contacts/contact-details/contact-details.component.ts");
-/* harmony import */ var _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./contacts/contact-delete/contact-delete.component */ "./src/app/contacts/contact-delete/contact-delete.component.ts");
-/* harmony import */ var _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./survey/survey-details/survey-details.component */ "./src/app/survey/survey-details/survey-details.component.ts");
-/* harmony import */ var _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./survey/survey-list/survey-list.component */ "./src/app/survey/survey-list/survey-list.component.ts");
-/* harmony import */ var _pages_register_register_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/register/register.component */ "./src/app/pages/register/register.component.ts");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
-/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
-/* harmony import */ var _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./survey/survey-delete/survey-delete.component */ "./src/app/survey/survey-delete/survey-delete.component.ts");
-/* harmony import */ var _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./survey/survey-result/survey-result.component */ "./src/app/survey/survey-result/survey-result.component.ts");
+/* harmony import */ var _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./survey/survey-q/survey-q.component */ "./src/app/survey/survey-q/survey-q.component.ts");
+/* harmony import */ var _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./survey/survey-q1/survey-q1.component */ "./src/app/survey/survey-q1/survey-q1.component.ts");
+/* harmony import */ var _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./survey/survey-r1/survey-r1.component */ "./src/app/survey/survey-r1/survey-r1.component.ts");
+/* harmony import */ var _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./survey/survey-submit/survey-submit.component */ "./src/app/survey/survey-submit/survey-submit.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _pages_about_about_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/about/about.component */ "./src/app/pages/about/about.component.ts");
+/* harmony import */ var _pages_products_products_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/products/products.component */ "./src/app/pages/products/products.component.ts");
+/* harmony import */ var _pages_services_services_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/services/services.component */ "./src/app/pages/services/services.component.ts");
+/* harmony import */ var _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/contact/contact.component */ "./src/app/pages/contact/contact.component.ts");
+/* harmony import */ var _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/page-not-found/page-not-found.component */ "./src/app/pages/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./contacts/contact-list/contact-list.component */ "./src/app/contacts/contact-list/contact-list.component.ts");
+/* harmony import */ var _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contacts/contact-details/contact-details.component */ "./src/app/contacts/contact-details/contact-details.component.ts");
+/* harmony import */ var _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contacts/contact-delete/contact-delete.component */ "./src/app/contacts/contact-delete/contact-delete.component.ts");
+/* harmony import */ var _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./survey/survey-details/survey-details.component */ "./src/app/survey/survey-details/survey-details.component.ts");
+/* harmony import */ var _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./survey/survey-list/survey-list.component */ "./src/app/survey/survey-list/survey-list.component.ts");
+/* harmony import */ var _pages_register_register_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/register/register.component */ "./src/app/pages/register/register.component.ts");
+/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./survey/survey-delete/survey-delete.component */ "./src/app/survey/survey-delete/survey-delete.component.ts");
+/* harmony import */ var _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./survey/survey-result/survey-result.component */ "./src/app/survey/survey-result/survey-result.component.ts");
+
+
+
+
 
 
 // Modules
@@ -76,36 +84,40 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], data: { title: 'Home' } },
-    { path: 'about', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_5__["AboutComponent"], data: { title: 'About' } },
-    { path: 'products', component: _pages_products_products_component__WEBPACK_IMPORTED_MODULE_6__["ProductsComponent"], data: { title: 'Products' } },
-    { path: 'services', component: _pages_services_services_component__WEBPACK_IMPORTED_MODULE_7__["ServicesComponent"], data: { title: 'Services' } },
-    { path: 'contact', component: _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_8__["ContactComponent"], data: { title: 'Contact' } },
-    { path: 'survey/add', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_13__["SurveyDetailsComponent"], data: { title: 'Add Survey' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
-    { path: 'survey/list', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_14__["SurveyListComponent"], data: { title: 'Active Survey' } },
-    { path: 'survey/list/:username', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_14__["SurveyListComponent"], data: { title: 'My Survey' } },
-    { path: 'survey/edit/:id', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_13__["SurveyDetailsComponent"], data: { title: 'Edit Survey' } },
-    { path: 'survey/result/:id', component: _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_19__["SurveyResultComponent"], data: { title: 'Edit Survey' } },
+    { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], data: { title: 'Home' } },
+    { path: 'about', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_9__["AboutComponent"], data: { title: 'About' } },
+    { path: 'products', component: _pages_products_products_component__WEBPACK_IMPORTED_MODULE_10__["ProductsComponent"], data: { title: 'Products' } },
+    { path: 'services', component: _pages_services_services_component__WEBPACK_IMPORTED_MODULE_11__["ServicesComponent"], data: { title: 'Services' } },
+    { path: 'contact', component: _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_12__["ContactComponent"], data: { title: 'Contact' } },
+    { path: 'survey/add', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_17__["SurveyDetailsComponent"], data: { title: 'Add Survey' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
+    { path: 'survey/list', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_18__["SurveyListComponent"], data: { title: 'Active Survey' } },
+    { path: 'survey/list/:username', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_18__["SurveyListComponent"], data: { title: 'My Survey' } },
+    { path: 'survey/edit/:id', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_17__["SurveyDetailsComponent"], data: { title: 'Edit Survey' } },
+    { path: 'survey/result/:id', component: _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_23__["SurveyResultComponent"], data: { title: 'Edit Survey' } },
     { path: 'survey/questions/:id', component: _survey_survey_questions_survey_questions_component__WEBPACK_IMPORTED_MODULE_1__["SurveyQuestionsComponent"], data: { title: 'Survey Questions' } },
-    { path: 'survey/list/delete/:id', component: _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_18__["SurveyDeleteComponent"], data: { title: 'Delete Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
-    { path: 'contact/contact-list', component: _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_10__["ContactListComponent"], data: { title: 'Contact List' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
-    { path: 'contact/contact-list/add', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_11__["ContactDetailsComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
-    { path: 'contact/contact-list/edit/:id', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_11__["ContactDetailsComponent"], data: { title: 'Edit Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
-    { path: 'contact/contact-list/delete/:id', component: _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_12__["ContactDeleteComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_17__["AuthGuard"]] },
-    { path: 'register', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"], data: { title: 'Register' } },
-    { path: 'editprofile', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_15__["RegisterComponent"], data: { title: 'Edit' } },
-    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_16__["LoginComponent"], data: { title: 'Register' } },
+    { path: 'survey/questionsS/1', component: _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_2__["SurveyQComponent"], data: { title: 'Survey Questions' } },
+    { path: 'survey/questionsS/2', component: _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_3__["SurveyQ1Component"], data: { title: 'Survey Questions' } },
+    { path: 'survey/Results/2', component: _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_4__["SurveyR1Component"], data: { title: 'Survey Questions' } },
+    { path: 'survey/submit', component: _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_5__["SurveySubmitComponent"], data: { title: 'Survey Questions' } },
+    { path: 'survey/list/delete/:id', component: _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_22__["SurveyDeleteComponent"], data: { title: 'Delete Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
+    { path: 'contact/contact-list', component: _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_14__["ContactListComponent"], data: { title: 'Contact List' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
+    { path: 'contact/contact-list/add', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__["ContactDetailsComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
+    { path: 'contact/contact-list/edit/:id', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__["ContactDetailsComponent"], data: { title: 'Edit Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
+    { path: 'contact/contact-list/delete/:id', component: _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_16__["ContactDeleteComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
+    { path: 'register', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_19__["RegisterComponent"], data: { title: 'Register' } },
+    { path: 'editprofile', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_19__["RegisterComponent"], data: { title: 'Edit' } },
+    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_20__["LoginComponent"], data: { title: 'Register' } },
     { path: 'logout', redirectTo: '/login', pathMatch: 'full' },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '**', component: _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_9__["PageNotFoundComponent"] }
+    { path: '**', component: _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_13__["PageNotFoundComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_6__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -213,6 +225,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./survey/survey-result/survey-result.component */ "./src/app/survey/survey-result/survey-result.component.ts");
 /* harmony import */ var _survey_time_q_time_q_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./survey/time-q/time-q.component */ "./src/app/survey/time-q/time-q.component.ts");
 /* harmony import */ var _survey_key_count_key_count_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./survey/key-count/key-count.component */ "./src/app/survey/key-count/key-count.component.ts");
+/* harmony import */ var _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./survey/survey-q/survey-q.component */ "./src/app/survey/survey-q/survey-q.component.ts");
+/* harmony import */ var _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./survey/survey-q1/survey-q1.component */ "./src/app/survey/survey-q1/survey-q1.component.ts");
+/* harmony import */ var _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./survey/survey-submit/survey-submit.component */ "./src/app/survey/survey-submit/survey-submit.component.ts");
+/* harmony import */ var _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./survey/survey-r1/survey-r1.component */ "./src/app/survey/survey-r1/survey-r1.component.ts");
 // Developers:
 // Shila Das            (ID# 300969886)
 // Michael Adaikalaraj  (ID# 300958145)
@@ -257,6 +273,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
 function jwtTokenGetter() {
     return localStorage.getItem("id_token");
 }
@@ -287,7 +307,11 @@ var AppModule = /** @class */ (function () {
                 _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_28__["SurveyDeleteComponent"],
                 _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_29__["SurveyResultComponent"],
                 _survey_time_q_time_q_component__WEBPACK_IMPORTED_MODULE_30__["TimeQComponent"],
-                _survey_key_count_key_count_component__WEBPACK_IMPORTED_MODULE_31__["KeyCountComponent"]
+                _survey_key_count_key_count_component__WEBPACK_IMPORTED_MODULE_31__["KeyCountComponent"],
+                _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_32__["SurveyQComponent"],
+                _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_33__["SurveyQ1Component"],
+                _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_34__["SurveySubmitComponent"],
+                _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_35__["SurveyR1Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -295,7 +319,7 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
-                angular2_flash_messages__WEBPACK_IMPORTED_MODULE_21__["FlashMessagesModule"],
+                angular2_flash_messages__WEBPACK_IMPORTED_MODULE_21__["FlashMessagesModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
                 _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_22__["JwtModule"].forRoot({
                     config: {
                         tokenGetter: jwtTokenGetter
@@ -673,7 +697,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material_stepper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/stepper */ "./node_modules/@angular/material/esm5/stepper.es5.js");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm5/radio.es5.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
 // Developers:
 // Shila Das            (ID# 300969886)
 // Michael Adaikalaraj  (ID# 300958145)
@@ -686,6 +714,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
@@ -693,22 +725,42 @@ var MaterialModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             imports: [
                 _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatFormFieldModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_7__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_4__["MatRadioModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_3__["MatStepperModule"]
             ],
             exports: [
                 _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDatepickerModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatFormFieldModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_7__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatNativeDateModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatInputModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_4__["MatRadioModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_3__["MatStepperModule"]
             ],
             providers: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDatepickerModule"]]
         })
     ], MaterialModule);
     return MaterialModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/ans1.ts":
+/*!********************************!*\
+  !*** ./src/app/models/ans1.ts ***!
+  \********************************/
+/*! exports provided: Ans1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ans1", function() { return Ans1; });
+var Ans1 = /** @class */ (function () {
+    function Ans1() {
+    }
+    return Ans1;
 }());
 
 
@@ -808,7 +860,7 @@ __webpack_require__.r(__webpack_exports__);
 // Gurpreet Kaur        (ID# 300989390)
 var Question = /** @class */ (function () {
     function Question() {
-        this.questionType = 1; //1 for mcq, 2 for text, 3 for other
+        this.questionType = 1; //1 for mcq, 2 for text, 3 for key tab, 4=missing q-2mcq, 5=dropdown, 6=image-mcq,7=image-text
     }
     return Question;
 }());
@@ -1034,7 +1086,7 @@ module.exports = "\n  .carousel-fade .carousel-inner .item {\n    opacity: 0;\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for home page-->\n\n<header style=\"height: 100vh;\">\n  <div\n    id=\"carouselFade\"\n    class=\"carousel slide carousel-fade\"\n    data-ride=\"carousel\"\n  >\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\"></div>\n      <div class=\"carousel-item\"></div>\n      <div class=\"carousel-item\"></div>\n    </div>\n  </div>\n</header>\n\n<section class=\"our-mission container\">\n  <h1>Our Mission</h1>\n  <div class=\"row\">\n    <div class=\"col-lg-12\" style=\"line-height: 30px;\">\n      <p>\n        Lorem Ipsum is simply dummy text of the printing and typesetting\n        industry. Lorem Ipsum has been the industry's standard dummy text ever\n        since the 1500s, when an unknown printer took a galley of type and\n        scrambled it to make a type specimen book. It has survived not only five\n        centuries, but also the leap into electronic typesetting, remaining\n        essentially unchanged.Lorem Ipsum is simply dummy text of the printing\n        and typesetting industry. Lorem Ipsum has been the industry's standard\n        dummy text ever since the 1500s, when an unknown printer took a galley\n        of type and scrambled it to make a type specimen book. It has survived\n        not only five centuries, but also the leap into electronic typesetting,\n        remaining essentially unchanged.\n      </p>\n    </div>\n  </div>\n</section>\n\n<section>\n  <div class=\"myImage2\"></div>\n</section>\n\n<section class=\"our-mission container\">\n  <h1>Our Vision</h1>\n  <div class=\"col-lg-12\" style=\"line-height: 30px;\">\n    <p>\n      Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n      Lorem Ipsum has been the industry's standard dummy text ever since the\n      1500s, when an unknown printer took a galley of type and scrambled it to\n      make a type specimen book. It has survived not only five centuries, but\n      also the leap into electronic typesetting, remaining essentially\n      unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industry's standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book.\n    </p>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-lg-6\"></div>\n  </div>\n</section>\n\n<section>\n  <div class=\"myImage\"></div>\n</section>\n\n<script>\n  $(document).ready(function() {\n    $(\"#carouselFade\").carousel({\n      interval: 200\n    });\n  });\n\n  $(function() {\n    $(document).scroll(function() {\n      var $nav = $(\".fixed-top\");\n      $nav.toggleClass(\"scrolled\", $(this).scrollTop() > $nav.height());\n    });\n  });\n\n  $(document).ready(function() {\n    // Add smooth scrolling to all links\n    $(\"a\").on(\"click\", function(event) {\n      // Make sure this.hash has a value before overriding default behavior\n      if (this.hash !== \"\") {\n        // Prevent default anchor click behavior\n        event.preventDefault();\n\n        // Store hash\n        var hash = this.hash;\n\n        // Using jQuery's animate() method to add smooth page scroll\n        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area\n        $(\"html, body\").animate(\n          {\n            scrollTop: $(hash).offset().top\n          },\n          800,\n          function() {\n            // Add hash (#) to URL when done scrolling (default click behavior)\n            window.location.hash = hash;\n          }\n        );\n      } // End if\n    });\n  });\n</script>\n"
+module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for home page-->\n\n<header style=\"height: 100vh;\">\n  <div\n    id=\"carouselFade\"\n    class=\"carousel slide carousel-fade\"\n    data-ride=\"carousel\"\n  >\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\"></div>\n      <div class=\"carousel-item\"></div>\n      <div class=\"carousel-item\"></div>\n    </div>\n  </div>\n</header>\n\n<section class=\"our-mission container\">\n  <h1>Our Mission</h1>\n  <div class=\"row\">\n    <div class=\"col-lg-12\" style=\"line-height: 30px;\">\n      <p>\n       THIS IS INTRODUCTION\n      </p>\n    </div>\n  </div>\n</section>\n\n<section>\n  <div class=\"myImage2\"></div>\n</section>\n\n<section class=\"our-mission container\">\n  <h1>Our Vision</h1>\n  <div class=\"col-lg-12\" style=\"line-height: 30px;\">\n    <p>\n        THIS IS INTRODUCTION\n    </p>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-lg-6\"></div>\n  </div>\n</section>\n\n<section>\n  <div class=\"myImage\"></div>\n</section>\n\n<script>\n  $(document).ready(function() {\n    $(\"#carouselFade\").carousel({\n      interval: 200\n    });\n  });\n\n  $(function() {\n    $(document).scroll(function() {\n      var $nav = $(\".fixed-top\");\n      $nav.toggleClass(\"scrolled\", $(this).scrollTop() > $nav.height());\n    });\n  });\n\n  $(document).ready(function() {\n    // Add smooth scrolling to all links\n    $(\"a\").on(\"click\", function(event) {\n      // Make sure this.hash has a value before overriding default behavior\n      if (this.hash !== \"\") {\n        // Prevent default anchor click behavior\n        event.preventDefault();\n\n        // Store hash\n        var hash = this.hash;\n\n        // Using jQuery's animate() method to add smooth page scroll\n        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area\n        $(\"html, body\").animate(\n          {\n            scrollTop: $(hash).offset().top\n          },\n          800,\n          function() {\n            // Add hash (#) to URL when done scrolling (default click behavior)\n            window.location.hash = hash;\n          }\n        );\n      } // End if\n    });\n  });\n</script>\n"
 
 /***/ }),
 
@@ -1589,7 +1641,7 @@ module.exports = "ul {\n  list-style-type: none;\n  -webkit-padding-start: 0px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for footer of each Page-->\n\n<footer>\n  <br />\n  <div class=\"navbar navbar-light bg-light\">\n    <div class=\"col-lg-6\">\n      <ul>\n        <li>\n          <a class=\"\" routerLink=\"/\">Home</a>\n        </li>\n        <li>\n          <a class=\"\" routerLink=\"/about\">FAQ</a>\n        </li>\n        <li>\n          <a class=\"\" routerLink=\"/products\">Contact Us</a>\n        </li>\n        <li>\n          <a class=\"\" routerLink=\"/survey/list\">Active Surveys</a>\n        </li>\n      </ul>\n    </div>\n    <div class=\"col-lg-6\">\n      <div id=\"mc_embed_signup\">\n        <form\n          class=\"validate material\"\n          asp-action=\"Subscribe\"\n          asp-controller=\"Home\"\n          method=\"post\"\n          id=\"mc-embedded-subscribe-form\"\n          name=\"mc-embedded-subscribe-form\"\n          novalidate\n        >\n          <div class=\"input-group mb-3\">\n            <input\n              type=\"text\"\n              class=\"form-control subscribeBox\"\n              placeholder=\"Email Address\"\n              aria-label=\"Email Address\"\n              aria-describedby=\"basic-addon2\"\n              name=\"EmailAddress\"\n            />\n            <div class=\"input-group-append\">\n              <button class=\"btn btn-secondary\" type=\"submit\">\n                <i class=\"fa fa-check fa-2x\"></i>\n              </button>\n            </div>\n          </div>\n        </form>\n      </div>\n      <div class=\"row\">\n        <i style=\"margin: 10px;\" class=\"fab fa-facebook-f\"></i>\n        <i style=\"margin: 10px;\" class=\"fab fa-twitter\"></i>\n        <i style=\"margin: 10px;\" class=\"fab fa-github\"></i>\n      </div>\n    </div>\n  </div>\n</footer>\n"
+module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for footer of each Page-->\n\n<footer>\n  <br />\n  <div class=\"navbar navbar-light bg-light\">\n    <div class=\"col-lg-6\">\n      <ul>\n        <li>\n          <a class=\"\" routerLink=\"/\">Home</a>\n        </li>\n        <li>\n          <a class=\"\" routerLink=\"/\">FAQ</a>\n        </li>\n        <li>\n          <a class=\"\" routerLink=\"/\">Contact Us</a>\n        </li>\n        <li>\n          <a class=\"\" routerLink=\"/\">Active Surveys</a>\n        </li>\n      </ul>\n    </div>\n    <div class=\"col-lg-6\">\n      <div id=\"mc_embed_signup\">\n        <form\n          class=\"validate material\"\n          asp-action=\"Subscribe\"\n          asp-controller=\"Home\"\n          method=\"post\"\n          id=\"mc-embedded-subscribe-form\"\n          name=\"mc-embedded-subscribe-form\"\n          novalidate\n        >\n          <div class=\"input-group mb-3\">\n            <input\n              type=\"text\"\n              class=\"form-control subscribeBox\"\n              placeholder=\"Email Address\"\n              aria-label=\"Email Address\"\n              aria-describedby=\"basic-addon2\"\n              name=\"EmailAddress\"\n            />\n            <div class=\"input-group-append\">\n              <button class=\"btn btn-secondary\" type=\"submit\">\n                <i class=\"fa fa-check fa-2x\"></i>\n              </button>\n            </div>\n          </div>\n        </form>\n      </div>\n      <div class=\"row\">\n        <i style=\"margin: 10px;\" class=\"fab fa-facebook-f\"></i>\n        <i style=\"margin: 10px;\" class=\"fab fa-twitter\"></i>\n        <i style=\"margin: 10px;\" class=\"fab fa-github\"></i>\n      </div>\n    </div>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -1655,7 +1707,7 @@ module.exports = ".header-logo{\n  margin-left: 30px;\n  height: 50px;\n}\n\n.na
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for header in each Page-->\n\n<nav class=\"navbar navbar-expand-lg fixed-top navbar-light bg-light\">\n  <a class=\"navbar-brand\" routerLink=\"/\"\n    ><img class=\"header-logo\" src=\"../../../assets/images/logo.jpeg\"\n  /></a>\n  <button\n    class=\"navbar-toggler\"\n    type=\"button\"\n    data-toggle=\"collapse\"\n    data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\"\n    aria-label=\"Toggle navigation\"\n  >\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Home </a>\n      </li>\n      <!-- <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">FAQ</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Contact Us</a>\n      </li> -->\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/survey/list\">Active Surveys</a>\n      </li>\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto navbar-right\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/survey/add\">Create Survey</a>\n      </li>\n\n      <li *ngIf=\"isLoggedIn()\">\n        <a\n          class=\"nav-link dropdown-toggle\"\n          id=\"navbarDropdown\"\n          data-toggle=\"dropdown\"\n          aria-expanded=\"false\"\n        >\n          Welcome, {{ user.displayName }}\n          <div class=\"dropdown-menu dropdown-menu-right\">\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/survey/list/{{ user.username }}\"\n              name=\"mySurvey\"\n              >My Surveys</a\n            >\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/editprofile\"\n              name=\"editProfile\"\n              >Edit Profile</a\n            >\n            <a\n              class=\"dropdown-item\"\n              *ngIf=\"isLoggedIn()\"\n              (click)=\"onLogoutClick()\"\n              routerLink=\"/logout\"\n            >\n              Logout</a\n            >\n          </div>\n        </a>\n      </li>\n      <li *ngIf=\"!isLoggedIn()\" class=\"nav-item\">\n        <a routerLink=\"/login\" class=\"nav-link\"> Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n"
+module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for header in each Page-->\n\n<nav class=\"navbar navbar-expand-lg fixed-top navbar-light bg-light\">\n  <a class=\"navbar-brand\" routerLink=\"/\"\n    ><img class=\"header-logo\" src=\"../../../assets/images/logo.jpeg\"\n  /></a>\n  <button\n    class=\"navbar-toggler\"\n    type=\"button\"\n    data-toggle=\"collapse\"\n    data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\"\n    aria-label=\"Toggle navigation\"\n  >\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Home </a>\n      </li>\n      <!-- <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">FAQ</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Contact Us</a>\n      </li> -->\n      <li class=\"nav-item\" *ngIf=\"isLoggedIn()\">\n        <a class=\"nav-link\" routerLink=\"/survey/list\">Active Surveys</a>\n      </li>\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto navbar-right\">\n      <li class=\"nav-item\" *ngIf=\"isLoggedIn()\">\n        <a class=\"nav-link\" routerLink=\"/survey/add\">Create Survey</a>\n      </li>\n\n      <li *ngIf=\"isLoggedIn()\">\n        <a\n          class=\"nav-link dropdown-toggle\"\n          id=\"navbarDropdown\"\n          data-toggle=\"dropdown\"\n          aria-expanded=\"false\"\n        >\n          Welcome, {{ user.displayName }}\n          <div class=\"dropdown-menu dropdown-menu-right\">\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/survey/list/{{ user.username }}\"\n              name=\"mySurvey\"\n              >My Surveys</a\n            >\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/editprofile\"\n              name=\"editProfile\"\n              >Edit Profile</a\n            >\n            <a\n              class=\"dropdown-item\"\n              *ngIf=\"isLoggedIn()\"\n              (click)=\"onLogoutClick()\"\n              routerLink=\"/logout\"\n            >\n              Logout</a\n            >\n          </div>\n        </a>\n      </li>\n      <!-- <li *ngIf=\"!isLoggedIn()\" class=\"nav-item\">\n        <a routerLink=\"/login\" class=\"nav-link\"> Login</a>\n      </li> -->\n    </ul>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -1765,8 +1817,8 @@ var AuthService = /** @class */ (function () {
     function AuthService(http, jwtService) {
         this.http = http;
         this.jwtService = jwtService;
-        // private endpoint = 'https://comp308-w2019-lesson10b.herokuapp.com/api/';
-        this.endpoint = "http://localhost:3000/api/";
+        this.endpoint = 'https://shilasurvey.herokuapp.com/api/';
+        //  private endpoint = "http://localhost:3000/api/";
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 "Content-Type": "application/json",
@@ -1835,8 +1887,8 @@ var ContactListService = /** @class */ (function () {
     function ContactListService(http) {
         this.http = http;
         this.authToken = null;
-        // private endpoint = 'https://comp308-w2019-lesson10b.herokuapp.com/api/contact-list/';
-        this.endpoint = 'https://pollplusnew.herokuapp.com/api/contact-list/';
+        this.endpoint = 'https://shilasurvey.herokuapp.com/api/contact-list/';
+        // private endpoint = 'https://pollplusnew.herokuapp.com/api/contact-list/';
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 'Content-Type': 'application/json',
@@ -1912,8 +1964,9 @@ var SurveyService = /** @class */ (function () {
     function SurveyService(http) {
         this.http = http;
         this.authToken = null;
-        // private endpoint = 'https://comp308-w2019-lesson10b.herokuapp.com/api/contact-list/';
+        //private endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
         this.endpoint = "http://localhost:3000/api/survey/";
+        this.endpoint1 = "http://localhost:3000/api/ans1/";
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 "Content-Type": "application/json",
@@ -1927,8 +1980,12 @@ var SurveyService = /** @class */ (function () {
         // this.loadToken();
         return this.http.get(this.endpoint, this.httpOptions);
     };
+    SurveyService.prototype.getAnsList = function () {
+        // this.loadToken();
+        return this.http.get(this.endpoint1, this.httpOptions);
+    };
     SurveyService.prototype.getSurvey = function (survey) {
-        this.loadToken();
+        //  this.loadToken();
         return this.http.get(this.endpoint + "" + survey._id, this.httpOptions);
     };
     SurveyService.prototype.getSurveyAnswers = function (survey) {
@@ -1936,12 +1993,17 @@ var SurveyService = /** @class */ (function () {
         return this.http.get(this.endpoint + "answer/" + survey._id, this.httpOptions);
     };
     SurveyService.prototype.getMySurvey = function (username) {
-        this.loadToken();
+        //this.loadToken();
         return this.http.get(this.endpoint + "list/" + username, this.httpOptions);
     };
     SurveyService.prototype.addSurvey = function (survey) {
-        this.loadToken();
+        //this.loadToken();
         return this.http.post(this.endpoint + "add", survey, this.httpOptions);
+    };
+    SurveyService.prototype.addAns1 = function (ans1) {
+        //this.loadToken();
+        console.log(ans1);
+        return this.http.post(this.endpoint1 + "Add", ans1, this.httpOptions);
     };
     SurveyService.prototype.addFilledSurvey = function (filledSurvey) {
         this.loadToken();
@@ -2497,6 +2559,368 @@ var SurveyListComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/survey/survey-q/survey-q.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/survey/survey-q/survey-q.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-radio-group {\r\n\r\n  margin: 15px 0;\r\n  display: flex; flex-direction: row; padding: 4px 0;\r\n}\r\n\r\n.example-radio-button {\r\n  margin: 5px; padding: 2px 10px;\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 80%;\r\n}\r\n\r\n.example-card {\r\n\r\n  width:60%;\r\n}\r\n\r\n.counter-wrapper {\r\n  width: 200px;\r\n  height: 50px;\r\n  float: right;\r\n  background-color: #c2c2c2;\r\n  font-size: 2rem;\r\n  text-align: right;\r\n   align-items: right;\r\n}\r\n\r\n.cardHeader{ text-align: center; font-size: 2vw}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3VydmV5L3N1cnZleS1xL3N1cnZleS1xLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsY0FBYztFQUNkLGFBQWEsRUFBRSxtQkFBbUIsRUFBRSxjQUFjO0FBQ3BEOztBQUVBO0VBQ0UsV0FBVyxFQUFFLGlCQUFpQjtBQUNoQzs7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsVUFBVTtBQUNaOztBQUNBOztFQUVFLFNBQVM7QUFDWDs7QUFDQTtFQUNFLFlBQVk7RUFDWixZQUFZO0VBQ1osWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixlQUFlO0VBQ2YsaUJBQWlCO0dBQ2hCLGtCQUFrQjtBQUNyQjs7QUFFQSxhQUFhLGtCQUFrQixFQUFFLGNBQWMiLCJmaWxlIjoic3JjL2FwcC9zdXJ2ZXkvc3VydmV5LXEvc3VydmV5LXEuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLXJhZGlvLWdyb3VwIHtcclxuXHJcbiAgbWFyZ2luOiAxNXB4IDA7XHJcbiAgZGlzcGxheTogZmxleDsgZmxleC1kaXJlY3Rpb246IHJvdzsgcGFkZGluZzogNHB4IDA7XHJcbn1cclxuXHJcbi5leGFtcGxlLXJhZGlvLWJ1dHRvbiB7XHJcbiAgbWFyZ2luOiA1cHg7IHBhZGRpbmc6IDJweCAxMHB4O1xyXG59XHJcbi5leGFtcGxlLWZvcm0ge1xyXG4gIG1pbi13aWR0aDogMTUwcHg7XHJcbiAgbWF4LXdpZHRoOiA1MDBweDtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XHJcbiAgd2lkdGg6IDgwJTtcclxufVxyXG4uZXhhbXBsZS1jYXJkIHtcclxuXHJcbiAgd2lkdGg6NjAlO1xyXG59XHJcbi5jb3VudGVyLXdyYXBwZXIge1xyXG4gIHdpZHRoOiAyMDBweDtcclxuICBoZWlnaHQ6IDUwcHg7XHJcbiAgZmxvYXQ6IHJpZ2h0O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNjMmMyYzI7XHJcbiAgZm9udC1zaXplOiAycmVtO1xyXG4gIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gICBhbGlnbi1pdGVtczogcmlnaHQ7XHJcbn1cclxuXHJcbi5jYXJkSGVhZGVyeyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtc2l6ZTogMnZ3fVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-q/survey-q.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/survey/survey-q/survey-q.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br><br><br>\n<h1> Readiness to Engage in Employment – Questionnaire </h1>\n<h4>   <div class=\"counter-wrapper\">\n    <app-time-q #counter></app-time-q>\n    <app-time-q #counter1 style=\"display: none\"></app-time-q>\n    <app-time-q #counter2 style=\"display: none\"></app-time-q>\n  </div><br>\n   </h4>\n<br>\n<mat-horizontal-stepper [linear]=\"isLinear\" #stepper>\n  <mat-step [stepControl]=\"firstFormGroup\">\n    <form [formGroup]=\"firstFormGroup\">\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\" >\n        <mat-card-header class=\"cardHeader\">\n            General Info\n        </mat-card-header>\n        <mat-card-content>\n<hr>\n\n      <mat-form-field class=\"example-full-width\">\n        <input matInput placeholder=\"Name\" formControlName=\"NameCtrl\"  >\n      </mat-form-field><br>\n      <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Email\" formControlName=\"EmailCtrl\"  >\n        </mat-form-field><br>\n      <mat-form-field>\n        <input matInput placeholder=\"Age\" formControlName=\"AgeCtrl\" >\n      </mat-form-field>\n      <div>\n        <button mat-button matStepperNext (click)=\"start()\">Start Exam</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"secondFormGroup\">\n    <form [formGroup]=\"secondFormGroup\">\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Immigration Status\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Are you a visible minority or a new immigrant woman?</label>\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\"\n        class=\"example-radio-group\" formControlName=\"isImiCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n      <div>\n\n        <label id=\"example-radio-group-label\">2. When did you arrived in Canada?</label>\n        <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\"\n        class=\"example-radio-group\" formControlName=\"isImiYrCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Yrs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n\n\n      <label id=\"example-radio-group-label\">3. Are you able to legally work in Canada?</label>\n      <mat-radio-group\n      aria-labelledby=\"example-radio-group-label\"\n      class=\"example-radio-group\" formControlName=\"isWorkCtrl\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <label id=\"example-radio-group-label\">4. What is your resident status?</label>\n    <mat-radio-group\n    aria-labelledby=\"example-radio-group-label\"\n    class=\"example-radio-group\" formControlName=\"ResCtrl\"\n    >\n    <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Res\" [value]=\"item\">\n      {{item}}\n    </mat-radio-button>\n  </mat-radio-group>\n\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"thirdFormGroup\">\n    <form [formGroup]=\"thirdFormGroup\">\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Work in Canada\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Have you ever worked in Canada?</label>\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\"\n        class=\"example-radio-group\" formControlName=\"isWorkedCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n      <div>\n\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"2. How many jobs have you worked on?\" formControlName=\"NoJobsCtrl\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"3. What is the maximum work period you have worked in a job (months/years)?\" formControlName=\"WorkPerCtrl\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"4. Why did you leave your previous job?\" formControlName=\"jobLCtrl\">\n        </mat-form-field><br>\n      <label id=\"example-radio-group-label\">5. Have you done any volunteering jobs in Canada?</label>\n      <mat-radio-group\n      aria-labelledby=\"example-radio-group-label\"\n      class=\"example-radio-group\" formControlName=\"isVolCtrl\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <mat-form-field class=\"example-full-width\">\n      <input matInput placeholder=\"6. For how long have you done the volunteering Work?\" formControlName=\"VolCtrl\">\n    </mat-form-field>\n<br>\n\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"fourthFormGroup\">\n    <form [formGroup]=\"fourthFormGroup\">\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              What type of work interests you?\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Choose one option for each row</label>\n\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\"\n        class=\"example-radio-group\" formControlName=\"Work1Ctrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" value=\"Working alone\" >Working alone</mat-radio-button>\n        <mat-radio-button class=\"example-radio-button\" value=\"Working with people\">Working with people</mat-radio-button>\n      </mat-radio-group>\n      <hr>\n      <mat-radio-group\n      aria-labelledby=\"example-radio-group-label\"\n      class=\"example-radio-group\" formControlName=\"Work2Ctrl\"\n      >\n      <mat-radio-button class=\"example-radio-button\" value=\"Working outdoors\" >Working outdoors</mat-radio-button>\n      <mat-radio-button class=\"example-radio-button\" value=\"Working indoors\" >Working indoors</mat-radio-button>\n    </mat-radio-group><hr>\n    <mat-radio-group\n    aria-labelledby=\"example-radio-group-label\"\n    class=\"example-radio-group\" formControlName=\"Work3Ctrl\"\n    >\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with numbers\">Working with numbers</mat-radio-button>\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with ideas\">Working with ideas</mat-radio-button>\n  </mat-radio-group><hr>\n  <mat-radio-group\n  aria-labelledby=\"example-radio-group-label\"\n  class=\"example-radio-group\" formControlName=\"Work4Ctrl\"\n  >\n  <mat-radio-button class=\"example-radio-button\" value=\"Cleaning and organizing\">Cleaning and organizing </mat-radio-button>\n  <mat-radio-button class=\"example-radio-button\" value=\"Creating new objects\" >Creating new objects</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group\naria-labelledby=\"example-radio-group-label\"\nclass=\"example-radio-group\" formControlName=\"Work5Ctrl\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"Operating machines\">Operating machines </mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Office work\">Office work</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group\naria-labelledby=\"example-radio-group-label\"\nclass=\"example-radio-group\" formControlName=\"Work6Ctrl\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"perating own business\" >perating own business</mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Woking in a company\">Woking in a company</mat-radio-button>\n</mat-radio-group><br>\n<mat-form-field class=\"example-full-width\">\n  <input matInput placeholder=\"Mention your career interest\" formControlName=\"IntCtrl\">\n</mat-form-field>\n<br>\n      <div>\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"fifthFormGroup\">\n    <form [formGroup]=\"fifthFormGroup\">\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Attempts made for job\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n\n          <label id=\"example-radio-group-label\">1. I  have explored job possibilities for me</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"isExpJob\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">2. I have explored possible organizations for me to work</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"isExpOrg\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">3. I have explored interview sessions</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"isExpInt\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">4. I have explored circulating my resume to as many contacts as possible</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"isExpRes\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">5. I have prepared for possible interview sessions</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"isExpPre\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">6. I have identified five target companies that I have to send my resume to them</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"isExpTar\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n      <div>\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"sixthFormGroup\">\n    <form [formGroup]=\"sixthFormGroup\">\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Motivation/ initiative\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n          <label id=\"example-radio-group-label\">You are given 15 seconds; how many times can you tab on the right arrow key?</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" formControlName=\"ExpCount\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Kc\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n        <label>Check Now your current speed!</label>\n        <app-key-count (messageEvent)=\"receiveMessage($event)\"></app-key-count>\n                      <input\n                        name=\"keySp\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"keySp\"\n                        value=\"{{count}}\"\n                        formControlName=\"keySp\"\n                      />\n      <div>\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"seventhFormGroup\">\n      <form [formGroup]=\"seventhFormGroup\">\n        <ng-template matStepLabel></ng-template>\n        <mat-card class=\"example-card\">\n            <mat-card-header class=\"cardHeader\">\n                Memory Test\n            </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Click on button see the image!</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked1\"\n            (click)=\"clicked1=!clicked1; img1=false; counter1.start();\">Show</button>\n            <span [hidden]=\"!span1\">How many red dot is there?<br> </span>\n            <img  src=\"../../../assets/images/mem1.jpg\" [hidden]=\"img1\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span1\"\n            name=\"redDot\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"redDot\"\n            formControlName=\"redDot\"\n          />\n\n            <br>\n            <label id=\"example-radio-group-label\">Click on button see the image!</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked2\"\n            (click)=\"clicked2=!clicked2; img2=false; counter2.start();\">Show</button>\n            <span [hidden]=\"!span2\">Can you write down the numbers from the image?<br> </span>\n            <img  src=\"../../../assets/images/mem2.png\" [hidden]=\"img2\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span2\"\n            name=\"nums\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"nums\"\n            formControlName=\"nums\"\n          />\n\n        <div>\n          <button mat-button matStepperNext>Next</button>\n        </div>\n      </mat-card-content>\n    </mat-card>\n      </form>\n    </mat-step>\n    <mat-step [stepControl]=\"eighthFormGroup\">\n        <form [formGroup]=\"eighthFormGroup\">\n          <ng-template matStepLabel></ng-template>\n          <mat-card class=\"example-card\">\n              <mat-card-header class=\"cardHeader\">\n                  Match with you\n              </mat-card-header>\n            <mat-card-content>\n                <hr>\n                <mat-form-field>\n                    <mat-label>What describe you best?</mat-label>\n                    <mat-select formControlName=\"desc\">\n                      <mat-option *ngFor=\"let item of lst\" [value]=\"item\">\n                        {{item}}\n                      </mat-option>\n                    </mat-select>\n                  </mat-form-field>\n          <div>\n            <button mat-button matStepperNext>Next</button>\n          </div>\n        </mat-card-content>\n      </mat-card>\n        </form>\n      </mat-step>\n\n  <mat-step>\n    <ng-template matStepLabel>Done</ng-template>\n    You are now done.\n    <div>\n\n      <button mat-button (click)=\"submit()\">Submit</button>\n    </div>\n  </mat-step>\n</mat-horizontal-stepper>\n"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-q/survey-q.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/survey/survey-q/survey-q.component.ts ***!
+  \*******************************************************/
+/*! exports provided: SurveyQComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveyQComponent", function() { return SurveyQComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../time-q/time-q.component */ "./src/app/survey/time-q/time-q.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/survey.service */ "./src/app/services/survey.service.ts");
+/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var src_app_models_ans1__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/models/ans1 */ "./src/app/models/ans1.ts");
+
+
+
+
+
+
+
+
+
+
+var SurveyQComponent = /** @class */ (function () {
+    function SurveyQComponent(_formBuilder, activatedRoute, flashMessage, surveyService, authService, router) {
+        this._formBuilder = _formBuilder;
+        this.activatedRoute = activatedRoute;
+        this.flashMessage = flashMessage;
+        this.surveyService = surveyService;
+        this.authService = authService;
+        this.router = router;
+        this.isLinear = false;
+        this.clicked1 = false;
+        this.clicked2 = false;
+        this.img1 = true;
+        this.img2 = true;
+        this.span1 = false;
+        this.span2 = false;
+        this.TFs = ['Yes', 'No'];
+        this.Yrs = ['less than 1 years', '1-3 years', '3-5 years', 'more than 5 years'];
+        this.Res = ['PR', 'Citizen', 'Student', 'Work Permit'];
+        this.Kc = ['30', '40', '50', 'More than 80'];
+        this.lst = ['A people’s person', 'A number cruncher', 'Self motivated',
+            'An effective communicator', 'Analytical', 'Negotiator', 'Organized and following procedures'];
+        this.counterState = 'counter is ticking';
+        this.count = 0;
+    }
+    SurveyQComponent.prototype.receiveMessage = function ($event) {
+        this.count = $event;
+    };
+    SurveyQComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.ans1 = new src_app_models_ans1__WEBPACK_IMPORTED_MODULE_8__["Ans1"]();
+        this.counter1.startAt = 7;
+        this.counter1.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.img1 = true;
+                _this.span1 = true;
+            }
+        });
+        this.counter2.startAt = 7;
+        this.counter2.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.img2 = true;
+                _this.span2 = true;
+            }
+        });
+        this.counter.startAt = 180;
+        this.counter.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.counterState = 'counter has stopped';
+                console.log('calling submit');
+                // submit here
+                _this.submit();
+            }
+        });
+        this.firstFormGroup = this._formBuilder.group({
+            NameCtrl: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required],
+            EmailCtrl: [''],
+            AgeCtrl: ['']
+        });
+        this.secondFormGroup = this._formBuilder.group({
+            isImiCtrl: [''],
+            isImiYrCtrl: [''],
+            isWorkCtrl: [''],
+            ResCtrl: ['']
+        });
+        this.thirdFormGroup = this._formBuilder.group({
+            isWorkedCtrl: [''],
+            NoJobsCtrl: [''],
+            WorkPerCtrl: [''],
+            jobLCtrl: [''],
+            isVolCtrl: [''],
+            VolCtrl: ['']
+        });
+        this.fourthFormGroup = this._formBuilder.group({
+            Work1Ctrl: [''],
+            Work2Ctrl: [''],
+            Work3Ctrl: [''],
+            Work4Ctrl: [''],
+            Work5Ctrl: [''],
+            Work6Ctrl: [''],
+            IntCtrl: ['']
+        });
+        this.fifthFormGroup = this._formBuilder.group({
+            isExpJob: [''],
+            isExpOrg: [''],
+            isExpInt: [''],
+            isExpRes: [''],
+            isExpPre: [''],
+            isExpTar: ['']
+        });
+        this.sixthFormGroup = this._formBuilder.group({
+            ExpCount: [''],
+            keySp: ['']
+        });
+        this.seventhFormGroup = this._formBuilder.group({
+            redDot: [''],
+            nums: ['']
+        });
+        this.eighthFormGroup = this._formBuilder.group({
+            desc: ['']
+        });
+    };
+    SurveyQComponent.prototype.start = function () {
+        this.counter.start();
+    };
+    SurveyQComponent.prototype.submit = function () {
+        console.log('read all data');
+        console.log(this.firstFormGroup.value);
+        console.log(this.secondFormGroup.value);
+        console.log(this.thirdFormGroup.value);
+        console.log(this.fourthFormGroup.value);
+        console.log(this.fifthFormGroup.value);
+        // this.sixthFormGroup.setValue({keySp: this.count, E});
+        console.log(this.sixthFormGroup.value);
+        console.log(this.count);
+        console.log(this.seventhFormGroup.value);
+        this.firstFormGroup.getRawValue();
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('counter', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"])
+    ], SurveyQComponent.prototype, "counter", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('counter1', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"])
+    ], SurveyQComponent.prototype, "counter1", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('counter2', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"])
+    ], SurveyQComponent.prototype, "counter2", void 0);
+    SurveyQComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-survey-q',
+            template: __webpack_require__(/*! ./survey-q.component.html */ "./src/app/survey/survey-q/survey-q.component.html"),
+            styles: [__webpack_require__(/*! ./survey-q.component.css */ "./src/app/survey/survey-q/survey-q.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5__["FlashMessagesService"],
+            src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_6__["SurveyService"],
+            src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_7__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
+    ], SurveyQComponent);
+    return SurveyQComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-q1/survey-q1.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/survey/survey-q1/survey-q1.component.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-radio-group {\r\n\r\n  margin: 15px 0;\r\n  display: flex; flex-direction: row; padding: 4px 0;\r\n}\r\n\r\n.example-radio-button {\r\n  margin: 5px; padding: 2px 10px;\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 80%;\r\n}\r\n\r\n.example-card {\r\n\r\n  width:60%;\r\n}\r\n\r\n.counter-wrapper {\r\n  width: 200px;\r\n  height: 50px;\r\n  float: right;\r\n  background-color: #c2c2c2;\r\n  font-size: 2rem;\r\n  text-align: right;\r\n   align-items: right;\r\n}\r\n\r\n.cardHeader{ text-align: center; font-size: 2vw}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3VydmV5L3N1cnZleS1xMS9zdXJ2ZXktcTEuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7RUFFRSxjQUFjO0VBQ2QsYUFBYSxFQUFFLG1CQUFtQixFQUFFLGNBQWM7QUFDcEQ7O0FBRUE7RUFDRSxXQUFXLEVBQUUsaUJBQWlCO0FBQ2hDOztBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBQ0E7O0VBRUUsU0FBUztBQUNYOztBQUNBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLGVBQWU7RUFDZixpQkFBaUI7R0FDaEIsa0JBQWtCO0FBQ3JCOztBQUVBLGFBQWEsa0JBQWtCLEVBQUUsY0FBYyIsImZpbGUiOiJzcmMvYXBwL3N1cnZleS9zdXJ2ZXktcTEvc3VydmV5LXExLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1yYWRpby1ncm91cCB7XHJcblxyXG4gIG1hcmdpbjogMTVweCAwO1xyXG4gIGRpc3BsYXk6IGZsZXg7IGZsZXgtZGlyZWN0aW9uOiByb3c7IHBhZGRpbmc6IDRweCAwO1xyXG59XHJcblxyXG4uZXhhbXBsZS1yYWRpby1idXR0b24ge1xyXG4gIG1hcmdpbjogNXB4OyBwYWRkaW5nOiAycHggMTBweDtcclxufVxyXG4uZXhhbXBsZS1mb3JtIHtcclxuICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gIG1heC13aWR0aDogNTAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xyXG4gIHdpZHRoOiA4MCU7XHJcbn1cclxuLmV4YW1wbGUtY2FyZCB7XHJcblxyXG4gIHdpZHRoOjYwJTtcclxufVxyXG4uY291bnRlci13cmFwcGVyIHtcclxuICB3aWR0aDogMjAwcHg7XHJcbiAgaGVpZ2h0OiA1MHB4O1xyXG4gIGZsb2F0OiByaWdodDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYzJjMmMyO1xyXG4gIGZvbnQtc2l6ZTogMnJlbTtcclxuICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgYWxpZ24taXRlbXM6IHJpZ2h0O1xyXG59XHJcblxyXG4uY2FyZEhlYWRlcnsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IDJ2d31cclxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-q1/survey-q1.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/survey/survey-q1/survey-q1.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br><br><br>\n<h1> Readiness to Engage in Employment – Questionnaire </h1>\n<h4>   <div class=\"counter-wrapper\">\n    <app-time-q #counter></app-time-q>\n    <app-time-q #counter1 style=\"display: none\"></app-time-q>\n    <app-time-q #counter2 style=\"display: none\"></app-time-q>\n  </div><br>\n   </h4>\n<br>\n<form>\n    <mat-card class=\"example-card\" [hidden]=\"startExam\" >\n        <mat-card-header class=\"cardHeader\">\n            General Info\n        </mat-card-header>\n        <mat-card-content>\n<hr>\n\n      <mat-form-field class=\"example-full-width\">\n        <input matInput placeholder=\"Name\" name=\"Name\" [(ngModel)]=\"ans1.Name\" required >\n      </mat-form-field><br>\n      <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Email\" name=\"Email\" type=\"email\" required  [(ngModel)]=\"ans1.Email\">\n        </mat-form-field><br>\n      <mat-form-field>\n        <input matInput placeholder=\"Age\" name=\"Age\"   [(ngModel)]=\"ans1.Age\">\n      </mat-form-field>\n      <div>\n        <button mat-button  (click)=\"start()\">Start Exam</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n<mat-horizontal-stepper [linear]=\"true\" [hidden]=\"!startExam\" #stepper>\n\n  <mat-step editable=\"false\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Immigration Status\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Are you a visible minority or a new immigrant woman?</label>\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\" name=\"isImi\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isImi\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n      <div>\n\n        <label id=\"example-radio-group-label\">2. When did you arrived in Canada?</label>\n        <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\" name=\"isImiYr\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isImiYr\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Yrs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n\n\n      <label id=\"example-radio-group-label\">3. Are you able to legally work in Canada?</label>\n      <mat-radio-group\n      aria-labelledby=\"example-radio-group-label\" name=\"isWork\"\n      class=\"example-radio-group\"  [(ngModel)]=\"ans1.isWork\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <label id=\"example-radio-group-label\">4. What is your resident status?</label>\n    <mat-radio-group name=\"Res\"\n    aria-labelledby=\"example-radio-group-label\"\n    class=\"example-radio-group\"  [(ngModel)]=\"ans1.Res\"\n    >\n    <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Res\" [value]=\"item\">\n      {{item}}\n    </mat-radio-button>\n  </mat-radio-group>\n\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Work in Canada\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Have you ever worked in Canada?</label>\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\" name=\"isWorked\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isWorked\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n      <div>\n\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"2. How many jobs have you worked on?\" name=\"NoJobs\"  [(ngModel)]=\"ans1.NoJobs\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput  [(ngModel)]=\"ans1.WorkPer\" name=\"WorkPer\" placeholder=\"3. What is the maximum work period you have worked in a job (months/years)?\" >\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput  [(ngModel)]=\"ans1.jobL\" name=\"jobL\" placeholder=\"4. Why did you leave your previous job?\" >\n        </mat-form-field><br>\n      <label id=\"example-radio-group-label\">5. Have you done any volunteering jobs in Canada?</label>\n      <mat-radio-group\n      aria-labelledby=\"example-radio-group-label\" name=\"isVol\"\n      class=\"example-radio-group\"  [(ngModel)]=\"ans1.isVol\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <mat-form-field class=\"example-full-width\">\n      <input matInput  [(ngModel)]=\"ans1.Vol\" name=\"Vol\" placeholder=\"6. For how long have you done the volunteering Work?\" >\n    </mat-form-field>\n<br>\n\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n\n  </mat-step>\n  <mat-step editable=\"false\" >\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              What type of work interests you?\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Choose one option for each row</label>\n\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\" name=\"Work1\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.Work1\"\n        >\n        <mat-radio-button class=\"example-radio-button\" value=\"Working alone\" >Working alone</mat-radio-button>\n        <mat-radio-button class=\"example-radio-button\" value=\"Working with people\">Working with people</mat-radio-button>\n      </mat-radio-group>\n      <hr>\n      <mat-radio-group\n      aria-labelledby=\"example-radio-group-label\" name=\"Work2\"\n      class=\"example-radio-group\" [(ngModel)]=\"ans1.Work2\"\n      >\n      <mat-radio-button class=\"example-radio-button\" value=\"Working outdoors\" >Working outdoors</mat-radio-button>\n      <mat-radio-button class=\"example-radio-button\" value=\"Working indoors\" >Working indoors</mat-radio-button>\n    </mat-radio-group><hr>\n    <mat-radio-group\n    aria-labelledby=\"example-radio-group-label\"\n    class=\"example-radio-group\" [(ngModel)]=\"ans1.Work3\" name=\"Work3\"\n    >\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with numbers\">Working with numbers</mat-radio-button>\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with ideas\">Working with ideas</mat-radio-button>\n  </mat-radio-group><hr>\n  <mat-radio-group\n  aria-labelledby=\"example-radio-group-label\"\n  class=\"example-radio-group\" [(ngModel)]=\"ans1.Work4\" name=\"Work4\"\n  >\n  <mat-radio-button class=\"example-radio-button\" value=\"Cleaning and organizing\">Cleaning and organizing </mat-radio-button>\n  <mat-radio-button class=\"example-radio-button\" value=\"Creating new objects\" >Creating new objects</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group\naria-labelledby=\"example-radio-group-label\"\nclass=\"example-radio-group\" [(ngModel)]=\"ans1.Work5\" name=\"Work5\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"Operating machines\">Operating machines </mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Office work\">Office work</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group\naria-labelledby=\"example-radio-group-label\"\nclass=\"example-radio-group\" [(ngModel)]=\"ans1.Work6\" name=\"Work6\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"perating own business\" >perating own business</mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Woking in a company\">Woking in a company</mat-radio-button>\n</mat-radio-group><br>\n<mat-form-field class=\"example-full-width\">\n  <input matInput [(ngModel)]=\"ans1.Interest\" name=\"Interest\" placeholder=\"Mention your career interest\" >\n</mat-form-field>\n<br>\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n\n  </mat-step>\n  <mat-step editable=\"false\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Attempts made for job\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n\n          <label id=\"example-radio-group-label\">1. I  have explored job possibilities for me</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\" name=\"isExpJob\"\n          class=\"example-radio-group\" [(ngModel)]=\"ans1.isExpJob\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">2. I have explored possible organizations for me to work</label>\n          <mat-radio-group\n          aria-labelledby=\"example-radio-group-label\" name=\"isExpOrg\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.isExpOrg\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">3. I have explored interview sessions</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpInt\"\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\" name=\"isExpInt\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">4. I have explored circulating my resume to as many contacts as possible</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpRes\" name=\"isExpRes\"\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">5. I have prepared for possible interview sessions</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpPre\" name=\"isExpPre\"\n          aria-labelledby=\"example-radio-group-label\"\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">6. I have identified five target companies that I have to send my resume to them</label>\n          <mat-radio-group name=\"isExpTar\"\n          aria-labelledby=\"example-radio-group-label\"  [(ngModel)]=\"ans1.isExpTar\"\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Motivation/ initiative\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n          <label id=\"example-radio-group-label\">You are given 15 seconds; how many times can you tab on the right arrow key?</label>\n          <mat-radio-group  (change)=\"selKey=true;\" [disabled]=\"selKey\"\n          aria-labelledby=\"example-radio-group-label\" name=\"ExpCount\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.ExpCount\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Kc\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n        <label [hidden]=\"!selKey\">Check Now your current speed!</label>\n        <app-key-count (messageEvent)=\"receiveMessage($event)\"></app-key-count>\n                      <input [hidden]=\"!selKey\"\n                        name=\"keySp\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"keySp\"\n                        value=\"{{count}}\"\n                        [(ngModel)]=\"ans1.keySp\"\n                      />\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\">\n\n        <ng-template matStepLabel></ng-template>\n        <mat-card class=\"example-card\">\n            <mat-card-header class=\"cardHeader\">\n                Memory Test\n            </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Click on button see the image!</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked1\"\n            (click)=\"clicked1=!clicked1; img1=false; counter1.start();\">Show</button>\n            <span [hidden]=\"!span1\">How many red dot is there?<br> </span>\n            <img  src=\"../../../assets/images/mem1.jpg\" [hidden]=\"img1\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span1\"\n            name=\"redDot\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"redDot\"\n            [(ngModel)]=\"ans1.redDot\"\n          />\n\n            <br>\n            <label id=\"example-radio-group-label\">Click on button see the image!</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked2\"\n            (click)=\"clicked2=!clicked2; img2=false; counter2.start();\">Show</button>\n            <span [hidden]=\"!span2\">Can you write down the numbers from the image?<br> </span>\n            <img  src=\"../../../assets/images/mem2.png\" [hidden]=\"img2\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span2\"\n            name=\"nums\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"nums\"\n            [(ngModel)]=\"ans1.nums\"\n          />\n\n        <div>\n          <button mat-button type=\"button\" matStepperNext>Next</button>\n        </div>\n      </mat-card-content>\n    </mat-card>\n\n    </mat-step>\n    <mat-step>\n\n          <ng-template matStepLabel></ng-template>\n          <mat-card class=\"example-card\">\n              <mat-card-header class=\"cardHeader\">\n                  Match with you\n              </mat-card-header>\n            <mat-card-content>\n                <hr>\n                <mat-form-field>\n                    <mat-label>What describe you best?</mat-label>\n                    <mat-select  [(ngModel)]=\"ans1.desc\" name=\"desc\">\n                      <mat-option *ngFor=\"let item of lst\" [value]=\"item\">\n                        {{item}}\n                      </mat-option>\n                    </mat-select>\n                  </mat-form-field>\n          <div>\n              <button mat-button type=\"submit\" (click)=\"submit()\">Submit</button>\n          </div>\n        </mat-card-content>\n      </mat-card>\n\n      </mat-step>\n\n\n</mat-horizontal-stepper>\n</form>\n"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-q1/survey-q1.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/survey/survey-q1/survey-q1.component.ts ***!
+  \*********************************************************/
+/*! exports provided: SurveyQ1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveyQ1Component", function() { return SurveyQ1Component; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_models_ans1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/models/ans1 */ "./src/app/models/ans1.ts");
+/* harmony import */ var _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../time-q/time-q.component */ "./src/app/survey/time-q/time-q.component.ts");
+/* harmony import */ var src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/survey.service */ "./src/app/services/survey.service.ts");
+/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+var SurveyQ1Component = /** @class */ (function () {
+    function SurveyQ1Component(activatedRoute, flashMessage, surveyService, authService, router) {
+        this.activatedRoute = activatedRoute;
+        this.flashMessage = flashMessage;
+        this.surveyService = surveyService;
+        this.authService = authService;
+        this.router = router;
+        this.clicked1 = false;
+        this.clicked2 = false;
+        this.img1 = true;
+        this.img2 = true;
+        this.span1 = false;
+        this.span2 = false;
+        this.selKey = false;
+        this.startExam = false;
+        this.TFs = ['Yes', 'No'];
+        this.Yrs = ['less than 1 years', '1-3 years', '3-5 years', 'more than 5 years'];
+        this.Res = ['PR', 'Citizen', 'Student', 'Work Permit'];
+        this.Kc = ['30', '40', '50', 'More than 80'];
+        this.lst = ['A people’s person', 'A number cruncher', 'Self motivated',
+            'An effective communicator', 'Analytical', 'Negotiator', 'Organized and following procedures'];
+        this.counterState = 'counter is ticking';
+        this.count = 0;
+    }
+    SurveyQ1Component.prototype.receiveMessage = function ($event) {
+        this.count = $event;
+    };
+    SurveyQ1Component.prototype.ngOnInit = function () {
+        var _this = this;
+        this.ans1 = new src_app_models_ans1__WEBPACK_IMPORTED_MODULE_2__["Ans1"]();
+        this.counter1.startAt = 7;
+        this.counter1.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.img1 = true;
+                _this.span1 = true;
+            }
+        });
+        this.counter2.startAt = 7;
+        this.counter2.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.img2 = true;
+                _this.span2 = true;
+            }
+        });
+        this.counter.startAt = 180;
+        this.counter.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.counterState = 'counter has stopped';
+                console.log('calling submit');
+                // submit here
+                _this.submit();
+            }
+        });
+    };
+    SurveyQ1Component.prototype.start = function () {
+        this.counter.start();
+        this.startExam = true;
+    };
+    SurveyQ1Component.prototype.submit = function () {
+        var _this = this;
+        console.log('read all data');
+        console.log(this.ans1);
+        this.ans1.keySp = this.count.toString();
+        this.surveyService.addAns1(this.ans1).subscribe(function (data) {
+            if (data.success) {
+                _this.flashMessage.show(data.msg, {
+                    cssClass: 'alert-success',
+                    timeOut: 3000
+                });
+                _this.router.navigate(['/survey/submit']);
+            }
+            else {
+                _this.flashMessage.show('Add Contact Failed', {
+                    cssClass: 'alert-danger',
+                    timeOut: 3000
+                });
+                _this.router.navigate(['/survey/list']);
+            }
+        });
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('counter', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"])
+    ], SurveyQ1Component.prototype, "counter", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('counter1', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"])
+    ], SurveyQ1Component.prototype, "counter1", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('counter2', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_3__["TimeQComponent"])
+    ], SurveyQ1Component.prototype, "counter2", void 0);
+    SurveyQ1Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-survey-q1',
+            template: __webpack_require__(/*! ./survey-q1.component.html */ "./src/app/survey/survey-q1/survey-q1.component.html"),
+            styles: [__webpack_require__(/*! ./survey-q1.component.css */ "./src/app/survey/survey-q1/survey-q1.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_6__["ActivatedRoute"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_7__["FlashMessagesService"],
+            src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_4__["SurveyService"],
+            src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
+    ], SurveyQ1Component);
+    return SurveyQ1Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/survey/survey-questions/survey-questions.component.css":
 /*!************************************************************************!*\
   !*** ./src/app/survey/survey-questions/survey-questions.component.css ***!
@@ -2515,7 +2939,7 @@ module.exports = ".questions{\n\n  font-family: 'Nanum Gothic', sans-serif;\n}\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content of Questions for Survey Page-->\n\n<br />\n<div class=\"container questions\">\n  <div class=\"row\">\n    <div class=\"col-lg-12\">\n      <h1>{{ survey.surveyTitle }}  </h1>\n      <h4>   <div class=\"counter-wrapper\">\n          <app-time-q #counter></app-time-q>\n        </div><br>\n         </h4>\n\n      <br />\n\n      <form class=\"form\" (submit)=\"onSurveySubmit()\">\n\n        <div *ngFor=\"let question of questions; let i = index\" class=\"card border-primary lg-3\">\n          <div class=\"card-header\">{{ i + 1 }}) {{ question.question }}</div>\n          <div class=\"card-text\">\n              <ul class=\"list-group list-group-flush\">\n                  <li class=\"list-group-item\" *ngIf=\"question.questionType === 3\">\n                      <app-key-count (messageEvent)=\"receiveMessage($event)\"></app-key-count>\n                      <input\n                        name=\"mike{{ i }}\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"{{ answers[i] }}\"\n\n                        value=\"{{count}}\"\n                        [(ngModel)]=\"answers[i].answer\"\n                      />\n\n                     <br />\n\n                    </li>\n                  <li class=\"list-group-item\" *ngIf=\"question.option1\">\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"1\"\n              />\n              {{ question.option1 }}<br />\n                  </li>\n                  <li class=\"list-group-item\" *ngIf=\"question.option2\">\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"2\"\n              />\n              {{ question.option2 }}<br />\n                  </li>\n                  <li class=\"list-group-item\" *ngIf=\"question.option3\">\n\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"3\"\n              />\n              {{ question.option3 }}<br />\n\n            </li>\n            <li class=\"list-group-item\" *ngIf=\"question.option4\">\n\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"4\"\n              />\n              {{ question.option4 }}<br />\n\n            </li>\n            <li class=\"list-group-item\" *ngIf=\"question.questionType === 2\">\n                <input\n                  name=\"mike{{ i }}\"\n                  type=\"text\"\n                  style=\"width: 50%; margin-left: 30px;\"\n                  id=\"{{ answers[i] }}\"\n                  [(ngModel)]=\"answers[i].answer\"\n                />\n               <br />\n\n              </li>\n          </ul>\n          </div>\n\n        </div>\n\n        <div class=\"container row\">\n          <button type=\"submit\" class=\"btn btn-primary\">\n            Submit Survey\n          </button>\n\n          <a routerLink=\"/survey/list\" class=\"btn btn-warning margin-left\">\n            Cancel</a\n          >\n        </div>\n      </form>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n<\nBrief Description: Content of Questions for Survey Page-->\n\n<br />\n<div class=\"container questions\">\n  <div class=\"row\">\n    <div class=\"col-lg-12\">\n      <h1>{{ survey.surveyTitle }}  </h1>\n      <h4>   <div class=\"counter-wrapper\">\n          <app-time-q #counter></app-time-q>\n          <app-time-q #counter1 style=\"display: none\"></app-time-q>\n          <app-time-q #counter2 style=\"display: none\"></app-time-q>\n        </div><br>\n         </h4>\n\n      <br />\n\n      <form class=\"form\" (submit)=\"onSurveySubmit()\">\n\n          <!-- <ul class=\"nav nav-tabs\" *ngFor=\"let section of sections; let j = index\">\n              <li ><a href=\"tab{{section.sectionN}}\" data-toggle=\"tab\">{{section.sectionHeader}}</a></li>\n          </ul> -->\n        <div *ngFor=\"let question of questions; let i = index\" class=\"card border-primary lg-3\">\n          <div class=\"card-header\">{{ i + 1 }}) {{ question.question }}</div>\n          <div class=\"card-text\">\n              <ul class=\"list-group list-group-flush\">\n                  <li class=\"list-group-item\" *ngIf=\"question.questionType === 3\">\n                      <app-key-count (messageEvent)=\"receiveMessage($event)\"></app-key-count>\n                      <input\n                        name=\"mike{{ i }}\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"{{ answers[i] }}\"\n\n                        value=\"{{count}}\"\n                        [(ngModel)]=\"answers[i].answer\"\n                      />\n\n                     <br />\n\n                    </li>\n                    <li class=\"list-group-item\" *ngIf=\"question.questionType === 6\">\n                        <button type=\"button\" class=\"btn\" [hidden]=\"clicked1\"\n                        (click)=\"clicked1=!clicked1; img1=false; counter1.start();\">Show</button>\n                        <span [hidden]=\"!span1\">{{question.dynamicQ}}<br> </span>\n                        <img  src=\"{{question.image}}\" [hidden]=\"img1\" width=\"50%\" height=\"15%\"/>\n\n\n\n                        <br />\n\n                       </li>\n                       <li class=\"list-group-item\" *ngIf=\"question.questionType === 7\">\n                          <button type=\"button\" class=\"btn\" [hidden]=\"clicked2\"\n                          (click)=\"clicked2=!clicked2; img2=false; counter2.start();\">Show</button>\n                          <span [hidden]=\"!span2\">{{question.dynamicQ}}</span><br>\n                          <img id=\"img2\" src=\"{{question.image}}\" [hidden]=\"img2\" width=\"50%\" height=\"30%\"/>\n\n\n                          <br />\n\n                         </li>\n                  <li class=\"list-group-item\" *ngIf=\"question.option1\">\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"1\"\n              />\n              {{ question.option1 }}<br />\n                  </li>\n                  <li class=\"list-group-item\" *ngIf=\"question.option2\">\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"2\"\n              />\n              {{ question.option2 }}<br />\n                  </li>\n                  <li class=\"list-group-item\" *ngIf=\"question.option3\">\n\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"3\"\n              />\n              {{ question.option3 }}<br />\n\n            </li>\n            <li class=\"list-group-item\" *ngIf=\"question.option4\">\n\n              <input\n                name=\"mike{{ i }}\"\n                type=\"radio\"\n                id=\"{{ answers[i] }}\"\n                [(ngModel)]=\"answers[i].answer\"\n                value=\"4\"\n              />\n              {{ question.option4 }}<br />\n\n            </li>\n            <li class=\"list-group-item\" *ngIf=\"question.questionType === 2 || question.questionType === 7\">\n                <input\n                  name=\"mike{{ i }}\"\n                  type=\"text\"\n                  style=\"width: 50%; margin-left: 30px;\"\n                  id=\"{{ answers[i] }}\"\n                  [(ngModel)]=\"answers[i].answer\"\n                />\n               <br />\n\n              </li>\n              <li class=\"list-group-item\" *ngIf=\"question.questionType === 5\">\n                <select  id=\"{{ answers[i] }}\"  name=\"mike{{ i }}\"\n                style=\"width: 50%; margin-left: 30px;\"\n                [(ngModel)]=\"answers[i].answer\"\n                >\n                <option *ngFor=\"let item of question.list\" [value]=\"item\">{{ item }}</option>\n              </select>\n\n                 <br />\n\n                </li>\n\n          </ul>\n          </div>\n\n        </div>\n\n        <div class=\"container row\">\n          <button type=\"submit\" class=\"btn btn-primary\">\n            Submit Survey\n          </button>\n\n          <a routerLink=\"/survey/list\" class=\"btn btn-warning margin-left\">\n            Cancel</a\n          >\n        </div>\n      </form>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -2568,6 +2992,12 @@ var SurveyQuestionsComponent = /** @class */ (function () {
         this.surveyService = surveyService;
         this.authService = authService;
         this.router = router;
+        this.clicked1 = false;
+        this.clicked2 = false;
+        this.img1 = true;
+        this.img2 = true;
+        this.span1 = false;
+        this.span2 = false;
         this.counterState = 'counter is ticking';
         this.count = 0;
     }
@@ -2585,8 +3015,22 @@ var SurveyQuestionsComponent = /** @class */ (function () {
         this.activatedRoute.params.subscribe(function (params) {
             _this.survey._id = params.id;
         });
+        this.counter1.startAt = 7;
+        this.counter1.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.img1 = true;
+                _this.span1 = true;
+            }
+        });
+        this.counter2.startAt = 7;
+        this.counter2.counterState.subscribe(function (msg) {
+            if (msg === 'COMPLETE') {
+                _this.img2 = true;
+                _this.span2 = true;
+            }
+        });
         this.getSurvey(this.survey);
-        this.counter.startAt = 360;
+        this.counter.startAt = 180;
         this.counter.counterState.subscribe(function (msg) {
             if (msg === 'COMPLETE') {
                 _this.counterState = 'counter has stopped';
@@ -2604,8 +3048,9 @@ var SurveyQuestionsComponent = /** @class */ (function () {
         var _this = this;
         this.surveyService.getSurvey(survey).subscribe(function (data) {
             _this.survey = data.survey;
+            _this.sections = data.survey.sections;
             _this.questions = _this.survey.questions;
-            console.log(_this.survey);
+            console.log('test' + _this.questions.length);
             for (var index = 0; index < _this.questions.length; index++) {
                 var answer = new _models_answer__WEBPACK_IMPORTED_MODULE_1__["Answer"]();
                 answer.question = _this.questions[index].question;
@@ -2613,7 +3058,6 @@ var SurveyQuestionsComponent = /** @class */ (function () {
             }
         });
     };
-    ;
     SurveyQuestionsComponent.prototype.onSurveySubmit = function () {
         var _this = this;
         console.log('inside submit');
@@ -2642,6 +3086,14 @@ var SurveyQuestionsComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"])('counter', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_10__["TimeQComponent"] }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_10__["TimeQComponent"])
     ], SurveyQuestionsComponent.prototype, "counter", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"])('counter1', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_10__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_10__["TimeQComponent"])
+    ], SurveyQuestionsComponent.prototype, "counter1", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"])('counter2', { read: _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_10__["TimeQComponent"] }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _time_q_time_q_component__WEBPACK_IMPORTED_MODULE_10__["TimeQComponent"])
+    ], SurveyQuestionsComponent.prototype, "counter2", void 0);
     SurveyQuestionsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
             selector: 'app-survey-questions',
@@ -2655,6 +3107,110 @@ var SurveyQuestionsComponent = /** @class */ (function () {
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], SurveyQuestionsComponent);
     return SurveyQuestionsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-r1/survey-r1.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/survey/survey-r1/survey-r1.component.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N1cnZleS9zdXJ2ZXktcjEvc3VydmV5LXIxLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-r1/survey-r1.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/survey/survey-r1/survey-r1.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<h1>Response of Users</h1>\n<a [routerLink]=\"\" (click)=\"download()\" class=\"\">Download</a>\n"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-r1/survey-r1.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/survey/survey-r1/survey-r1.component.ts ***!
+  \*********************************************************/
+/*! exports provided: SurveyR1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveyR1Component", function() { return SurveyR1Component; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var _node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/survey.service */ "./src/app/services/survey.service.ts");
+/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/auth.service */ "./src/app/services/auth.service.ts");
+
+
+
+
+
+
+
+var SurveyR1Component = /** @class */ (function () {
+    function SurveyR1Component(activatedRoute, flashMessage, surveyService, authService, router) {
+        this.activatedRoute = activatedRoute;
+        this.flashMessage = flashMessage;
+        this.surveyService = surveyService;
+        this.authService = authService;
+        this.router = router;
+    }
+    SurveyR1Component.prototype.ngOnInit = function () {
+        var _this = this;
+        this.ans1s = new Array();
+        this.surveyService.getAnsList().subscribe(function (data) {
+            if (data.success) {
+                _this.ans1s = data.contactList;
+            }
+            else {
+                _this.flashMessage.show('some error', { cssClass: 'alert-danger', timeOut: 3000 });
+            }
+        });
+    };
+    SurveyR1Component.prototype.download = function () {
+        this.downloadFile(this.ans1s);
+    };
+    SurveyR1Component.prototype.downloadFile = function (data) {
+        var replacer = function (key, value) { return (value === null ? "" : value); }; // specify how you want to handle null values here
+        var header = Object.keys(data[0]);
+        var csv = data.map(function (row) {
+            return header
+                .map(function (fieldName) { return JSON.stringify(row[fieldName], replacer); })
+                .join(",");
+        });
+        csv.unshift(header.join(","));
+        var csvArray = csv.join("\r\n");
+        console.log(csvArray);
+        var blob = new Blob([csvArray], { type: "text/csv" });
+        Object(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2__["saveAs"])(blob, "myFile.csv");
+    };
+    SurveyR1Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-survey-r1',
+            template: __webpack_require__(/*! ./survey-r1.component.html */ "./src/app/survey/survey-r1/survey-r1.component.html"),
+            styles: [__webpack_require__(/*! ./survey-r1.component.css */ "./src/app/survey/survey-r1/survey-r1.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__["FlashMessagesService"],
+            src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_5__["SurveyService"],
+            src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    ], SurveyR1Component);
+    return SurveyR1Component;
 }());
 
 
@@ -2818,6 +3374,62 @@ var SurveyResultComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/survey/survey-submit/survey-submit.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/survey/survey-submit/survey-submit.component.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N1cnZleS9zdXJ2ZXktc3VibWl0L3N1cnZleS1zdWJtaXQuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-submit/survey-submit.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/survey/survey-submit/survey-submit.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<br><br><br><br>\n<p>\n\n  Your answers submitted successfully\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/survey/survey-submit/survey-submit.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/survey/survey-submit/survey-submit.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: SurveySubmitComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveySubmitComponent", function() { return SurveySubmitComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var SurveySubmitComponent = /** @class */ (function () {
+    function SurveySubmitComponent() {
+    }
+    SurveySubmitComponent.prototype.ngOnInit = function () {
+    };
+    SurveySubmitComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-survey-submit',
+            template: __webpack_require__(/*! ./survey-submit.component.html */ "./src/app/survey/survey-submit/survey-submit.component.html"),
+            styles: [__webpack_require__(/*! ./survey-submit.component.css */ "./src/app/survey/survey-submit/survey-submit.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], SurveySubmitComponent);
+    return SurveySubmitComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/survey/time-q/time-q.component.css":
 /*!****************************************************!*\
   !*** ./src/app/survey/time-q/time-q.component.css ***!
@@ -2836,7 +3448,7 @@ module.exports = "h1 { font-family: Lato; }\r\n\r\n/*# sourceMappingURL=data:app
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"counter-parent\">\n  <span>Time:{{ currentValue }}</span>\n</div>\n"
+module.exports = "<div class=\"counter-parent\">\n  <span *ngIf=\"currentValue\">Time:{{ currentValue }}</span>\n</div>\n"
 
 /***/ }),
 

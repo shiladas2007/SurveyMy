@@ -10,6 +10,7 @@
 //Brief Description: When a user created a new survey all the data will be stored in the Survey table.
 
 import { Question } from "./question";
+import { Section } from "./section";
 export class Survey {
   // tslint:disable-next-line: variable-name
   _id: string;
@@ -18,5 +19,6 @@ export class Survey {
   surveyFrom: Date;
   surveyTill: Date;
   createDateAndTime: Date;
+  sections: Section[];
   questions: Question[];
 }

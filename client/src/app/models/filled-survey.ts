@@ -7,9 +7,9 @@
 
 // WebApp Name: Poll+
 
-//Brief Description: It will store data once user fills a survey and submits it.
+// Brief Description: It will store data once user fills a survey and submits it.
 
-import { Answer } from "./answer";
+import { Answer } from './answer';
 export class FilledSurvey {
   // tslint:disable-next-line: variable-name
   _id: string;

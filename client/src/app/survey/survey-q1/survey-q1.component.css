@@ -1,0 +1,33 @@
+.example-radio-group {
+
+  margin: 15px 0;
+  display: flex; flex-direction: row; padding: 4px 0;
+}
+
+.example-radio-button {
+  margin: 5px; padding: 2px 10px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 80%;
+}
+.example-card {
+
+  width:60%;
+}
+.counter-wrapper {
+  width: 200px;
+  height: 50px;
+  float: right;
+  background-color: #c2c2c2;
+  font-size: 2rem;
+  text-align: right;
+   align-items: right;
+}
+
+.cardHeader{ text-align: center; font-size: 2vw}

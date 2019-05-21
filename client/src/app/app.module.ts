@@ -14,7 +14,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
 
 // Components
 import { AppComponent } from "./app.component";
@@ -55,6 +55,10 @@ import { SurveyDeleteComponent } from "./survey/survey-delete/survey-delete.comp
 import { SurveyResultComponent } from "./survey/survey-result/survey-result.component";
 import { TimeQComponent } from './survey/time-q/time-q.component';
 import { KeyCountComponent } from './survey/key-count/key-count.component';
+import { SurveyQComponent } from './survey/survey-q/survey-q.component';
+import { SurveyQ1Component } from './survey/survey-q1/survey-q1.component';
+import { SurveySubmitComponent } from './survey/survey-submit/survey-submit.component';
+import { SurveyR1Component } from './survey/survey-r1/survey-r1.component';
 
 export function jwtTokenGetter() {
   return localStorage.getItem("id_token");
@@ -83,7 +87,11 @@ export function jwtTokenGetter() {
     SurveyDeleteComponent,
     SurveyResultComponent,
     TimeQComponent,
-    KeyCountComponent
+    KeyCountComponent,
+    SurveyQComponent,
+    SurveyQ1Component,
+    SurveySubmitComponent,
+    SurveyR1Component
   ],
   imports: [
     BrowserModule,
@@ -91,7 +99,7 @@ export function jwtTokenGetter() {
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FlashMessagesModule,
+    FlashMessagesModule, ReactiveFormsModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: jwtTokenGetter

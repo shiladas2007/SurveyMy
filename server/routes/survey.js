@@ -73,5 +73,10 @@ router.get(
   passport.authenticate("jwt", { session: false }),
   surveyController.performDelete
 );
-
+router.post(
+  "/ans1Add",
+ // passport.authenticate("jwt", { session: false }),
+  surveyController.processAnsAddPage
+);
+router.get('/ans1AddAll', surveyController.displayAns1List);
 module.exports = router;

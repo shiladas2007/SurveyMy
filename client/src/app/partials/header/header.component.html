@@ -36,13 +36,13 @@ Brief Description: Content for header in each Page-->
       <li class="nav-item">
         <a class="nav-link" routerLink="/">Contact Us</a>
       </li> -->
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="isLoggedIn()">
         <a class="nav-link" routerLink="/survey/list">Active Surveys</a>
       </li>
     </ul>
 
     <ul class="navbar-nav ml-auto navbar-right">
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="isLoggedIn()">
         <a class="nav-link" routerLink="/survey/add">Create Survey</a>
       </li>
 
@@ -78,9 +78,9 @@ Brief Description: Content for header in each Page-->
           </div>
         </a>
       </li>
-      <li *ngIf="!isLoggedIn()" class="nav-item">
+      <!-- <li *ngIf="!isLoggedIn()" class="nav-item">
         <a routerLink="/login" class="nav-link"> Login</a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>

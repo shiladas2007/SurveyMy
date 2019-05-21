@@ -24,7 +24,7 @@ export class TimeQComponent implements OnInit {
 
   private currentSubscription: Subscription;
 
-  constructor(private changeDetector:ChangeDetectorRef) { }
+  constructor(private changeDetector: ChangeDetectorRef) { }
 
   ngOnInit() {
   }

@@ -17,6 +17,7 @@ import { Observable } from "rxjs";
 
 import { Survey } from "../models/survey";
 import { User } from "../models/user";
+import { Ans1 } from "../models/ans1";
 
 @Injectable({
   providedIn: "root"
@@ -25,9 +26,10 @@ export class SurveyService {
   private user: User;
   private authToken: any = null;
 
-  private endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
+  //private endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
 
-  // private endpoint = "http://localhost:3000/api/survey/";
+  private endpoint = "http://localhost:3000/api/survey/";
+  private endpoint1 = "http://localhost:3000/api/ans1/";
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -45,6 +47,10 @@ export class SurveyService {
   public getList(): Observable<any> {
     // this.loadToken();
     return this.http.get<any>(this.endpoint, this.httpOptions);
+  }
+  public getAnsList(): Observable<any> {
+    // this.loadToken();
+    return this.http.get<any>(this.endpoint1, this.httpOptions);
   }
 
   public getSurvey(survey: Survey): Observable<any> {
@@ -74,6 +80,11 @@ export class SurveyService {
   public addSurvey(survey: Survey): Observable<any> {
     //this.loadToken();
     return this.http.post<any>(this.endpoint + "add", survey, this.httpOptions);
+  }
+  public addAns1(ans1: Ans1): Observable<any> {
+    //this.loadToken();
+    console.log(ans1);
+    return this.http.post<any>(this.endpoint1 + "Add", ans1, this.httpOptions);
   }
 
   public addFilledSurvey(filledSurvey: FilledSurvey): Observable<any> {

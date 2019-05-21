@@ -16,6 +16,7 @@ let jwt = require("jsonwebtoken");
 // create a reference to the db schema
 let surveyModel = require("../models/survey");
 let answerModel = require("../models/answer");
+let ans1Model = require("../models/ans1");
 
 module.exports.displaySurveyList = (req, res, next) => {
   surveyModel.find({ surveyFrom: { $lt: new Date() } }, (err, surveyList) => {
@@ -203,4 +204,63 @@ module.exports.performDelete = (req, res, next) => {
       res.json({ success: true, msg: "Successfully Deleted Contact" });
     }
   });
+};
+
+module.exports.processAnsAddPage = (req, res, next) => {
+  let newAns1 = ans1Model({
+  Name: req.body.Name,
+  Email: req.body.Email,
+  Age: req.body.Age,
+  isImi: req.body.isImi,
+  isImiYr: req.body.isImiYr,
+  isWork: req.body.isWork,
+  Res: req.body.Res,
+  isWorked: req.body.isWorked,
+  NoJobs: req.body.NoJobs,
+  WorkPer: req.body.WorkPer,
+  jobL: req.body.jobL,
+  isVol: req.body.isVol,
+  Vol: req.body.Vol,
+  Work1: req.body.Work1,
+  Work2: req.body.Work2,
+  Work3: req.body.Work3,
+  Work4: req.body.Work4,
+  Work5: req.body.Work5,
+  Work6: req.body.Work6,
+  Interest: req.body.Interest,
+  isExpJob: req.body.isExpJob,
+  isExpOrg: req.body.isExpOrg,
+  isExpInt: req.body.isExpInt,
+  isExpRes: req.body.isExpRes,
+  isExpPre: req.body.isExpPre,
+  isExpTar: req.body.isExpTar,
+  ExpCount: req.body.ExpCount,
+  keySp: req.body.keySp,
+  redDot: req.body.redDot,
+  nums: req.body.nums,
+  desc: req.body.desc
+  });
+  
+ console.log(newAns1);
+  ans1Model.create(newAns1, (err, ans1Model) => {
+    if (err) {
+      console.log('error');
+      console.log(err);
+      res.end(err);
+    } else {
+      console.log('success');
+      res.json({ success: true, msg: "Successfully submitted your answers" });
+    }
+  });
+};
+module.exports.displayAns1List = (req, res, next) => {
+  console.log('called');
+  ans1Model.find((err, ans1List) => {
+    if(err) {
+        return console.error(err);
+    }
+    else {
+       res.json({success: true, msg: 'Response List Displayed Successfully', ans1List: ans1List, user: req.user});
+    }
+});
 };

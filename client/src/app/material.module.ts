@@ -16,22 +16,25 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from "@angular/material";
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatRadioModule} from '@angular/material/radio';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
+import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   imports: [
     MatDatepickerModule,
-    MatFormFieldModule,
-    MatNativeDateModule,
-    MatInputModule,
-    BrowserAnimationsModule
+    MatFormFieldModule, MatSelectModule,
+    MatNativeDateModule, MatCardModule,
+    MatInputModule, MatRadioModule,
+    BrowserAnimationsModule, MatStepperModule
   ],
   exports: [
     MatDatepickerModule,
-    MatFormFieldModule,
-    MatNativeDateModule,
-    MatInputModule,
-    BrowserAnimationsModule
+    MatFormFieldModule, MatSelectModule,
+    MatNativeDateModule, MatCardModule,
+    MatInputModule, MatRadioModule,
+    BrowserAnimationsModule, MatStepperModule
   ],
   providers: [MatDatepickerModule]
 })

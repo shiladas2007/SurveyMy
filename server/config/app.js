@@ -43,6 +43,7 @@ mongoDB.once("open", () => {
 let indexRouter = require("../routes/index");
 let contactRouter = require("../routes/contact");
 let surveyRouter = require("../routes/survey");
+let ans1Router = require("../routes/ans1");
 
 let app = express();
 
@@ -112,6 +113,7 @@ app.use(
   contactRouter
 );
 app.use("/api/survey", surveyRouter);
+app.use("/api/ans1", ans1Router);
 app.get("*", (req, res) => {
   res.sendfile(path.join(__dirname, "../../public/index.html"));
 });

@@ -18,6 +18,7 @@ import { SurveyService } from 'src/app/services/survey.service';
 import { AuthService } from 'src/app/services/auth.service';
 import { Survey } from 'src/app/models/survey';
 import { Question } from 'src/app/models/question';
+import { Section } from 'src/app/models/section';
 import { User } from 'src/app/models/user';
 import { FilledSurvey } from 'src/app/models/filled-survey';
 
@@ -41,12 +42,23 @@ export class SurveyQuestionsComponent implements OnInit {
 title: string;
 survey: Survey;
 questions: Question[];
+sections: Section[];
 user: User;
 
+clicked1 = false;
+clicked2 = false;
+img1 = true;
+img2 = true;
+span1 = false;
+span2 = false;
 filledSurvey: FilledSurvey;
 answers: Answer[];
 @ViewChild('counter', {read: TimeQComponent})
   private counter: TimeQComponent;
+  @ViewChild('counter1', {read: TimeQComponent})
+  private counter1: TimeQComponent;
+  @ViewChild('counter2', {read: TimeQComponent})
+  private counter2: TimeQComponent;
 
 counterState = 'counter is ticking';
 count = 0;
@@ -74,8 +86,23 @@ ngOnInit() {
       this.survey._id = params.id;
     });
 
+
+    this.counter1.startAt = 7;
+    this.counter1.counterState.subscribe((msg) => {
+      if (msg === 'COMPLETE') {
+        this.img1 = true;
+        this.span1 = true;
+      }
+    });
+    this.counter2.startAt = 7;
+    this.counter2.counterState.subscribe((msg) => {
+      if (msg === 'COMPLETE') {
+        this.img2 = true;
+        this.span2 = true;
+      }
+    });
     this.getSurvey(this.survey);
-    this.counter.startAt = 360;
+    this.counter.startAt = 180;
     this.counter.counterState.subscribe((msg) => {
       if (msg === 'COMPLETE') {
         this.counterState = 'counter has stopped';
@@ -91,11 +118,13 @@ ngOnInit() {
     console.log(event);
   } */
   private getSurvey(survey: Survey): void {
+
+
     this.surveyService.getSurvey(survey).subscribe(data => {
       this.survey = data.survey;
+      this.sections = data.survey.sections;
       this.questions = this.survey.questions;
-
-      console.log(this.survey);
+      console.log('test' + this.questions.length);
 
       for (let index = 0; index < this.questions.length; index++) {
         const answer = new Answer();
@@ -105,7 +134,7 @@ ngOnInit() {
         this.answers[index] = answer;
       }
     });
-  };
+  }
 
 onSurveySubmit(): void {
     console.log('inside submit');

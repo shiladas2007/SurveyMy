@@ -1,0 +1,398 @@
+<br><br><br>
+<h1> Readiness to Engage in Employment – Questionnaire </h1>
+<h4>   <div class="counter-wrapper">
+    <app-time-q #counter></app-time-q>
+    <app-time-q #counter1 style="display: none"></app-time-q>
+    <app-time-q #counter2 style="display: none"></app-time-q>
+  </div><br>
+   </h4>
+<br>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel></ng-template>
+      <mat-card class="example-card" >
+        <mat-card-header class="cardHeader">
+            General Info
+        </mat-card-header>
+        <mat-card-content>
+<hr>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Name" formControlName="NameCtrl"  >
+      </mat-form-field><br>
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" formControlName="EmailCtrl"  >
+        </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="Age" formControlName="AgeCtrl" >
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext (click)="start()">Start Exam</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel></ng-template>
+      <mat-card class="example-card">
+          <mat-card-header class="cardHeader">
+              Immigration Status
+          </mat-card-header>
+          <mat-card-content>
+              <hr>
+      <label id="example-radio-group-label">1. Are you a visible minority or a new immigrant woman?</label>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group" formControlName="isImiCtrl"
+        >
+        <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+          {{item}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>
+
+        <label id="example-radio-group-label">2. When did you arrived in Canada?</label>
+        <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group" formControlName="isImiYrCtrl"
+        >
+        <mat-radio-button class="example-radio-button" *ngFor="let item of Yrs" [value]="item">
+          {{item}}
+        </mat-radio-button>
+      </mat-radio-group>
+
+
+      <label id="example-radio-group-label">3. Are you able to legally work in Canada?</label>
+      <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group" formControlName="isWorkCtrl"
+      >
+      <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+        {{item}}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <label id="example-radio-group-label">4. What is your resident status?</label>
+    <mat-radio-group
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group" formControlName="ResCtrl"
+    >
+    <mat-radio-button class="example-radio-button" *ngFor="let item of Res" [value]="item">
+      {{item}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel></ng-template>
+      <mat-card class="example-card">
+          <mat-card-header class="cardHeader">
+              Work in Canada
+          </mat-card-header>
+          <mat-card-content>
+              <hr>
+      <label id="example-radio-group-label">1. Have you ever worked in Canada?</label>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group" formControlName="isWorkedCtrl"
+        >
+        <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+          {{item}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <div>
+
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="2. How many jobs have you worked on?" formControlName="NoJobsCtrl">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="3. What is the maximum work period you have worked in a job (months/years)?" formControlName="WorkPerCtrl">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="4. Why did you leave your previous job?" formControlName="jobLCtrl">
+        </mat-form-field><br>
+      <label id="example-radio-group-label">5. Have you done any volunteering jobs in Canada?</label>
+      <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group" formControlName="isVolCtrl"
+      >
+      <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+        {{item}}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="6. For how long have you done the volunteering Work?" formControlName="VolCtrl">
+    </mat-form-field>
+<br>
+
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="fourthFormGroup">
+    <form [formGroup]="fourthFormGroup">
+      <ng-template matStepLabel></ng-template>
+      <mat-card class="example-card">
+          <mat-card-header class="cardHeader">
+              What type of work interests you?
+          </mat-card-header>
+          <mat-card-content>
+              <hr>
+            <label id="example-radio-group-label">Choose one option for each row</label>
+
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group" formControlName="Work1Ctrl"
+        >
+        <mat-radio-button class="example-radio-button" value="Working alone" >Working alone</mat-radio-button>
+        <mat-radio-button class="example-radio-button" value="Working with people">Working with people</mat-radio-button>
+      </mat-radio-group>
+      <hr>
+      <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group" formControlName="Work2Ctrl"
+      >
+      <mat-radio-button class="example-radio-button" value="Working outdoors" >Working outdoors</mat-radio-button>
+      <mat-radio-button class="example-radio-button" value="Working indoors" >Working indoors</mat-radio-button>
+    </mat-radio-group><hr>
+    <mat-radio-group
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group" formControlName="Work3Ctrl"
+    >
+    <mat-radio-button class="example-radio-button" value="Working with numbers">Working with numbers</mat-radio-button>
+    <mat-radio-button class="example-radio-button" value="Working with ideas">Working with ideas</mat-radio-button>
+  </mat-radio-group><hr>
+  <mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group" formControlName="Work4Ctrl"
+  >
+  <mat-radio-button class="example-radio-button" value="Cleaning and organizing">Cleaning and organizing </mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="Creating new objects" >Creating new objects</mat-radio-button>
+</mat-radio-group><hr>
+<mat-radio-group
+aria-labelledby="example-radio-group-label"
+class="example-radio-group" formControlName="Work5Ctrl"
+>
+<mat-radio-button class="example-radio-button" value="Operating machines">Operating machines </mat-radio-button>
+<mat-radio-button class="example-radio-button" value="Office work">Office work</mat-radio-button>
+</mat-radio-group><hr>
+<mat-radio-group
+aria-labelledby="example-radio-group-label"
+class="example-radio-group" formControlName="Work6Ctrl"
+>
+<mat-radio-button class="example-radio-button" value="perating own business" >perating own business</mat-radio-button>
+<mat-radio-button class="example-radio-button" value="Woking in a company">Woking in a company</mat-radio-button>
+</mat-radio-group><br>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Mention your career interest" formControlName="IntCtrl">
+</mat-form-field>
+<br>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="fifthFormGroup">
+    <form [formGroup]="fifthFormGroup">
+      <ng-template matStepLabel></ng-template>
+      <mat-card class="example-card">
+          <mat-card-header class="cardHeader">
+              Attempts made for job
+          </mat-card-header>
+        <mat-card-content>
+            <hr>
+
+          <label id="example-radio-group-label">1. I  have explored job possibilities for me</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="isExpJob"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <label id="example-radio-group-label">2. I have explored possible organizations for me to work</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="isExpOrg"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <label id="example-radio-group-label">3. I have explored interview sessions</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="isExpInt"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <label id="example-radio-group-label">4. I have explored circulating my resume to as many contacts as possible</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="isExpRes"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <label id="example-radio-group-label">5. I have prepared for possible interview sessions</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="isExpPre"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+        <label id="example-radio-group-label">6. I have identified five target companies that I have to send my resume to them</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="isExpTar"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of TFs" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="sixthFormGroup">
+    <form [formGroup]="sixthFormGroup">
+      <ng-template matStepLabel></ng-template>
+      <mat-card class="example-card">
+          <mat-card-header class="cardHeader">
+              Motivation/ initiative
+          </mat-card-header>
+        <mat-card-content>
+            <hr>
+          <label id="example-radio-group-label">You are given 15 seconds; how many times can you tab on the right arrow key?</label>
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group" formControlName="ExpCount"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of Kc" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+        <label>Check Now your current speed!</label>
+        <app-key-count (messageEvent)="receiveMessage($event)"></app-key-count>
+                      <input
+                        name="keySp"
+                        type="text" readonly="readonly"
+                        style="width: 50%; margin-left: 30px;"
+                        id="keySp"
+                        value="{{count}}"
+                        formControlName="keySp"
+                      />
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="seventhFormGroup">
+      <form [formGroup]="seventhFormGroup">
+        <ng-template matStepLabel></ng-template>
+        <mat-card class="example-card">
+            <mat-card-header class="cardHeader">
+                Memory Test
+            </mat-card-header>
+          <mat-card-content>
+              <hr>
+            <label id="example-radio-group-label">Click on button see the image!</label><br>
+            <button type="button" class="btn" [hidden]="clicked1"
+            (click)="clicked1=!clicked1; img1=false; counter1.start();">Show</button>
+            <span [hidden]="!span1">How many red dot is there?<br> </span>
+            <img  src="../../../assets/images/mem1.jpg" [hidden]="img1" width="50%" height="15%"/>
+            <input [hidden]="!span1"
+            name="redDot"
+            type="text"
+            style="width: 50%; margin-left: 30px;"
+            id="redDot"
+            formControlName="redDot"
+          />
+
+            <br>
+            <label id="example-radio-group-label">Click on button see the image!</label><br>
+            <button type="button" class="btn" [hidden]="clicked2"
+            (click)="clicked2=!clicked2; img2=false; counter2.start();">Show</button>
+            <span [hidden]="!span2">Can you write down the numbers from the image?<br> </span>
+            <img  src="../../../assets/images/mem2.png" [hidden]="img2" width="50%" height="15%"/>
+            <input [hidden]="!span2"
+            name="nums"
+            type="text"
+            style="width: 50%; margin-left: 30px;"
+            id="nums"
+            formControlName="nums"
+          />
+
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="eighthFormGroup">
+        <form [formGroup]="eighthFormGroup">
+          <ng-template matStepLabel></ng-template>
+          <mat-card class="example-card">
+              <mat-card-header class="cardHeader">
+                  Match with you
+              </mat-card-header>
+            <mat-card-content>
+                <hr>
+                <mat-form-field>
+                    <mat-label>What describe you best?</mat-label>
+                    <mat-select formControlName="desc">
+                      <mat-option *ngFor="let item of lst" [value]="item">
+                        {{item}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+        </form>
+      </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+
+      <button mat-button (click)="submit()">Submit</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

@@ -31,15 +31,22 @@ let surveySchema = mongoose.Schema(
     surveyTill: {
       type: Date
     },
-    questions: [
+    sections: [{sectionN: Number,
+      sectionHeader: String}]
+    ,questions: [
       {
         _id: String,
+        sectionN: Number,
+        sectionHeader: String,
         questionType: Number , //1 for mcq, 2 for text, 3 for other
         question: String,
         option1: String,
         option2: String,
         option3: String,
-        option4: String
+        option4: String,
+        image: String,
+        dynamicQ: String,
+        list: []
       }
     ]
   },

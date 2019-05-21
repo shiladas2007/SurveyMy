@@ -14,9 +14,14 @@ export class Question {
   // tslint:disable-next-line: variable-name
   _id: string;
   question: string;
-  questionType = 1; //1 for mcq, 2 for text, 3 for other
+  sectionN: number;
+  sectionHeader: string;
+  questionType = 1; //1 for mcq, 2 for text, 3 for key tab, 4=missing q-2mcq, 5=dropdown, 6=image-mcq,7=image-text
   option1: string;
   option2: string;
   option3: string;
   option4: string;
+  image: string;
+  dynamicQ: string;
+  list: [];
 }

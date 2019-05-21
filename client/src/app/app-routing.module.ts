@@ -1,4 +1,8 @@
 import { SurveyQuestionsComponent } from './survey/survey-questions/survey-questions.component';
+import { SurveyQComponent } from './survey/survey-q/survey-q.component';
+import { SurveyQ1Component } from './survey/survey-q1/survey-q1.component';
+import { SurveyR1Component } from './survey/survey-r1/survey-r1.component';
+import { SurveySubmitComponent } from './survey/survey-submit/survey-submit.component';
 
 // Modules
 import { NgModule } from '@angular/core';
@@ -35,6 +39,10 @@ const routes: Routes = [
   {path: 'survey/edit/:id', component: SurveyDetailsComponent, data: {title: 'Edit Survey'}},
   {path: 'survey/result/:id', component: SurveyResultComponent, data: {title: 'Edit Survey'}},
   {path: 'survey/questions/:id', component: SurveyQuestionsComponent, data: {title: 'Survey Questions'}},
+  {path: 'survey/questionsS/1', component: SurveyQComponent, data: {title: 'Survey Questions'}},
+  {path: 'survey/questionsS/2', component: SurveyQ1Component, data: {title: 'Survey Questions'}},
+  {path: 'survey/Results/2', component: SurveyR1Component, data: {title: 'Survey Questions'}},
+  {path: 'survey/submit', component: SurveySubmitComponent, data: {title: 'Survey Questions'}},
   {path: 'survey/list/delete/:id', component: SurveyDeleteComponent, data: {title: 'Delete Contact'}, canActivate: [AuthGuard]},
 
   {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'}, canActivate: [AuthGuard]},

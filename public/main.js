@@ -1964,9 +1964,10 @@ var SurveyService = /** @class */ (function () {
     function SurveyService(http) {
         this.http = http;
         this.authToken = null;
-        //private endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
-        this.endpoint = "http://localhost:3000/api/survey/";
-        this.endpoint1 = "http://localhost:3000/api/ans1/";
+        this.endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
+        this.endpoint1 = 'https://shilasurvey.herokuapp.com/api/ans1/';
+        //private endpoint = "http://localhost:3000/api/survey/";
+        // private endpoint1 = "http://localhost:3000/api/ans1/";
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 "Content-Type": "application/json",

@@ -26,10 +26,11 @@ export class SurveyService {
   private user: User;
   private authToken: any = null;
 
-  //private endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
+  private endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
+  private endpoint1 = 'https://shilasurvey.herokuapp.com/api/ans1/';
 
-  private endpoint = "http://localhost:3000/api/survey/";
-  private endpoint1 = "http://localhost:3000/api/ans1/";
+  //private endpoint = "http://localhost:3000/api/survey/";
+ // private endpoint1 = "http://localhost:3000/api/ans1/";
 
   private httpOptions = {
     headers: new HttpHeaders({

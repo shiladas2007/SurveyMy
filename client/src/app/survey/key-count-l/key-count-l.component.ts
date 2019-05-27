@@ -1,11 +1,12 @@
 import { Component, OnInit, HostListener, Output, EventEmitter ,  ViewChild  } from '@angular/core';
 import { TimeQComponent } from '../time-q/time-q.component';
+
 @Component({
-  selector: 'app-key-count',
-  templateUrl: './key-count.component.html',
-  styleUrls: ['./key-count.component.css']
+  selector: 'app-key-count-l',
+  templateUrl: './key-count-l.component.html',
+  styleUrls: ['./key-count-l.component.css']
 })
-export class KeyCountComponent implements OnInit {
+export class KeyCountLComponent implements OnInit {
   value = 0;
   firstTime = false;
 
@@ -18,7 +19,7 @@ export class KeyCountComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    if (event.keyCode === 39) {
+    if (event.keyCode === 37) {
       if(this.firstTime) {
         console.log('start timer');
         this.firstTime = false;

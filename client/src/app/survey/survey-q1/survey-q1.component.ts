@@ -181,6 +181,7 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
     console.log('read all data');
     console.log(this.ans1);
     this.ans1.keySp = this.count.toString();
+    this.ans1.keyLSp = this.countL.toString();
     this.ans1.num1Shown = this.random1 + ' ' + this.random2 + ' ' + this.random3 + ' ' + this.random4;
     this.surveyService.addAns1(this.ans1).subscribe(data => {
       if (data.success) {

@@ -311,7 +311,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             {{item}}
           </mat-radio-button>
         </mat-radio-group>
-          <label id="example-radio-group-label">You are given 15 seconds; how many times can you tab on the right arrow key?</label>
+          <label id="example-radio-group-label">You are given 15 seconds; how many times can you tab on the <b>right arrow key</b>?</label>
           <mat-radio-group  (change)="selKey=true;" [disabled]="selKey" required
           aria-labelledby="example-radio-group-label" name="ExpCount" formControlName="ExpCount"
           class="example-radio-group"  [(ngModel)]="ans1.ExpCount"
@@ -333,7 +333,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
                         formControlName="keySp"
                       />
 <br>
-<label id="example-radio-group-label"><b>2nd Attempt:</b> You are given 15 seconds; how many times can you tab on the right arrow key?</label>
+<label id="example-radio-group-label"><b>2nd Attempt:</b> You are given 15 seconds; how many times can you tab on the <b>left arrow key</b>?</label>
           <mat-radio-group  (change)="selLKey=true;" [disabled]="selLKey" required
           aria-labelledby="example-radio-group-label" name="ExpLCount" formControlName="ExpLCount"
           class="example-radio-group"  [(ngModel)]="ans1.ExpLCount"
@@ -344,7 +344,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
         </mat-radio-group>
 
         <label [hidden]="!selLKey">Check Now your current speed!</label>
-        <app-key-count (messageEvent)="receiveMessageL($event)"></app-key-count>
+        <app-key-count-l (messageEvent)="receiveMessageL($event)"></app-key-count-l>
                       <input [hidden]="!selLKey"
                         name="keyLSp"
                         type="text" readonly="readonly"
@@ -371,7 +371,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             </mat-card-header>
           <mat-card-content>
               <hr>
-            <label id="example-radio-group-label">Click on button see the image of dots. please count the dots by color.!</label><br>
+            <label id="example-radio-group-label">Click on button see the image of dots. please <b>count the dots by color</b>.!</label><br>
             <button type="button" class="btn" [hidden]="clicked1"
             (click)="clicked1=!clicked1; img1=false; counter1.start();">Show</button>
             <span [hidden]="!span1">How many red dot is there?<br> </span>

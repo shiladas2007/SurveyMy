@@ -237,6 +237,8 @@ module.exports.processAnsAddPage = (req, res, next) => {
   midDot: req.body.midDot,
   ExpCount: req.body.ExpCount,
   keySp: req.body.keySp,
+  ExpLCount: req.body.ExpLCount,
+  keyLSp: req.body.keyLSp,
   redDot: req.body.redDot,
   blueDot: req.body.blueDot,
   nums: req.body.nums,

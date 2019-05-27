@@ -60,6 +60,7 @@ import { SurveyQ1Component } from './survey/survey-q1/survey-q1.component';
 import { SurveySubmitComponent } from './survey/survey-submit/survey-submit.component';
 import { SurveyR1Component } from './survey/survey-r1/survey-r1.component';
 import { LinkEncryptComponent } from './pages/link-encrypt/link-encrypt.component';
+import { NoLayoutComponent } from './no-layout/no-layout.component';
 
 export function jwtTokenGetter() {
   return localStorage.getItem("id_token");
@@ -93,7 +94,8 @@ export function jwtTokenGetter() {
     SurveyQ1Component,
     SurveySubmitComponent,
     SurveyR1Component,
-    LinkEncryptComponent
+    LinkEncryptComponent,
+    NoLayoutComponent
   ],
   imports: [
     BrowserModule,

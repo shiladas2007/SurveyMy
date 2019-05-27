@@ -3,6 +3,7 @@ import { SurveyQComponent } from './survey/survey-q/survey-q.component';
 import { SurveyQ1Component } from './survey/survey-q1/survey-q1.component';
 import { SurveyR1Component } from './survey/survey-r1/survey-r1.component';
 import { SurveySubmitComponent } from './survey/survey-submit/survey-submit.component';
+import { NoLayoutComponent } from './no-layout/no-layout.component';
 
 // Modules
 import { NgModule } from '@angular/core';
@@ -27,22 +28,21 @@ import { SurveyDeleteComponent } from './survey/survey-delete/survey-delete.comp
 import { SurveyResultComponent } from './survey/survey-result/survey-result.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent, data: {title: 'Home'}},
-  {path: 'about', component: AboutComponent, data: {title: 'About'}},
-  {path: 'products', component: ProductsComponent, data: {title: 'Products'}},
-  {path: 'services', component: ServicesComponent, data: {title: 'Services'}},
-  {path: 'contact', component: ContactComponent, data: {title: 'Contact'}},
-
-  {path: 'survey/add', component: SurveyDetailsComponent, data: {title: 'Add Survey'}, canActivate: [AuthGuard]},
+  {
+    path: '',
+    component: NoLayoutComponent,
+    children: [
+      { path: 'home', component: HomeComponent, data: {title: 'Home'}, pathMatch: 'full'},
+      { path: 'about', component: AboutComponent, data: {title: 'About'} },
+      { path: 'products', component: ProductsComponent, data: {title: 'Products'} },
+      { path: 'services', component: ServicesComponent, data: {title: 'Services'} },
+      { path: 'contact', component: ContactComponent, data: {title: 'Contact'} },
+      {path: 'survey/add', component: SurveyDetailsComponent, data: {title: 'Add Survey'}, canActivate: [AuthGuard]},
   {path: 'survey/list', component: SurveyListComponent, data: {title: 'Active Survey'}},
   {path: 'survey/list/:username', component: SurveyListComponent, data: {title: 'My Survey'}},
   {path: 'survey/edit/:id', component: SurveyDetailsComponent, data: {title: 'Edit Survey'}},
   {path: 'survey/result/:id', component: SurveyResultComponent, data: {title: 'Edit Survey'}},
   {path: 'survey/questions/:id', component: SurveyQuestionsComponent, data: {title: 'Survey Questions'}},
-  {path: 'survey/questionsS/1', component: SurveyQComponent, data: {title: 'Survey Questions'}},
-  {path: 'survey/questionsS/2', component: SurveyQ1Component, data: {title: 'Survey Questions'}},
-  {path: 'survey/Results/2', component: SurveyR1Component, data: {title: 'Survey Questions'}},
-  {path: 'survey/submit', component: SurveySubmitComponent, data: {title: 'Survey Questions'}},
   {path: 'survey/list/delete/:id', component: SurveyDeleteComponent, data: {title: 'Delete Contact'}, canActivate: [AuthGuard]},
 
   {path: 'contact/contact-list', component: ContactListComponent, data: {title: 'Contact List'}, canActivate: [AuthGuard]},
@@ -54,8 +54,17 @@ const routes: Routes = [
   {path: 'editprofile', component: RegisterComponent, data: {title: 'Edit'}},
   {path: 'login', component: LoginComponent, data: {title: 'Register'}},
   {path: 'logout', redirectTo: '/login', pathMatch: 'full'},
-
   {path: '', redirectTo: '/home', pathMatch: 'full'},
+    ]
+},
+
+  {path: 'survey/questionsS/1', component: SurveyQComponent
+  , data: {title: 'Survey Questions'}},
+  {path: 'survey/questionsS/2', component: SurveyQ1Component, data: {title: 'Survey Questions'}},
+  {path: 'survey/Results/2', component: SurveyR1Component, data: {title: 'Survey Questions'}},
+  {path: 'survey/submit', component: SurveySubmitComponent, data: {title: 'Survey Questions'}},
+
+
   {path: '**', component: PageNotFoundComponent}
 ];
 

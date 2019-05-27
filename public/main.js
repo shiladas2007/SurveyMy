@@ -39,24 +39,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./survey/survey-q1/survey-q1.component */ "./src/app/survey/survey-q1/survey-q1.component.ts");
 /* harmony import */ var _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./survey/survey-r1/survey-r1.component */ "./src/app/survey/survey-r1/survey-r1.component.ts");
 /* harmony import */ var _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./survey/survey-submit/survey-submit.component */ "./src/app/survey/survey-submit/survey-submit.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
-/* harmony import */ var _pages_about_about_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/about/about.component */ "./src/app/pages/about/about.component.ts");
-/* harmony import */ var _pages_products_products_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/products/products.component */ "./src/app/pages/products/products.component.ts");
-/* harmony import */ var _pages_services_services_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/services/services.component */ "./src/app/pages/services/services.component.ts");
-/* harmony import */ var _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/contact/contact.component */ "./src/app/pages/contact/contact.component.ts");
-/* harmony import */ var _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/page-not-found/page-not-found.component */ "./src/app/pages/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./contacts/contact-list/contact-list.component */ "./src/app/contacts/contact-list/contact-list.component.ts");
-/* harmony import */ var _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contacts/contact-details/contact-details.component */ "./src/app/contacts/contact-details/contact-details.component.ts");
-/* harmony import */ var _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contacts/contact-delete/contact-delete.component */ "./src/app/contacts/contact-delete/contact-delete.component.ts");
-/* harmony import */ var _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./survey/survey-details/survey-details.component */ "./src/app/survey/survey-details/survey-details.component.ts");
-/* harmony import */ var _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./survey/survey-list/survey-list.component */ "./src/app/survey/survey-list/survey-list.component.ts");
-/* harmony import */ var _pages_register_register_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/register/register.component */ "./src/app/pages/register/register.component.ts");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
-/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
-/* harmony import */ var _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./survey/survey-delete/survey-delete.component */ "./src/app/survey/survey-delete/survey-delete.component.ts");
-/* harmony import */ var _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./survey/survey-result/survey-result.component */ "./src/app/survey/survey-result/survey-result.component.ts");
+/* harmony import */ var _no_layout_no_layout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./no-layout/no-layout.component */ "./src/app/no-layout/no-layout.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
+/* harmony import */ var _pages_about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/about/about.component */ "./src/app/pages/about/about.component.ts");
+/* harmony import */ var _pages_products_products_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/products/products.component */ "./src/app/pages/products/products.component.ts");
+/* harmony import */ var _pages_services_services_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/services/services.component */ "./src/app/pages/services/services.component.ts");
+/* harmony import */ var _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/contact/contact.component */ "./src/app/pages/contact/contact.component.ts");
+/* harmony import */ var _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/page-not-found/page-not-found.component */ "./src/app/pages/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contacts/contact-list/contact-list.component */ "./src/app/contacts/contact-list/contact-list.component.ts");
+/* harmony import */ var _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contacts/contact-details/contact-details.component */ "./src/app/contacts/contact-details/contact-details.component.ts");
+/* harmony import */ var _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./contacts/contact-delete/contact-delete.component */ "./src/app/contacts/contact-delete/contact-delete.component.ts");
+/* harmony import */ var _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./survey/survey-details/survey-details.component */ "./src/app/survey/survey-details/survey-details.component.ts");
+/* harmony import */ var _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./survey/survey-list/survey-list.component */ "./src/app/survey/survey-list/survey-list.component.ts");
+/* harmony import */ var _pages_register_register_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/register/register.component */ "./src/app/pages/register/register.component.ts");
+/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./survey/survey-delete/survey-delete.component */ "./src/app/survey/survey-delete/survey-delete.component.ts");
+/* harmony import */ var _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./survey/survey-result/survey-result.component */ "./src/app/survey/survey-result/survey-result.component.ts");
+
 
 
 
@@ -84,40 +86,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], data: { title: 'Home' } },
-    { path: 'about', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_9__["AboutComponent"], data: { title: 'About' } },
-    { path: 'products', component: _pages_products_products_component__WEBPACK_IMPORTED_MODULE_10__["ProductsComponent"], data: { title: 'Products' } },
-    { path: 'services', component: _pages_services_services_component__WEBPACK_IMPORTED_MODULE_11__["ServicesComponent"], data: { title: 'Services' } },
-    { path: 'contact', component: _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_12__["ContactComponent"], data: { title: 'Contact' } },
-    { path: 'survey/add', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_17__["SurveyDetailsComponent"], data: { title: 'Add Survey' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
-    { path: 'survey/list', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_18__["SurveyListComponent"], data: { title: 'Active Survey' } },
-    { path: 'survey/list/:username', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_18__["SurveyListComponent"], data: { title: 'My Survey' } },
-    { path: 'survey/edit/:id', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_17__["SurveyDetailsComponent"], data: { title: 'Edit Survey' } },
-    { path: 'survey/result/:id', component: _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_23__["SurveyResultComponent"], data: { title: 'Edit Survey' } },
-    { path: 'survey/questions/:id', component: _survey_survey_questions_survey_questions_component__WEBPACK_IMPORTED_MODULE_1__["SurveyQuestionsComponent"], data: { title: 'Survey Questions' } },
-    { path: 'survey/questionsS/1', component: _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_2__["SurveyQComponent"], data: { title: 'Survey Questions' } },
+    {
+        path: '',
+        component: _no_layout_no_layout_component__WEBPACK_IMPORTED_MODULE_6__["NoLayoutComponent"],
+        children: [
+            { path: 'home', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"], data: { title: 'Home' }, pathMatch: 'full' },
+            { path: 'about', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"], data: { title: 'About' } },
+            { path: 'products', component: _pages_products_products_component__WEBPACK_IMPORTED_MODULE_11__["ProductsComponent"], data: { title: 'Products' } },
+            { path: 'services', component: _pages_services_services_component__WEBPACK_IMPORTED_MODULE_12__["ServicesComponent"], data: { title: 'Services' } },
+            { path: 'contact', component: _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_13__["ContactComponent"], data: { title: 'Contact' } },
+            { path: 'survey/add', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_18__["SurveyDetailsComponent"], data: { title: 'Add Survey' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'survey/list', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_19__["SurveyListComponent"], data: { title: 'Active Survey' } },
+            { path: 'survey/list/:username', component: _survey_survey_list_survey_list_component__WEBPACK_IMPORTED_MODULE_19__["SurveyListComponent"], data: { title: 'My Survey' } },
+            { path: 'survey/edit/:id', component: _survey_survey_details_survey_details_component__WEBPACK_IMPORTED_MODULE_18__["SurveyDetailsComponent"], data: { title: 'Edit Survey' } },
+            { path: 'survey/result/:id', component: _survey_survey_result_survey_result_component__WEBPACK_IMPORTED_MODULE_24__["SurveyResultComponent"], data: { title: 'Edit Survey' } },
+            { path: 'survey/questions/:id', component: _survey_survey_questions_survey_questions_component__WEBPACK_IMPORTED_MODULE_1__["SurveyQuestionsComponent"], data: { title: 'Survey Questions' } },
+            { path: 'survey/list/delete/:id', component: _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_23__["SurveyDeleteComponent"], data: { title: 'Delete Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'contact/contact-list', component: _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_15__["ContactListComponent"], data: { title: 'Contact List' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'contact/contact-list/add', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_16__["ContactDetailsComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'contact/contact-list/edit/:id', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_16__["ContactDetailsComponent"], data: { title: 'Edit Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'contact/contact-list/delete/:id', component: _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_17__["ContactDeleteComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_22__["AuthGuard"]] },
+            { path: 'register', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], data: { title: 'Register' } },
+            { path: 'editprofile', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_20__["RegisterComponent"], data: { title: 'Edit' } },
+            { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_21__["LoginComponent"], data: { title: 'Register' } },
+            { path: 'logout', redirectTo: '/login', pathMatch: 'full' },
+            { path: '', redirectTo: '/home', pathMatch: 'full' },
+        ]
+    },
+    { path: 'survey/questionsS/1', component: _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_2__["SurveyQComponent"],
+        data: { title: 'Survey Questions' } },
     { path: 'survey/questionsS/2', component: _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_3__["SurveyQ1Component"], data: { title: 'Survey Questions' } },
     { path: 'survey/Results/2', component: _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_4__["SurveyR1Component"], data: { title: 'Survey Questions' } },
     { path: 'survey/submit', component: _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_5__["SurveySubmitComponent"], data: { title: 'Survey Questions' } },
-    { path: 'survey/list/delete/:id', component: _survey_survey_delete_survey_delete_component__WEBPACK_IMPORTED_MODULE_22__["SurveyDeleteComponent"], data: { title: 'Delete Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
-    { path: 'contact/contact-list', component: _contacts_contact_list_contact_list_component__WEBPACK_IMPORTED_MODULE_14__["ContactListComponent"], data: { title: 'Contact List' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
-    { path: 'contact/contact-list/add', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__["ContactDetailsComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
-    { path: 'contact/contact-list/edit/:id', component: _contacts_contact_details_contact_details_component__WEBPACK_IMPORTED_MODULE_15__["ContactDetailsComponent"], data: { title: 'Edit Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
-    { path: 'contact/contact-list/delete/:id', component: _contacts_contact_delete_contact_delete_component__WEBPACK_IMPORTED_MODULE_16__["ContactDeleteComponent"], data: { title: 'Add Contact' }, canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]] },
-    { path: 'register', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_19__["RegisterComponent"], data: { title: 'Register' } },
-    { path: 'editprofile', component: _pages_register_register_component__WEBPACK_IMPORTED_MODULE_19__["RegisterComponent"], data: { title: 'Edit' } },
-    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_20__["LoginComponent"], data: { title: 'Register' } },
-    { path: 'logout', redirectTo: '/login', pathMatch: 'full' },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '**', component: _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_13__["PageNotFoundComponent"] }
+    { path: '**', component: _pages_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_14__["PageNotFoundComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
     AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_6__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"]]
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_7__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -145,7 +154,7 @@ module.exports = "body{\n  font-family: 'Nanum Gothic', sans-serif;\n}\n\n/*# so
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n<flash-messages></flash-messages>\n\n<router-outlet></router-outlet>\n\n<app-footer></app-footer>\n\n\n"
+module.exports = "\n<flash-messages></flash-messages>\n\n<router-outlet></router-outlet>\n\n\n\n"
 
 /***/ }),
 
@@ -230,6 +239,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./survey/survey-submit/survey-submit.component */ "./src/app/survey/survey-submit/survey-submit.component.ts");
 /* harmony import */ var _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./survey/survey-r1/survey-r1.component */ "./src/app/survey/survey-r1/survey-r1.component.ts");
 /* harmony import */ var _pages_link_encrypt_link_encrypt_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./pages/link-encrypt/link-encrypt.component */ "./src/app/pages/link-encrypt/link-encrypt.component.ts");
+/* harmony import */ var _no_layout_no_layout_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./no-layout/no-layout.component */ "./src/app/no-layout/no-layout.component.ts");
 // Developers:
 // Shila Das            (ID# 300969886)
 // Michael Adaikalaraj  (ID# 300958145)
@@ -279,6 +289,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function jwtTokenGetter() {
     return localStorage.getItem("id_token");
 }
@@ -314,7 +325,8 @@ var AppModule = /** @class */ (function () {
                 _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_33__["SurveyQ1Component"],
                 _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_34__["SurveySubmitComponent"],
                 _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_35__["SurveyR1Component"],
-                _pages_link_encrypt_link_encrypt_component__WEBPACK_IMPORTED_MODULE_36__["LinkEncryptComponent"]
+                _pages_link_encrypt_link_encrypt_component__WEBPACK_IMPORTED_MODULE_36__["LinkEncryptComponent"],
+                _no_layout_no_layout_component__WEBPACK_IMPORTED_MODULE_37__["NoLayoutComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -920,6 +932,62 @@ var User = /** @class */ (function () {
     function User() {
     }
     return User;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/no-layout/no-layout.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/no-layout/no-layout.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25vLWxheW91dC9uby1sYXlvdXQuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/no-layout/no-layout.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/no-layout/no-layout.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-header></app-header>\n<flash-messages></flash-messages>\n\n<router-outlet></router-outlet>\n\n<app-footer></app-footer>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/no-layout/no-layout.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/no-layout/no-layout.component.ts ***!
+  \**************************************************/
+/*! exports provided: NoLayoutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoLayoutComponent", function() { return NoLayoutComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var NoLayoutComponent = /** @class */ (function () {
+    function NoLayoutComponent() {
+    }
+    NoLayoutComponent.prototype.ngOnInit = function () {
+    };
+    NoLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-no-layout',
+            template: __webpack_require__(/*! ./no-layout.component.html */ "./src/app/no-layout/no-layout.component.html"),
+            styles: [__webpack_require__(/*! ./no-layout.component.css */ "./src/app/no-layout/no-layout.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], NoLayoutComponent);
+    return NoLayoutComponent;
 }());
 
 
@@ -1766,7 +1834,7 @@ module.exports = ".header-logo{\n  margin-left: 30px;\n  height: 50px;\n}\n\n.na
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for header in each Page-->\n\n<nav class=\"navbar navbar-expand-lg fixed-top navbar-light bg-light\">\n  <a class=\"navbar-brand\" routerLink=\"/\"\n    ><img class=\"header-logo\" src=\"../../../assets/images/logo.jpeg\"\n  /></a>\n  <button\n    class=\"navbar-toggler\"\n    type=\"button\"\n    data-toggle=\"collapse\"\n    data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\"\n    aria-label=\"Toggle navigation\"\n  >\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Home </a>\n      </li>\n      <!-- <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">FAQ</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Contact Us</a>\n      </li> -->\n      <li class=\"nav-item\" *ngIf=\"isLoggedIn()\">\n        <a class=\"nav-link\" routerLink=\"/survey/list\">Active Surveys</a>\n      </li>\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto navbar-right\">\n      <li class=\"nav-item\" *ngIf=\"isLoggedIn()\">\n        <a class=\"nav-link\" routerLink=\"/survey/add\">Create Survey</a>\n      </li>\n\n      <li *ngIf=\"isLoggedIn()\">\n        <a\n          class=\"nav-link dropdown-toggle\"\n          id=\"navbarDropdown\"\n          data-toggle=\"dropdown\"\n          aria-expanded=\"false\"\n        >\n          Welcome, {{ user.displayName }}\n          <div class=\"dropdown-menu dropdown-menu-right\">\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/survey/list/{{ user.username }}\"\n              name=\"mySurvey\"\n              >My Surveys</a\n            >\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/editprofile\"\n              name=\"editProfile\"\n              >Edit Profile</a\n            >\n            <a\n              class=\"dropdown-item\"\n              *ngIf=\"isLoggedIn()\"\n              (click)=\"onLogoutClick()\"\n              routerLink=\"/logout\"\n            >\n              Logout</a\n            >\n          </div>\n        </a>\n      </li>\n      <!-- <li *ngIf=\"!isLoggedIn()\" class=\"nav-item\">\n        <a routerLink=\"/login\" class=\"nav-link\"> Login</a>\n      </li> -->\n    </ul>\n  </div>\n</nav>\n"
+module.exports = "<!-- Developers:\n       Shila Das (ID# 300969886)\n       Michael Adaikalaraj (ID# 300958145)\n       Nikesh Patel (ID# 300970071)\n       Khushboo Sakervala (ID# 300984318)\n       Gurpreet Kaur (ID# 300989390)\n\n WebApp Name: Poll+\n\nBrief Description: Content for header in each Page-->\n\n<nav class=\"navbar navbar-expand-lg fixed-top navbar-light bg-light\">\n  <a class=\"navbar-brand\" routerLink=\"/\"\n    ><img class=\"header-logo\" src=\"../../../assets/images/logo.jpeg\"\n  /></a>\n  <button\n    class=\"navbar-toggler\"\n    type=\"button\"\n    data-toggle=\"collapse\"\n    data-target=\"#navbarSupportedContent\"\n    aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\"\n    aria-label=\"Toggle navigation\"\n  >\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n  <div class=\"navbar-collapse collapse\" id=\"navbarSupportedContent\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Home </a>\n      </li>\n       <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">FAQ</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/\">Contact Us</a>\n      </li>\n      <li class=\"nav-item\" *ngIf=\"isLoggedIn()\">\n        <a class=\"nav-link\" routerLink=\"/survey/list\">Active Surveys</a>\n      </li>\n    </ul>\n\n    <ul class=\"navbar-nav ml-auto navbar-right\">\n      <li class=\"nav-item\" *ngIf=\"isLoggedIn()\">\n        <a class=\"nav-link\" routerLink=\"/survey/add\">Create Survey</a>\n      </li>\n\n      <li *ngIf=\"isLoggedIn()\">\n        <a\n          class=\"nav-link dropdown-toggle\"\n          id=\"navbarDropdown\"\n          data-toggle=\"dropdown\"\n          aria-expanded=\"false\"\n        >\n          Welcome, {{ user.displayName }}\n          <div class=\"dropdown-menu dropdown-menu-right\">\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/survey/list/{{ user.username }}\"\n              name=\"mySurvey\"\n              >My Surveys</a\n            >\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"/editprofile\"\n              name=\"editProfile\"\n              >Edit Profile</a\n            >\n            <a\n              class=\"dropdown-item\"\n              *ngIf=\"isLoggedIn()\"\n              (click)=\"onLogoutClick()\"\n              routerLink=\"/logout\"\n            >\n              Logout</a\n            >\n          </div>\n        </a>\n      </li>\n       <li *ngIf=\"!isLoggedIn()\" class=\"nav-item\">\n        <a routerLink=\"/login\" class=\"nav-link\"> Login</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n"
 
 /***/ }),
 

@@ -30,6 +30,7 @@ random2: number;
 random3: number;
 random4: number;
 selKey = false;
+selLKey = false;
 startExam = false;
 formGroup: FormGroup;
 /** Returns a FormArray with the name 'formArray'. */
@@ -38,7 +39,8 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
   TFs: string[] = ['Yes', 'No'];
   Yrs: string[] = ['less than 1 years', '1-3 years', '3-5 years', 'more than 5 years'];
   Res: string[] = ['PR', 'Citizen', 'Student', 'Work Permit'];
-  Kc: string[] = ['30', '40', '50', 'More than 80'];
+  Kc: string[] = ['7', '14', '30', 'More than 60'];
+  KcL: string[] = ['7', '14', '20', '30', '40', '50', '60', 'More than 80'];
   lst: string[] = ['A people’s person', 'A number cruncher', 'Self motivated'
   , 'An effective communicator', 'Analytical', 'Negotiator', 'Organized and following procedures'];
   midDots: string[] = ['red', 'yellow', 'orange', 'blue', 'pink', 'cyan'];
@@ -52,8 +54,12 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
   private counter3: TimeQComponent;
   counterState = 'counter is ticking';
   count = 0;
+  countL = 0;
   receiveMessage($event) {
     this.count = $event;
+  }
+  receiveMessageL($event) {
+    this.countL = $event;
   }
 
 
@@ -124,7 +130,7 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
       Work3Ctrl: ['',Validators.required],
       Work4Ctrl: ['',Validators.required],
       Work5Ctrl: ['',Validators.required],
-      Work6Ctrl: ['',Validators.required],
+      // Work6Ctrl: ['',Validators.required],
       IntCtrl: ['']
         }),
         this._formBuilder.group({
@@ -138,7 +144,9 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
         this._formBuilder.group({
           midDot: [''],
           ExpCount: [''],
-          keySp: ['']
+          keySp: [''],
+          ExpLCount: [''],
+          keyLSp: ['']
         }),
         this._formBuilder.group({
           redDot: [''],

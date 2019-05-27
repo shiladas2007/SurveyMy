@@ -1,4 +1,88 @@
 
 <h1>Response of Users</h1>
 <a [routerLink]="" (click)="download()" >Download</a><br>
-<textarea style="width:60%" rows="5">{{ output }} </textarea>
+<a [routerLink]="" (click)="downloadC()" >Download Customized Report</a><br>
+<!-- <textarea style="width:60%" rows="5">{{ output }} </textarea> -->
+
+<div class="d-none d-sm-block d-md-block">
+  <div class="row">
+    <div class="col-lg-4">
+      <p class="font-weight-bold">Name/Email</p>
+    </div>
+    <div class="col-lg-2">
+      <p class="font-weight-bold">Recommended Job</p>
+    </div>
+    <div class="col-lg-2">
+      <p class="font-weight-bold">Motivation Score
+        (0-7)
+        less(0-2) normal(3-5) high(6-7)
+      </p>
+    </div>
+    <div class="col-lg-2">
+      <p class="font-weight-bold">Memory Sore
+          (0-13)
+          clever(0-4) smart(5-8) sharp(9-13)
+      </p>
+    </div>
+    <div class="col-lg-2">
+      <p class="font-weight-bold">Aptitude Score
+        (0-6)
+        low(0-2) mid(3-4) high(5-6)
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div *ngFor="let res of ans1cs; let i = index">
+  <div class="row">
+    <div class="col-lg-4">
+      <p class="font-weight-bold"> {{ res.Name }} / {{ res.Email}}</p>
+    </div>
+
+    <div class="col-lg-2" >
+      <p>{{res.JobType}}</p>
+    </div>
+    <div class="col-lg-2" >
+      <p *ngIf="res.MotivationScore <= 2">
+          Less Motivated
+      </p>
+      <p *ngIf="res.MotivationScore >= 3 && res.MotivationScore <= 5">
+          Motivated
+        </p>
+        <p *ngIf="res.MotivationScore >= 6">
+          High Motivated
+          </p>
+    </div>
+    <div class="col-lg-2" >
+      <p *ngIf="res.MemoryScore <= 4">
+        Clever
+    </p>
+    <p *ngIf="res.MemoryScore >= 5 && res.MemoryScore <= 8">
+        Smart
+      </p>
+      <p *ngIf="res.MemoryScore >= 9">
+       Sharp
+        </p>
+    </div>
+    <div class="col-lg-2" >
+      <p *ngIf="res.IqScore <= 2">
+        Low
+    </p>
+    <p *ngIf="res.IqScore >= 3 && res.IqScore <= 4">
+        Mid
+      </p>
+      <p *ngIf="res.IqScore >= 5">
+       High
+        </p>
+    </div>
+    <div class="col-lg-2" >
+        <p></p>
+      </div>
+
+  </div>
+  <hr />
+</div>
+
+

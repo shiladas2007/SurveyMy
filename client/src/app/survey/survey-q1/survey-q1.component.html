@@ -5,6 +5,7 @@
     <app-time-q #counter1 style="display: none"></app-time-q>
     <app-time-q #counter2 style="display: none"></app-time-q>
     <app-time-q #counter3 style="display: none"></app-time-q>
+
   </div><br>
    </h4>
 <br>
@@ -197,15 +198,17 @@ class="example-radio-group" [(ngModel)]="ans1.Work5" name="Work5"
 >
 <mat-radio-button class="example-radio-button" value="Operating machines">Operating machines </mat-radio-button>
 <mat-radio-button class="example-radio-button" value="Office work">Office work</mat-radio-button>
-</mat-radio-group><hr>
-<mat-radio-group formControlName="Work6Ctrl" required
+</mat-radio-group>
+<hr>
+<!-- <mat-radio-group formControlName="Work6Ctrl" required
 aria-labelledby="example-radio-group-label"
 class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
 >
-<mat-radio-button class="example-radio-button" value="perating own business" >perating own business</mat-radio-button>
+<mat-radio-button class="example-radio-button" value="Operating own business" >perating own business</mat-radio-button>
 <mat-radio-button class="example-radio-button" value="Woking in a company">Woking in a company</mat-radio-button>
 </mat-radio-group><br>
-<mat-form-field class="example-full-width">
+ -->
+ <mat-form-field class="example-full-width">
   <input matInput [(ngModel)]="ans1.Interest" formControlName="IntCtrl" name="Interest" placeholder="Mention your career interest" >
 </mat-form-field>
 <br>
@@ -328,6 +331,28 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
                         value="{{count}}"
                         [(ngModel)]="ans1.keySp"
                         formControlName="keySp"
+                      />
+<br>
+<label id="example-radio-group-label"><b>2nd Attempt:</b> You are given 15 seconds; how many times can you tab on the right arrow key?</label>
+          <mat-radio-group  (change)="selLKey=true;" [disabled]="selLKey" required
+          aria-labelledby="example-radio-group-label" name="ExpLCount" formControlName="ExpLCount"
+          class="example-radio-group"  [(ngModel)]="ans1.ExpLCount"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of KcL" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+        <label [hidden]="!selLKey">Check Now your current speed!</label>
+        <app-key-count (messageEvent)="receiveMessageL($event)"></app-key-count>
+                      <input [hidden]="!selLKey"
+                        name="keyLSp"
+                        type="text" readonly="readonly"
+                        style="width: 50%; margin-left: 30px;"
+                        id="keyLSp"
+                        value="{{countL}}"
+                        [(ngModel)]="ans1.keyLSp"
+                        formControlName="keyLSp"
                       />
 
       <div>

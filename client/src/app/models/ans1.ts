@@ -28,6 +28,8 @@ export class Ans1 {
       midDot: string;
       ExpCount: string;
       keySp: string;
+      ExpLCount: string;
+      keyLSp: string;
       redDot: string;
       blueDot: string;
       nums: string;

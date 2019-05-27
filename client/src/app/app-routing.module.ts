@@ -58,8 +58,7 @@ const routes: Routes = [
     ]
 },
 
-  {path: 'survey/questionsS/1', component: SurveyQComponent
-  , data: {title: 'Survey Questions'}},
+  {path: 'survey/questionsS/1', component: SurveyQComponent, data: {title: 'Survey Questions'}},
   {path: 'survey/questionsS/2', component: SurveyQ1Component, data: {title: 'Survey Questions'}},
   {path: 'survey/Results/2', component: SurveyR1Component, data: {title: 'Survey Questions'}},
   {path: 'survey/submit', component: SurveySubmitComponent, data: {title: 'Survey Questions'}},

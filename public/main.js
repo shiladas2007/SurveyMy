@@ -113,8 +113,7 @@ var routes = [
             { path: '', redirectTo: '/home', pathMatch: 'full' },
         ]
     },
-    { path: 'survey/questionsS/1', component: _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_2__["SurveyQComponent"],
-        data: { title: 'Survey Questions' } },
+    { path: 'survey/questionsS/1', component: _survey_survey_q_survey_q_component__WEBPACK_IMPORTED_MODULE_2__["SurveyQComponent"], data: { title: 'Survey Questions' } },
     { path: 'survey/questionsS/2', component: _survey_survey_q1_survey_q1_component__WEBPACK_IMPORTED_MODULE_3__["SurveyQ1Component"], data: { title: 'Survey Questions' } },
     { path: 'survey/Results/2', component: _survey_survey_r1_survey_r1_component__WEBPACK_IMPORTED_MODULE_4__["SurveyR1Component"], data: { title: 'Survey Questions' } },
     { path: 'survey/submit', component: _survey_survey_submit_survey_submit_component__WEBPACK_IMPORTED_MODULE_5__["SurveySubmitComponent"], data: { title: 'Survey Questions' } },
@@ -776,6 +775,29 @@ var Ans1 = /** @class */ (function () {
     function Ans1() {
     }
     return Ans1;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/models/ans1c.ts":
+/*!*********************************!*\
+  !*** ./src/app/models/ans1c.ts ***!
+  \*********************************/
+/*! exports provided: Ans1c */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ans1c", function() { return Ans1c; });
+var Ans1c = /** @class */ (function () {
+    function Ans1c() {
+        this.MemoryScore = 0;
+        this.MotivationScore = 0;
+        this.IqScore = 0;
+    }
+    return Ans1c;
 }());
 
 
@@ -2093,8 +2115,8 @@ var SurveyService = /** @class */ (function () {
         this.authToken = null;
         this.endpoint = 'https://shilasurvey.herokuapp.com/api/survey/';
         this.endpoint1 = 'https://shilasurvey.herokuapp.com/api/ans1/';
-        //private endpoint = "http://localhost:3000/api/survey/";
-        // private endpoint1 = "http://localhost:3000/api/ans1/";
+        // private endpoint = "http://localhost:3000/api/survey/";
+        //private endpoint1 = "http://localhost:3000/api/ans1/";
         this.httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                 "Content-Type": "application/json",
@@ -2906,7 +2928,7 @@ module.exports = ".example-radio-group {\r\n\r\n  margin: 15px 0;\r\n  display: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<br><br><br>\n<h1> Readiness to Engage in Employment – Questionnaire </h1>\n<h4>   <div class=\"counter-wrapper\">\n    <app-time-q #counter></app-time-q>\n    <app-time-q #counter1 style=\"display: none\"></app-time-q>\n    <app-time-q #counter2 style=\"display: none\"></app-time-q>\n    <app-time-q #counter3 style=\"display: none\"></app-time-q>\n  </div><br>\n   </h4>\n<br>\n<form [formGroup]=\"formGroup\">\n    <mat-horizontal-stepper formArrayName=\"formArray\" [linear]=\"true\" #stepper>\n        <mat-step [editable]=\"false\" formGroupName=\"0\" [stepControl]=\"formArray?.get([0])\">\n            <ng-template matStepLabel></ng-template>\n    <mat-card class=\"example-card\"  >\n        <mat-card-header class=\"cardHeader\">\n            General Info\n        </mat-card-header>\n        <mat-card-content>\n<hr>\n\n      <mat-form-field class=\"example-full-width\">\n        <input matInput placeholder=\"Name\" name=\"Name\" formControlName=\"NameCtrl\" [(ngModel)]=\"ans1.Name\" required >\n        <mat-error>This field is required</mat-error>\n      </mat-form-field><br>\n      <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Email\" name=\"Email\"formControlName=\"EmailCtrl\"  type=\"email\" required  [(ngModel)]=\"ans1.Email\">\n          <mat-error>This field is required</mat-error>\n        </mat-form-field><br>\n      <mat-form-field>\n        <input matInput placeholder=\"Age\" name=\"Age\" formControlName=\"AgeCtrl\"   [(ngModel)]=\"ans1.Age\">\n      </mat-form-field>\n\n\n      <div>\n        <button mat-button type=\"button\" autofocus matStepperNext (click)=\"start()\">Start Exam</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</mat-step>\n\n  <mat-step editable=\"false\" formGroupName=\"1\" [stepControl]=\"formArray?.get([1])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Immigration Status\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Are you a visible minority or a new immigrant woman?</label>\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\" name=\"isImi\" #isImi required\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isImi\" formControlName=\"isImiCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n        <mat-error *ngIf=\"isImi.invalid\">required</mat-error>\n      </mat-radio-group>\n      <div>\n\n        <label id=\"example-radio-group-label\">2. When did you arrived in Canada?</label>\n        <mat-radio-group required\n        aria-labelledby=\"example-radio-group-label\" name=\"isImiYr\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isImiYr\" formControlName=\"isImiYrCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Yrs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n\n\n      <label id=\"example-radio-group-label\">3. Are you able to legally work in Canada?</label>\n      <mat-radio-group required\n      aria-labelledby=\"example-radio-group-label\" name=\"isWork\"  formControlName=\"isWorkCtrl\"\n      class=\"example-radio-group\"  [(ngModel)]=\"ans1.isWork\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <label id=\"example-radio-group-label\">4. What is your resident status?</label>\n    <mat-radio-group name=\"Res\" required\n    aria-labelledby=\"example-radio-group-label\" formControlName=\"ResCtrl\"\n    class=\"example-radio-group\"  [(ngModel)]=\"ans1.Res\"\n    >\n    <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Res\" [value]=\"item\">\n      {{item}}\n    </mat-radio-button>\n  </mat-radio-group>\n\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"2\" [stepControl]=\"formArray?.get([2])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Work in Canada\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Have you ever worked in Canada?</label>\n      <mat-radio-group required\n        aria-labelledby=\"example-radio-group-label\" name=\"isWorked\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isWorked\" formControlName=\"isWorkedCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n      <div>\n\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput required formControlName=\"NoJobsCtrl\" placeholder=\"2. How many jobs have you worked on?\" name=\"NoJobs\"  [(ngModel)]=\"ans1.NoJobs\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput required [(ngModel)]=\"ans1.WorkPer\"  formControlName=\"WorkPerCtrl\" name=\"WorkPer\" placeholder=\"3. What is the maximum work period you have worked in a job (months/years)?\" >\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput  [(ngModel)]=\"ans1.jobL\" formControlName=\"jobLCtrl\" name=\"jobL\" placeholder=\"4. Why did you leave your previous job?\" >\n        </mat-form-field><br>\n      <label id=\"example-radio-group-label\">5. Have you done any volunteering jobs in Canada?</label>\n      <mat-radio-group required\n      aria-labelledby=\"example-radio-group-label\" name=\"isVol\" formControlName=\"isVolCtrl\"\n      class=\"example-radio-group\"  [(ngModel)]=\"ans1.isVol\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <mat-form-field class=\"example-full-width\">\n      <input matInput required formControlName=\"VolCtrl\" [(ngModel)]=\"ans1.Vol\" name=\"Vol\" placeholder=\"6. For how long have you done the volunteering Work?\" >\n    </mat-form-field>\n<br>\n\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"3\" [stepControl]=\"formArray?.get([3])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              What type of work interests you?\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Choose one option for each row</label>\n\n      <mat-radio-group formControlName=\"Work1Ctrl\" required\n        aria-labelledby=\"example-radio-group-label\" name=\"Work1\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.Work1\"\n        >\n        <mat-radio-button class=\"example-radio-button\" value=\"Working alone\" >Working alone</mat-radio-button>\n        <mat-radio-button class=\"example-radio-button\" value=\"Working with people\">Working with people</mat-radio-button>\n      </mat-radio-group>\n      <hr>\n      <mat-radio-group formControlName=\"Work2Ctrl\" required\n      aria-labelledby=\"example-radio-group-label\" name=\"Work2\"\n      class=\"example-radio-group\" [(ngModel)]=\"ans1.Work2\"\n      >\n      <mat-radio-button class=\"example-radio-button\" value=\"Working outdoors\" >Working outdoors</mat-radio-button>\n      <mat-radio-button class=\"example-radio-button\" value=\"Working indoors\" >Working indoors</mat-radio-button>\n    </mat-radio-group><hr>\n    <mat-radio-group formControlName=\"Work3Ctrl\" required\n    aria-labelledby=\"example-radio-group-label\"\n    class=\"example-radio-group\" [(ngModel)]=\"ans1.Work3\" name=\"Work3\"\n    >\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with numbers\">Working with numbers</mat-radio-button>\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with ideas\">Working with ideas</mat-radio-button>\n  </mat-radio-group><hr>\n  <mat-radio-group formControlName=\"Work4Ctrl\"\n  aria-labelledby=\"example-radio-group-label\" required\n  class=\"example-radio-group\" [(ngModel)]=\"ans1.Work4\" name=\"Work4\"\n  >\n  <mat-radio-button class=\"example-radio-button\" value=\"Cleaning and organizing\">Cleaning and organizing </mat-radio-button>\n  <mat-radio-button class=\"example-radio-button\" value=\"Creating new objects\" >Creating new objects</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group formControlName=\"Work5Ctrl\"\naria-labelledby=\"example-radio-group-label\" required\nclass=\"example-radio-group\" [(ngModel)]=\"ans1.Work5\" name=\"Work5\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"Operating machines\">Operating machines </mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Office work\">Office work</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group formControlName=\"Work6Ctrl\" required\naria-labelledby=\"example-radio-group-label\"\nclass=\"example-radio-group\" [(ngModel)]=\"ans1.Work6\" name=\"Work6\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"perating own business\" >perating own business</mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Woking in a company\">Woking in a company</mat-radio-button>\n</mat-radio-group><br>\n<mat-form-field class=\"example-full-width\">\n  <input matInput [(ngModel)]=\"ans1.Interest\" formControlName=\"IntCtrl\" name=\"Interest\" placeholder=\"Mention your career interest\" >\n</mat-form-field>\n<br>\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"4\" [stepControl]=\"formArray?.get([4])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Attempts made for job\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n\n          <label id=\"example-radio-group-label\">1. I  have explored job possibilities for me</label>\n          <mat-radio-group required\n          aria-labelledby=\"example-radio-group-label\" name=\"isExpJob\" formControlName=\"isExpJob\"\n          class=\"example-radio-group\" [(ngModel)]=\"ans1.isExpJob\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">2. I have explored possible organizations for me to work</label>\n          <mat-radio-group formControlName=\"isExpOrg\" required\n          aria-labelledby=\"example-radio-group-label\" name=\"isExpOrg\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.isExpOrg\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">3. I have explored interview sessions</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpInt\" required\n          aria-labelledby=\"example-radio-group-label\" formControlName=\"isExpInt\"\n          class=\"example-radio-group\" name=\"isExpInt\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">4. I have explored circulating my resume to as many contacts as possible</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpRes\" name=\"isExpRes\" formControlName=\"isExpRes\"\n          aria-labelledby=\"example-radio-group-label\" required\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">5. I have prepared for possible interview sessions</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpPre\" name=\"isExpPre\" formControlName=\"isExpPre\"\n          aria-labelledby=\"example-radio-group-label\" required\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">6. I have identified five target companies that I have to send my resume to them</label>\n          <mat-radio-group name=\"isExpTar\" formControlName=\"isExpTar\" required\n          aria-labelledby=\"example-radio-group-label\"  [(ngModel)]=\"ans1.isExpTar\"\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"5\" [stepControl]=\"formArray?.get([5])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Motivation/ initiative\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n            <img  src=\"../../../assets/images/middot.jpg\" width=\"50%\" height=\"15%\"/>\n\n          <mat-radio-group   required\n          aria-labelledby=\"example-radio-group-label\" name=\"midDot\" formControlName=\"midDot\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.midDot\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of midDots\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n          <label id=\"example-radio-group-label\">You are given 15 seconds; how many times can you tab on the right arrow key?</label>\n          <mat-radio-group  (change)=\"selKey=true;\" [disabled]=\"selKey\" required\n          aria-labelledby=\"example-radio-group-label\" name=\"ExpCount\" formControlName=\"ExpCount\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.ExpCount\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Kc\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n        <label [hidden]=\"!selKey\">Check Now your current speed!</label>\n        <app-key-count (messageEvent)=\"receiveMessage($event)\"></app-key-count>\n                      <input [hidden]=\"!selKey\"\n                        name=\"keySp\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"keySp\"\n                        value=\"{{count}}\"\n                        [(ngModel)]=\"ans1.keySp\"\n                        formControlName=\"keySp\"\n                      />\n\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"6\" [stepControl]=\"formArray?.get([6])\">\n\n        <ng-template matStepLabel></ng-template>\n        <mat-card class=\"example-card\">\n            <mat-card-header class=\"cardHeader\">\n                Memory Test\n            </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Click on button see the image of dots. please count the dots by color.!</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked1\"\n            (click)=\"clicked1=!clicked1; img1=false; counter1.start();\">Show</button>\n            <span [hidden]=\"!span1\">How many red dot is there?<br> </span>\n            <img  src=\"../../../assets/images/mem1.jpg\" [hidden]=\"img1\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span1\"\n            name=\"redDot\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"redDot\"\n            [(ngModel)]=\"ans1.redDot\"\n            formControlName=\"redDot\"\n          /><br>\n          <span [hidden]=\"!span1\">How many blue dot is there?<br> </span>\n          <input [hidden]=\"!span1\"\n          name=\"blueDot\"\n          type=\"text\"\n          style=\"width: 50%; margin-left: 30px;\"\n          id=\"blueDot\"\n          [(ngModel)]=\"ans1.blueDot\"\n          formControlName=\"blueDot\"\n        />\n\n            <br>\n            <label id=\"example-radio-group-label\">Click on button see the image! Please read all the numbers from image.</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked2\"\n            (click)=\"clicked2=!clicked2; img2=false; counter2.start();\">Show</button>\n            <span [hidden]=\"!span2\">Can you write down the numbers from the image?<br> </span>\n            <img  src=\"../../../assets/images/mem2.png\" [hidden]=\"img2\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span2\"\n            name=\"nums\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"nums\"\n            [(ngModel)]=\"ans1.nums\"\n            formControlName=\"nums\"\n          />\n          <br>\n          <label id=\"example-radio-group-label\">Click on button see the questions!</label><br>\n          <button type=\"button\" class=\"btn\" [hidden]=\"clicked3\"\n          (click)=\"clicked3=!clicked3; img3=false; counter3.start(); genN();\">Show</button>\n          <label [hidden]=\"img3\">{{random1}} {{random2}} {{random3}} {{random4}}</label>\n          <span [hidden]=\"!span3\">Can you write down the numbers which has shown?<br> </span>\n          <input [hidden]=\"!span3\"\n          name=\"num1Typed\"\n          type=\"text\"\n          style=\"width: 50%; margin-left: 30px;\"\n          id=\"num1Typed\"\n          [(ngModel)]=\"ans1.num1Typed\"\n          formControlName=\"num1Typed\"\n        />\n\n        <div>\n          <button mat-button type=\"button\" matStepperNext>Next</button>\n        </div>\n      </mat-card-content>\n    </mat-card>\n\n    </mat-step>\n    <mat-step formGroupName=\"7\" [stepControl]=\"formArray?.get([7])\">\n\n          <ng-template matStepLabel></ng-template>\n          <mat-card class=\"example-card\">\n              <mat-card-header class=\"cardHeader\">\n                  Match with you\n              </mat-card-header>\n            <mat-card-content>\n                <hr>\n                <label> What number comes in the blank in each sequence below?</label>\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput [(ngModel)]=\"ans1.n1\" formControlName=\"n1Ctrl\" name=\"n1\" placeholder=\"4, 8, 16, 32, 64, _______\" >\n                </mat-form-field>\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput [(ngModel)]=\"ans1.n2\" formControlName=\"n2Ctrl\" name=\"n2\" placeholder=\"1, 3, 6, 10, 15, _______\" >\n                </mat-form-field>\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput [(ngModel)]=\"ans1.n3\" formControlName=\"n3Ctrl\" name=\"n3\" placeholder=\"500, 475, 425, 350, 250, ______\" >\n                </mat-form-field>\n                <mat-form-field>\n                    <mat-label>What describe you best?</mat-label>\n                    <mat-select  [(ngModel)]=\"ans1.desc\" name=\"desc\" required formControlName=\"desc\" >\n                      <mat-option *ngFor=\"let item of lst\" [value]=\"item\">\n                        {{item}}\n                      </mat-option>\n                    </mat-select>\n                  </mat-form-field>\n          <div>\n              <button mat-button type=\"button\"  (click)=\"submit()\">Submit</button>\n          </div>\n        </mat-card-content>\n      </mat-card>\n\n      </mat-step>\n\n\n</mat-horizontal-stepper>\n</form>\n"
+module.exports = "<br><br><br>\n<h1> Readiness to Engage in Employment – Questionnaire </h1>\n<h4>   <div class=\"counter-wrapper\">\n    <app-time-q #counter></app-time-q>\n    <app-time-q #counter1 style=\"display: none\"></app-time-q>\n    <app-time-q #counter2 style=\"display: none\"></app-time-q>\n    <app-time-q #counter3 style=\"display: none\"></app-time-q>\n\n  </div><br>\n   </h4>\n<br>\n<form [formGroup]=\"formGroup\">\n    <mat-horizontal-stepper formArrayName=\"formArray\" [linear]=\"true\" #stepper>\n        <mat-step [editable]=\"false\" formGroupName=\"0\" [stepControl]=\"formArray?.get([0])\">\n            <ng-template matStepLabel></ng-template>\n    <mat-card class=\"example-card\"  >\n        <mat-card-header class=\"cardHeader\">\n            General Info\n        </mat-card-header>\n        <mat-card-content>\n<hr>\n\n      <mat-form-field class=\"example-full-width\">\n        <input matInput placeholder=\"Name\" name=\"Name\" formControlName=\"NameCtrl\" [(ngModel)]=\"ans1.Name\" required >\n        <mat-error>This field is required</mat-error>\n      </mat-form-field><br>\n      <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Email\" name=\"Email\"formControlName=\"EmailCtrl\"  type=\"email\" required  [(ngModel)]=\"ans1.Email\">\n          <mat-error>This field is required</mat-error>\n        </mat-form-field><br>\n      <mat-form-field>\n        <input matInput placeholder=\"Age\" name=\"Age\" formControlName=\"AgeCtrl\"   [(ngModel)]=\"ans1.Age\">\n      </mat-form-field>\n\n\n      <div>\n        <button mat-button type=\"button\" autofocus matStepperNext (click)=\"start()\">Start Exam</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</mat-step>\n\n  <mat-step editable=\"false\" formGroupName=\"1\" [stepControl]=\"formArray?.get([1])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Immigration Status\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Are you a visible minority or a new immigrant woman?</label>\n      <mat-radio-group\n        aria-labelledby=\"example-radio-group-label\" name=\"isImi\" #isImi required\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isImi\" formControlName=\"isImiCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n        <mat-error *ngIf=\"isImi.invalid\">required</mat-error>\n      </mat-radio-group>\n      <div>\n\n        <label id=\"example-radio-group-label\">2. When did you arrived in Canada?</label>\n        <mat-radio-group required\n        aria-labelledby=\"example-radio-group-label\" name=\"isImiYr\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isImiYr\" formControlName=\"isImiYrCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Yrs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n\n\n      <label id=\"example-radio-group-label\">3. Are you able to legally work in Canada?</label>\n      <mat-radio-group required\n      aria-labelledby=\"example-radio-group-label\" name=\"isWork\"  formControlName=\"isWorkCtrl\"\n      class=\"example-radio-group\"  [(ngModel)]=\"ans1.isWork\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <label id=\"example-radio-group-label\">4. What is your resident status?</label>\n    <mat-radio-group name=\"Res\" required\n    aria-labelledby=\"example-radio-group-label\" formControlName=\"ResCtrl\"\n    class=\"example-radio-group\"  [(ngModel)]=\"ans1.Res\"\n    >\n    <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Res\" [value]=\"item\">\n      {{item}}\n    </mat-radio-button>\n  </mat-radio-group>\n\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"2\" [stepControl]=\"formArray?.get([2])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Work in Canada\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n      <label id=\"example-radio-group-label\">1. Have you ever worked in Canada?</label>\n      <mat-radio-group required\n        aria-labelledby=\"example-radio-group-label\" name=\"isWorked\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.isWorked\" formControlName=\"isWorkedCtrl\"\n        >\n        <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n          {{item}}\n        </mat-radio-button>\n      </mat-radio-group>\n      <div>\n\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput required formControlName=\"NoJobsCtrl\" placeholder=\"2. How many jobs have you worked on?\" name=\"NoJobs\"  [(ngModel)]=\"ans1.NoJobs\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput required [(ngModel)]=\"ans1.WorkPer\"  formControlName=\"WorkPerCtrl\" name=\"WorkPer\" placeholder=\"3. What is the maximum work period you have worked in a job (months/years)?\" >\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput  [(ngModel)]=\"ans1.jobL\" formControlName=\"jobLCtrl\" name=\"jobL\" placeholder=\"4. Why did you leave your previous job?\" >\n        </mat-form-field><br>\n      <label id=\"example-radio-group-label\">5. Have you done any volunteering jobs in Canada?</label>\n      <mat-radio-group required\n      aria-labelledby=\"example-radio-group-label\" name=\"isVol\" formControlName=\"isVolCtrl\"\n      class=\"example-radio-group\"  [(ngModel)]=\"ans1.isVol\"\n      >\n      <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n        {{item}}\n      </mat-radio-button>\n    </mat-radio-group>\n\n    <mat-form-field class=\"example-full-width\">\n      <input matInput required formControlName=\"VolCtrl\" [(ngModel)]=\"ans1.Vol\" name=\"Vol\" placeholder=\"6. For how long have you done the volunteering Work?\" >\n    </mat-form-field>\n<br>\n\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"3\" [stepControl]=\"formArray?.get([3])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              What type of work interests you?\n          </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Choose one option for each row</label>\n\n      <mat-radio-group formControlName=\"Work1Ctrl\" required\n        aria-labelledby=\"example-radio-group-label\" name=\"Work1\"\n        class=\"example-radio-group\"  [(ngModel)]=\"ans1.Work1\"\n        >\n        <mat-radio-button class=\"example-radio-button\" value=\"Working alone\" >Working alone</mat-radio-button>\n        <mat-radio-button class=\"example-radio-button\" value=\"Working with people\">Working with people</mat-radio-button>\n      </mat-radio-group>\n      <hr>\n      <mat-radio-group formControlName=\"Work2Ctrl\" required\n      aria-labelledby=\"example-radio-group-label\" name=\"Work2\"\n      class=\"example-radio-group\" [(ngModel)]=\"ans1.Work2\"\n      >\n      <mat-radio-button class=\"example-radio-button\" value=\"Working outdoors\" >Working outdoors</mat-radio-button>\n      <mat-radio-button class=\"example-radio-button\" value=\"Working indoors\" >Working indoors</mat-radio-button>\n    </mat-radio-group><hr>\n    <mat-radio-group formControlName=\"Work3Ctrl\" required\n    aria-labelledby=\"example-radio-group-label\"\n    class=\"example-radio-group\" [(ngModel)]=\"ans1.Work3\" name=\"Work3\"\n    >\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with numbers\">Working with numbers</mat-radio-button>\n    <mat-radio-button class=\"example-radio-button\" value=\"Working with ideas\">Working with ideas</mat-radio-button>\n  </mat-radio-group><hr>\n  <mat-radio-group formControlName=\"Work4Ctrl\"\n  aria-labelledby=\"example-radio-group-label\" required\n  class=\"example-radio-group\" [(ngModel)]=\"ans1.Work4\" name=\"Work4\"\n  >\n  <mat-radio-button class=\"example-radio-button\" value=\"Cleaning and organizing\">Cleaning and organizing </mat-radio-button>\n  <mat-radio-button class=\"example-radio-button\" value=\"Creating new objects\" >Creating new objects</mat-radio-button>\n</mat-radio-group><hr>\n<mat-radio-group formControlName=\"Work5Ctrl\"\naria-labelledby=\"example-radio-group-label\" required\nclass=\"example-radio-group\" [(ngModel)]=\"ans1.Work5\" name=\"Work5\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"Operating machines\">Operating machines </mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Office work\">Office work</mat-radio-button>\n</mat-radio-group>\n<hr>\n<!-- <mat-radio-group formControlName=\"Work6Ctrl\" required\naria-labelledby=\"example-radio-group-label\"\nclass=\"example-radio-group\" [(ngModel)]=\"ans1.Work6\" name=\"Work6\"\n>\n<mat-radio-button class=\"example-radio-button\" value=\"Operating own business\" >perating own business</mat-radio-button>\n<mat-radio-button class=\"example-radio-button\" value=\"Woking in a company\">Woking in a company</mat-radio-button>\n</mat-radio-group><br>\n -->\n <mat-form-field class=\"example-full-width\">\n  <input matInput [(ngModel)]=\"ans1.Interest\" formControlName=\"IntCtrl\" name=\"Interest\" placeholder=\"Mention your career interest\" >\n</mat-form-field>\n<br>\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"4\" [stepControl]=\"formArray?.get([4])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Attempts made for job\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n\n          <label id=\"example-radio-group-label\">1. I  have explored job possibilities for me</label>\n          <mat-radio-group required\n          aria-labelledby=\"example-radio-group-label\" name=\"isExpJob\" formControlName=\"isExpJob\"\n          class=\"example-radio-group\" [(ngModel)]=\"ans1.isExpJob\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">2. I have explored possible organizations for me to work</label>\n          <mat-radio-group formControlName=\"isExpOrg\" required\n          aria-labelledby=\"example-radio-group-label\" name=\"isExpOrg\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.isExpOrg\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">3. I have explored interview sessions</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpInt\" required\n          aria-labelledby=\"example-radio-group-label\" formControlName=\"isExpInt\"\n          class=\"example-radio-group\" name=\"isExpInt\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">4. I have explored circulating my resume to as many contacts as possible</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpRes\" name=\"isExpRes\" formControlName=\"isExpRes\"\n          aria-labelledby=\"example-radio-group-label\" required\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">5. I have prepared for possible interview sessions</label>\n          <mat-radio-group  [(ngModel)]=\"ans1.isExpPre\" name=\"isExpPre\" formControlName=\"isExpPre\"\n          aria-labelledby=\"example-radio-group-label\" required\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n        <label id=\"example-radio-group-label\">6. I have identified five target companies that I have to send my resume to them</label>\n          <mat-radio-group name=\"isExpTar\" formControlName=\"isExpTar\" required\n          aria-labelledby=\"example-radio-group-label\"  [(ngModel)]=\"ans1.isExpTar\"\n          class=\"example-radio-group\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of TFs\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"5\" [stepControl]=\"formArray?.get([5])\">\n\n      <ng-template matStepLabel></ng-template>\n      <mat-card class=\"example-card\">\n          <mat-card-header class=\"cardHeader\">\n              Motivation/ initiative\n          </mat-card-header>\n        <mat-card-content>\n            <hr>\n            <img  src=\"../../../assets/images/middot.jpg\" width=\"50%\" height=\"15%\"/>\n\n          <mat-radio-group   required\n          aria-labelledby=\"example-radio-group-label\" name=\"midDot\" formControlName=\"midDot\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.midDot\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of midDots\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n          <label id=\"example-radio-group-label\">You are given 15 seconds; how many times can you tab on the right arrow key?</label>\n          <mat-radio-group  (change)=\"selKey=true;\" [disabled]=\"selKey\" required\n          aria-labelledby=\"example-radio-group-label\" name=\"ExpCount\" formControlName=\"ExpCount\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.ExpCount\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of Kc\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n        <label [hidden]=\"!selKey\">Check Now your current speed!</label>\n        <app-key-count (messageEvent)=\"receiveMessage($event)\"></app-key-count>\n                      <input [hidden]=\"!selKey\"\n                        name=\"keySp\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"keySp\"\n                        value=\"{{count}}\"\n                        [(ngModel)]=\"ans1.keySp\"\n                        formControlName=\"keySp\"\n                      />\n<br>\n<label id=\"example-radio-group-label\"><b>2nd Attempt:</b> You are given 15 seconds; how many times can you tab on the right arrow key?</label>\n          <mat-radio-group  (change)=\"selLKey=true;\" [disabled]=\"selLKey\" required\n          aria-labelledby=\"example-radio-group-label\" name=\"ExpLCount\" formControlName=\"ExpLCount\"\n          class=\"example-radio-group\"  [(ngModel)]=\"ans1.ExpLCount\"\n          >\n          <mat-radio-button class=\"example-radio-button\" *ngFor=\"let item of KcL\" [value]=\"item\">\n            {{item}}\n          </mat-radio-button>\n        </mat-radio-group>\n\n        <label [hidden]=\"!selLKey\">Check Now your current speed!</label>\n        <app-key-count (messageEvent)=\"receiveMessageL($event)\"></app-key-count>\n                      <input [hidden]=\"!selLKey\"\n                        name=\"keyLSp\"\n                        type=\"text\" readonly=\"readonly\"\n                        style=\"width: 50%; margin-left: 30px;\"\n                        id=\"keyLSp\"\n                        value=\"{{countL}}\"\n                        [(ngModel)]=\"ans1.keyLSp\"\n                        formControlName=\"keyLSp\"\n                      />\n\n      <div>\n        <button mat-button type=\"button\" matStepperNext>Next</button>\n      </div>\n    </mat-card-content>\n  </mat-card>\n\n  </mat-step>\n  <mat-step editable=\"false\" formGroupName=\"6\" [stepControl]=\"formArray?.get([6])\">\n\n        <ng-template matStepLabel></ng-template>\n        <mat-card class=\"example-card\">\n            <mat-card-header class=\"cardHeader\">\n                Memory Test\n            </mat-card-header>\n          <mat-card-content>\n              <hr>\n            <label id=\"example-radio-group-label\">Click on button see the image of dots. please count the dots by color.!</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked1\"\n            (click)=\"clicked1=!clicked1; img1=false; counter1.start();\">Show</button>\n            <span [hidden]=\"!span1\">How many red dot is there?<br> </span>\n            <img  src=\"../../../assets/images/mem1.jpg\" [hidden]=\"img1\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span1\"\n            name=\"redDot\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"redDot\"\n            [(ngModel)]=\"ans1.redDot\"\n            formControlName=\"redDot\"\n          /><br>\n          <span [hidden]=\"!span1\">How many blue dot is there?<br> </span>\n          <input [hidden]=\"!span1\"\n          name=\"blueDot\"\n          type=\"text\"\n          style=\"width: 50%; margin-left: 30px;\"\n          id=\"blueDot\"\n          [(ngModel)]=\"ans1.blueDot\"\n          formControlName=\"blueDot\"\n        />\n\n            <br>\n            <label id=\"example-radio-group-label\">Click on button see the image! Please read all the numbers from image.</label><br>\n            <button type=\"button\" class=\"btn\" [hidden]=\"clicked2\"\n            (click)=\"clicked2=!clicked2; img2=false; counter2.start();\">Show</button>\n            <span [hidden]=\"!span2\">Can you write down the numbers from the image?<br> </span>\n            <img  src=\"../../../assets/images/mem2.png\" [hidden]=\"img2\" width=\"50%\" height=\"15%\"/>\n            <input [hidden]=\"!span2\"\n            name=\"nums\"\n            type=\"text\"\n            style=\"width: 50%; margin-left: 30px;\"\n            id=\"nums\"\n            [(ngModel)]=\"ans1.nums\"\n            formControlName=\"nums\"\n          />\n          <br>\n          <label id=\"example-radio-group-label\">Click on button see the questions!</label><br>\n          <button type=\"button\" class=\"btn\" [hidden]=\"clicked3\"\n          (click)=\"clicked3=!clicked3; img3=false; counter3.start(); genN();\">Show</button>\n          <label [hidden]=\"img3\">{{random1}} {{random2}} {{random3}} {{random4}}</label>\n          <span [hidden]=\"!span3\">Can you write down the numbers which has shown?<br> </span>\n          <input [hidden]=\"!span3\"\n          name=\"num1Typed\"\n          type=\"text\"\n          style=\"width: 50%; margin-left: 30px;\"\n          id=\"num1Typed\"\n          [(ngModel)]=\"ans1.num1Typed\"\n          formControlName=\"num1Typed\"\n        />\n\n        <div>\n          <button mat-button type=\"button\" matStepperNext>Next</button>\n        </div>\n      </mat-card-content>\n    </mat-card>\n\n    </mat-step>\n    <mat-step formGroupName=\"7\" [stepControl]=\"formArray?.get([7])\">\n\n          <ng-template matStepLabel></ng-template>\n          <mat-card class=\"example-card\">\n              <mat-card-header class=\"cardHeader\">\n                  Match with you\n              </mat-card-header>\n            <mat-card-content>\n                <hr>\n                <label> What number comes in the blank in each sequence below?</label>\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput [(ngModel)]=\"ans1.n1\" formControlName=\"n1Ctrl\" name=\"n1\" placeholder=\"4, 8, 16, 32, 64, _______\" >\n                </mat-form-field>\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput [(ngModel)]=\"ans1.n2\" formControlName=\"n2Ctrl\" name=\"n2\" placeholder=\"1, 3, 6, 10, 15, _______\" >\n                </mat-form-field>\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput [(ngModel)]=\"ans1.n3\" formControlName=\"n3Ctrl\" name=\"n3\" placeholder=\"500, 475, 425, 350, 250, ______\" >\n                </mat-form-field>\n                <mat-form-field>\n                    <mat-label>What describe you best?</mat-label>\n                    <mat-select  [(ngModel)]=\"ans1.desc\" name=\"desc\" required formControlName=\"desc\" >\n                      <mat-option *ngFor=\"let item of lst\" [value]=\"item\">\n                        {{item}}\n                      </mat-option>\n                    </mat-select>\n                  </mat-form-field>\n          <div>\n              <button mat-button type=\"button\"  (click)=\"submit()\">Submit</button>\n          </div>\n        </mat-card-content>\n      </mat-card>\n\n      </mat-step>\n\n\n</mat-horizontal-stepper>\n</form>\n"
 
 /***/ }),
 
@@ -2958,16 +2980,19 @@ var SurveyQ1Component = /** @class */ (function () {
         this.span2 = false;
         this.span3 = false;
         this.selKey = false;
+        this.selLKey = false;
         this.startExam = false;
         this.TFs = ['Yes', 'No'];
         this.Yrs = ['less than 1 years', '1-3 years', '3-5 years', 'more than 5 years'];
         this.Res = ['PR', 'Citizen', 'Student', 'Work Permit'];
-        this.Kc = ['30', '40', '50', 'More than 80'];
+        this.Kc = ['7', '14', '30', 'More than 60'];
+        this.KcL = ['7', '14', '20', '30', '40', '50', '60', 'More than 80'];
         this.lst = ['A people’s person', 'A number cruncher', 'Self motivated',
             'An effective communicator', 'Analytical', 'Negotiator', 'Organized and following procedures'];
         this.midDots = ['red', 'yellow', 'orange', 'blue', 'pink', 'cyan'];
         this.counterState = 'counter is ticking';
         this.count = 0;
+        this.countL = 0;
     }
     Object.defineProperty(SurveyQ1Component.prototype, "formArray", {
         /** Returns a FormArray with the name 'formArray'. */
@@ -2977,6 +3002,9 @@ var SurveyQ1Component = /** @class */ (function () {
     });
     SurveyQ1Component.prototype.receiveMessage = function ($event) {
         this.count = $event;
+    };
+    SurveyQ1Component.prototype.receiveMessageL = function ($event) {
+        this.countL = $event;
     };
     SurveyQ1Component.prototype.ngOnInit = function () {
         var _this = this;
@@ -3038,7 +3066,7 @@ var SurveyQ1Component = /** @class */ (function () {
                     Work3Ctrl: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
                     Work4Ctrl: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
                     Work5Ctrl: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
-                    Work6Ctrl: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
+                    // Work6Ctrl: ['',Validators.required],
                     IntCtrl: ['']
                 }),
                 this._formBuilder.group({
@@ -3052,7 +3080,9 @@ var SurveyQ1Component = /** @class */ (function () {
                 this._formBuilder.group({
                     midDot: [''],
                     ExpCount: [''],
-                    keySp: ['']
+                    keySp: [''],
+                    ExpLCount: [''],
+                    keyLSp: ['']
                 }),
                 this._formBuilder.group({
                     redDot: [''],
@@ -3352,7 +3382,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<h1>Response of Users</h1>\n<a [routerLink]=\"\" (click)=\"download()\" >Download</a><br>\n<textarea style=\"width:60%\" rows=\"5\">{{ output }} </textarea>\n"
+module.exports = "\n<h1>Response of Users</h1>\n<a [routerLink]=\"\" (click)=\"download()\" >Download</a><br>\n<a [routerLink]=\"\" (click)=\"downloadC()\" >Download Customized Report</a><br>\n<!-- <textarea style=\"width:60%\" rows=\"5\">{{ output }} </textarea> -->\n\n<div class=\"d-none d-sm-block d-md-block\">\n  <div class=\"row\">\n    <div class=\"col-lg-4\">\n      <p class=\"font-weight-bold\">Name/Email</p>\n    </div>\n    <div class=\"col-lg-2\">\n      <p class=\"font-weight-bold\">Recommended Job</p>\n    </div>\n    <div class=\"col-lg-2\">\n      <p class=\"font-weight-bold\">Motivation Score\n        (0-7)\n        less(0-2) normal(3-5) high(6-7)\n      </p>\n    </div>\n    <div class=\"col-lg-2\">\n      <p class=\"font-weight-bold\">Memory Sore\n          (0-13)\n          clever(0-4) smart(5-8) sharp(9-13)\n      </p>\n    </div>\n    <div class=\"col-lg-2\">\n      <p class=\"font-weight-bold\">Aptitude Score\n        (0-6)\n        low(0-2) mid(3-4) high(5-6)\n      </p>\n    </div>\n  </div>\n</div>\n\n<hr />\n\n<div *ngFor=\"let res of ans1cs; let i = index\">\n  <div class=\"row\">\n    <div class=\"col-lg-4\">\n      <p class=\"font-weight-bold\"> {{ res.Name }} / {{ res.Email}}</p>\n    </div>\n\n    <div class=\"col-lg-2\" >\n      <p>{{res.JobType}}</p>\n    </div>\n    <div class=\"col-lg-2\" >\n      <p *ngIf=\"res.MotivationScore <= 2\">\n          Less Motivated\n      </p>\n      <p *ngIf=\"res.MotivationScore >= 3 && res.MotivationScore <= 5\">\n          Motivated\n        </p>\n        <p *ngIf=\"res.MotivationScore >= 6\">\n          High Motivated\n          </p>\n    </div>\n    <div class=\"col-lg-2\" >\n      <p *ngIf=\"res.MemoryScore <= 4\">\n        Clever\n    </p>\n    <p *ngIf=\"res.MemoryScore >= 5 && res.MemoryScore <= 8\">\n        Smart\n      </p>\n      <p *ngIf=\"res.MemoryScore >= 9\">\n       Sharp\n        </p>\n    </div>\n    <div class=\"col-lg-2\" >\n      <p *ngIf=\"res.IqScore <= 2\">\n        Low\n    </p>\n    <p *ngIf=\"res.IqScore >= 3 && res.IqScore <= 4\">\n        Mid\n      </p>\n      <p *ngIf=\"res.IqScore >= 5\">\n       High\n        </p>\n    </div>\n    <div class=\"col-lg-2\" >\n        <p></p>\n      </div>\n\n  </div>\n  <hr />\n</div>\n\n\n"
 
 /***/ }),
 
@@ -3368,13 +3398,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SurveyR1Component", function() { return SurveyR1Component; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
-/* harmony import */ var _node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
-/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/survey.service */ "./src/app/services/survey.service.ts");
-/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var _models_ans1c__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../models/ans1c */ "./src/app/models/ans1c.ts");
+/* harmony import */ var _node_modules_file_saver__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var _node_modules_file_saver__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/survey.service */ "./src/app/services/survey.service.ts");
+/* harmony import */ var src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/services/auth.service */ "./src/app/services/auth.service.ts");
+
 
 
 
@@ -3393,32 +3425,127 @@ var SurveyR1Component = /** @class */ (function () {
     SurveyR1Component.prototype.ngOnInit = function () {
         var _this = this;
         this.ans1s = new Array();
+        this.ans1cs = new Array();
         this.output = 'Results:\r\n';
         this.surveyService.getAnsList().subscribe(function (data) {
             if (data.success) {
                 _this.ans1s = data.contactList;
-                //prepare result
+                // prepare result
                 var i_1 = 1;
                 _this.ans1s.forEach(function (item) {
                     if (item.isWork === 'Yes') {
+                        var c = new _models_ans1c__WEBPACK_IMPORTED_MODULE_2__["Ans1c"]();
+                        c.Name = item.Name;
+                        c.Email = item.Email;
+                        c.MemoryScore = 0;
+                        c.MotivationScore = 0;
+                        c.IqScore = 0;
+                        if (item.n1 == '128') {
+                            c.IqScore += 2;
+                        }
+                        if (item.n2 == '21') {
+                            c.IqScore += 2;
+                        }
+                        if (item.n3 == '125') {
+                            c.IqScore += 2;
+                        }
+                        if (item.midDot == 'red') {
+                            c.MotivationScore += 1;
+                        }
+                        if (item.redDot == '5') {
+                            c.MemoryScore += 1;
+                        }
+                        if (item.blueDot == '13') {
+                            c.MemoryScore += 3;
+                        }
+                        if (item.blueDot == '11') {
+                            c.MemoryScore += 1;
+                        }
+                        if ((item.blueDot == '14') || (item.blueDot == '12')) {
+                            c.MemoryScore += 2;
+                        }
+                        var str1 = new String(item.nums);
+                        if (str1.indexOf('62') != -1) {
+                            c.MemoryScore += 1;
+                        }
+                        if (str1.indexOf('15') != -1) {
+                            c.MemoryScore += 1;
+                        }
+                        if (str1.indexOf('74') != -1) {
+                            c.MemoryScore += 1;
+                        }
+                        if (str1.indexOf('43') != -1) {
+                            c.MemoryScore += 1;
+                        }
+                        if (str1.indexOf('80') != -1) {
+                            c.MemoryScore += 1;
+                        }
+                        var str2 = new String(item.num1Shown);
+                        var str3 = new String(item.num1Typed);
+                        var ns = str2.split(' ');
+                        for (var n in ns) {
+                            if (str3.indexOf(n) != -1) {
+                                c.MemoryScore += 1;
+                            }
+                        }
                         var sp = +item.keySp;
+                        if (sp > 21) {
+                            c.MotivationScore += 2;
+                        }
+                        else if (sp > 51) {
+                            c.MotivationScore += 4;
+                        }
+                        else if (sp > 81) {
+                            c.MotivationScore += 6;
+                        }
                         if ((item.Work4.startsWith('Cleaning')) &&
                             (item.Work2.endsWith('indoors')) &&
-                            (item.Work6.endsWith('company')) &&
+                            // (item.Work6.endsWith('company')) &&
                             (item.Work3.endsWith('numbers')) &&
                             (item.Work5.startsWith('Office')) &&
                             sp > 21) {
                             _this.output += i_1 + '. Name:' + item.Name + ',' + item.Email + ', Administrative jobs;\r\n';
+                            _this.jobType = 'Administrative jobs';
                             console.log(item.isWork + i_1++);
                         }
                         else if ((item.Work4.startsWith('Cleaning')) &&
-                            (item.Work6.endsWith('company')) &&
+                            // (item.Work6.endsWith('company')) &&
                             (item.Work3.endsWith('ideas')) &&
                             (item.Work1.endsWith('people')) &&
                             sp > 51) {
                             _this.output += i_1 + '. Name:' + item.Name + ',' + item.Email + ', Digital Marketing;\r\n';
+                            _this.jobType = 'Digital Marketing';
                             console.log(item.isWork + i_1++);
                         }
+                        c.JobType = _this.jobType;
+                        if (c.IqScore >= 5) {
+                            c.IqLevel = 'High';
+                        }
+                        else if (c.IqScore <= 2) {
+                            c.IqLevel = 'Low';
+                        }
+                        else {
+                            c.IqLevel = 'Mid';
+                        }
+                        if (c.MemoryScore >= 9) {
+                            c.MemoryLevel = 'Sharp';
+                        }
+                        else if (c.MemoryScore <= 4) {
+                            c.MemoryLevel = 'Clever';
+                        }
+                        else {
+                            c.MemoryLevel = 'Smart';
+                        }
+                        if (c.MotivationScore >= 6) {
+                            c.MotivationLevel = 'High Motivated';
+                        }
+                        else if (c.MotivationScore <= 2) {
+                            c.MotivationLevel = 'Less Motivated';
+                        }
+                        else {
+                            c.MotivationLevel = 'Motivated';
+                        }
+                        _this.ans1cs.push(c);
                     }
                 });
             }
@@ -3431,6 +3558,29 @@ var SurveyR1Component = /** @class */ (function () {
     SurveyR1Component.prototype.download = function () {
         this.downloadFile(this.ans1s);
     };
+    SurveyR1Component.prototype.downloadC = function () {
+        this.downloadFileC(this.ans1cs);
+    };
+    SurveyR1Component.prototype.downloadFileC = function (data) {
+        var replacer = function (key, value) { return (value === null ? "" : value); }; // specify how you want to handle null values here
+        var header = Object.keys(data[0]);
+        console.log(header);
+        var csv = data.map(function (row) {
+            return header
+                .map(function (fieldName) { return JSON.stringify(row[fieldName], replacer); })
+                .join(",");
+        });
+        console.log('csv');
+        console.log(csv);
+        csv.unshift(header.join(","));
+        console.log('un');
+        console.log(csv);
+        var csvArray = csv.join("\r\n");
+        console.log('ar');
+        console.log(csvArray);
+        var blob = new Blob([csvArray], { type: "text/csv" });
+        Object(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_3__["saveAs"])(blob, "CustomizedResult.csv");
+    };
     SurveyR1Component.prototype.downloadFile = function (data) {
         var replacer = function (key, value) { return (value === null ? "" : value); }; // specify how you want to handle null values here
         var header = Object.keys(data[0]);
@@ -3439,11 +3589,14 @@ var SurveyR1Component = /** @class */ (function () {
                 .map(function (fieldName) { return JSON.stringify(row[fieldName], replacer); })
                 .join(",");
         });
+        var r1 = 'Motivation Score (0-7): less(0-2) normal(3-5) high(6-7)';
+        var r2 = 'Memory Sore (0-13):  clever(0-4) smart(5-8) sharp(9-13)';
+        var r3 = 'Aptitude Score (0-6): low(0-2) mid(3-4) high(5-6)';
         csv.unshift(header.join(","));
         var csvArray = csv.join("\r\n");
         console.log(csvArray);
         var blob = new Blob([csvArray], { type: "text/csv" });
-        Object(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_2__["saveAs"])(blob, "myFile.csv");
+        Object(_node_modules_file_saver__WEBPACK_IMPORTED_MODULE_3__["saveAs"])(blob, "Result.csv");
     };
     SurveyR1Component = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3451,11 +3604,11 @@ var SurveyR1Component = /** @class */ (function () {
             template: __webpack_require__(/*! ./survey-r1.component.html */ "./src/app/survey/survey-r1/survey-r1.component.html"),
             styles: [__webpack_require__(/*! ./survey-r1.component.css */ "./src/app/survey/survey-r1/survey-r1.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_4__["FlashMessagesService"],
-            src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_5__["SurveyService"],
-            src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_5__["FlashMessagesService"],
+            src_app_services_survey_service__WEBPACK_IMPORTED_MODULE_6__["SurveyService"],
+            src_app_services_auth_service__WEBPACK_IMPORTED_MODULE_7__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], SurveyR1Component);
     return SurveyR1Component;
 }());

@@ -33,6 +33,8 @@ let answerSchema = mongoose.Schema(
       midDot: String,
       ExpCount: String,
       keySp: String,
+      ExpLCount: String,
+      keyLSp: String,
       redDot: String,
       blueDot: String,
       nums: String,

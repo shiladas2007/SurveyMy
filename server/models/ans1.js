@@ -30,12 +30,17 @@ let answerSchema = mongoose.Schema(
       isExpRes: String,
       isExpPre: String,
       isExpTar: String,
+      midDot: String,
       ExpCount: String,
       keySp: String,
       redDot: String,
+      blueDot: String,
       nums: String,
       num1Shown: String,
       num1Typed: String,
+      n1: String,
+      n2: String,
+      n3: String,
       desc: String
   },
   {

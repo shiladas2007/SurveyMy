@@ -298,6 +298,16 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
           </mat-card-header>
         <mat-card-content>
             <hr>
+            <img  src="../../../assets/images/middot.jpg" width="50%" height="15%"/>
+
+          <mat-radio-group   required
+          aria-labelledby="example-radio-group-label" name="midDot" formControlName="midDot"
+          class="example-radio-group"  [(ngModel)]="ans1.midDot"
+          >
+          <mat-radio-button class="example-radio-button" *ngFor="let item of midDots" [value]="item">
+            {{item}}
+          </mat-radio-button>
+        </mat-radio-group>
           <label id="example-radio-group-label">You are given 15 seconds; how many times can you tab on the right arrow key?</label>
           <mat-radio-group  (change)="selKey=true;" [disabled]="selKey" required
           aria-labelledby="example-radio-group-label" name="ExpCount" formControlName="ExpCount"
@@ -319,6 +329,7 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
                         [(ngModel)]="ans1.keySp"
                         formControlName="keySp"
                       />
+
       <div>
         <button mat-button type="button" matStepperNext>Next</button>
       </div>
@@ -347,7 +358,16 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
             id="redDot"
             [(ngModel)]="ans1.redDot"
             formControlName="redDot"
-          />
+          /><br>
+          <span [hidden]="!span1">How many blue dot is there?<br> </span>
+          <input [hidden]="!span1"
+          name="blueDot"
+          type="text"
+          style="width: 50%; margin-left: 30px;"
+          id="blueDot"
+          [(ngModel)]="ans1.blueDot"
+          formControlName="blueDot"
+        />
 
             <br>
             <label id="example-radio-group-label">Click on button see the image! Please read all the numbers from image.</label><br>
@@ -394,6 +414,16 @@ class="example-radio-group" [(ngModel)]="ans1.Work6" name="Work6"
               </mat-card-header>
             <mat-card-content>
                 <hr>
+                <label> What number comes in the blank in each sequence below?</label>
+                <mat-form-field class="example-full-width">
+                  <input matInput [(ngModel)]="ans1.n1" formControlName="n1Ctrl" name="n1" placeholder="4, 8, 16, 32, 64, _______" >
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <input matInput [(ngModel)]="ans1.n2" formControlName="n2Ctrl" name="n2" placeholder="1, 3, 6, 10, 15, _______" >
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <input matInput [(ngModel)]="ans1.n3" formControlName="n3Ctrl" name="n3" placeholder="500, 475, 425, 350, 250, ______" >
+                </mat-form-field>
                 <mat-form-field>
                     <mat-label>What describe you best?</mat-label>
                     <mat-select  [(ngModel)]="ans1.desc" name="desc" required formControlName="desc" >

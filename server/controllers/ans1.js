@@ -46,14 +46,20 @@ module.exports.processAddPage = (req, res, next) => {
         isExpRes: req.body.isExpRes,
         isExpPre: req.body.isExpPre,
         isExpTar: req.body.isExpTar,
+        midDot: req.body.midDot,
         ExpCount: req.body.ExpCount,
         keySp: req.body.keySp,
         redDot: req.body.redDot,
+        blueDot: req.body.blueDot,
         nums: req.body.nums,
         num1Shown: req.body.num1Shown,
         num1Typed: req.body.num1Typed,
+        n1: req.body.n1,
+        n2: req.body.n2,
+        n3: req.body.n3,
         desc: req.body.desc
     });
+    console.log('now insert');
     console.log(newContact);
     contactModel.create(newContact, (err, contactModel) => {
         if(err) {

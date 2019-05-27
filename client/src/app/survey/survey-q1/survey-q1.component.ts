@@ -41,7 +41,7 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
   Kc: string[] = ['30', '40', '50', 'More than 80'];
   lst: string[] = ['A people’s person', 'A number cruncher', 'Self motivated'
   , 'An effective communicator', 'Analytical', 'Negotiator', 'Organized and following procedures'];
-
+  midDots: string[] = ['red', 'yellow', 'orange', 'blue', 'pink', 'cyan'];
   @ViewChild('counter', {read: TimeQComponent})
   private counter: TimeQComponent;
   @ViewChild('counter1', {read: TimeQComponent})
@@ -88,7 +88,7 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
         this.span3 = true;
       }
     });
-    this.counter.startAt = 180;
+    this.counter.startAt = 600;
     this.counter.counterState.subscribe((msg) => {
       if (msg === 'COMPLETE') {
         this.counterState = 'counter has stopped';
@@ -136,15 +136,20 @@ get formArray(): AbstractControl | null { return this.formGroup.get('formArray')
       isExpTar: ['',Validators.required]
         }),
         this._formBuilder.group({
+          midDot: [''],
           ExpCount: [''],
           keySp: ['']
         }),
         this._formBuilder.group({
           redDot: [''],
+          blueDot: [''],
           nums: [''],
           num1Typed: ['']
         }),
         this._formBuilder.group({
+          n1Ctrl: [''],
+          n2Ctrl: [''],
+          n3Ctrl: [''],
           desc: ['',Validators.required]
         }),
       ])

@@ -25,12 +25,17 @@ export class Ans1 {
       isExpRes: string;
       isExpPre: string;
       isExpTar: string;
+      midDot: string;
       ExpCount: string;
       keySp: string;
       redDot: string;
+      blueDot: string;
       nums: string;
       num1Shown: string;
       num1Typed: string;
+      n1: string;
+      n2: string;
+      n3: string;
       desc: string;
 
 }
